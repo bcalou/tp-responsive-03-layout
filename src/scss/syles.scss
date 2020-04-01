@@ -1,0 +1,19 @@
+@import '../scss/reset.css';
+@import '../scss/mixin.scss';
+
+body {
+  height: 100vh;
+  background-color: green;
+
+  @include small {
+    background-color: blue;
+  }
+
+  @include medium {
+    background-color: yellow;
+  }
+
+  @include large {
+    background-color: red;
+  }
+} 
