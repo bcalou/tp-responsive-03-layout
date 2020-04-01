@@ -4,10 +4,6 @@ body {
   align-items: center;
 }
 
-footer,
-header,
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: $row-gap/2 0px $row-gap/2 0px;
 }

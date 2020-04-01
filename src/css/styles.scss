@@ -1,7 +1,10 @@
 @import 'global/reset.scss';
 @import 'config/medias.scss';
+@import 'config/variables.scss';
 @import 'blocs/body.scss';
 @import 'blocs/header.scss';
 @import 'blocs/main/main.scss';
 @import 'blocs/main/main-articles.scss';
+@import 'blocs/main/sub-articles.scss';
+@import 'blocs/main/rdv.scss';
 @import 'blocs/footer.scss';

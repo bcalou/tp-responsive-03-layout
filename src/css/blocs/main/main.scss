@@ -1,6 +1,5 @@
 .main {
-  margin: 20px 0px 20px 0px;
-  padding: 0px 10px 0px 10px;
+  padding: 20px 10px 20px 10px;
   width: 100%;
   max-width: 660px;
   @include large {
@@ -15,9 +14,12 @@
       'abo abo .'
       'rdv rdv rdv';
   }
+  grid-column-gap: $col-gap;
+  grid-row-gap: $row-gap;
 }
 
 .main__primaryInfo {
+  border: 1px solid black;
   background-color: gold;
   height: 450px;
   @include large {
@@ -26,6 +28,7 @@
 }
 
 .main__fillInfo {
+  border: 1px solid black;
   display: none;
   background-color: teal;
   @include large {
@@ -35,6 +38,7 @@
 }
 
 .main__mainArticles {
+  border: 1px solid black;
   background-color: salmon;
   @include large {
     grid-area: article;
@@ -42,14 +46,15 @@
 }
 
 .main__subArticles {
+  border: 1px solid black;
   background-color: skyblue;
-  height: 320px;
   @include large {
     grid-area: sub-article;
   }
 }
 
 .main__abonnement {
+  border: 1px solid black;
   background-color: violet;
   height: 320px;
   @include large {
@@ -57,8 +62,8 @@
   }
 }
 .main__rdv {
+  border: 1px solid black;
   background-color: yellowgreen;
-  height: 320px;
   @include large {
     grid-area: rdv;
   }
