@@ -9,15 +9,3 @@
     @content;
   }
 }
-
-body {
-  background-color: teal;
-
-  @include medium {
-    background-color: gold;
-  }
-
-  @include large {
-    background-color: royalblue;
-  }
-}

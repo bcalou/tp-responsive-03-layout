@@ -1,0 +1,66 @@
+.main {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  max-width: 660px;
+  @include large {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      'primary-info primary-info fil-info'
+      'article article article'
+      'sub-article sub-article .'
+      'abo abo .'
+      'rdv rdv rdv';
+  }
+}
+
+.main__primaryInfo {
+  background-color: gold;
+  height: 450px;
+  @include large {
+    grid-area: primary-info;
+  }
+}
+
+.main__fillInfo {
+  display: none;
+  background-color: teal;
+  @include large {
+    display: block;
+    grid-area: fil-info;
+  }
+}
+
+.main__mainArticles {
+  background-color: salmon;
+  height: 500px;
+  @include large {
+    grid-area: article;
+  }
+}
+
+.main__subArticles {
+  background-color: skyblue;
+  height: 320px;
+  @include large {
+    grid-area: sub-article;
+  }
+}
+
+.main__abonnement {
+  background-color: violet;
+  height: 320px;
+  @include large {
+    grid-area: abo;
+  }
+}
+.main__rdv {
+  background-color: yellowgreen;
+  height: 320px;
+  @include large {
+    grid-area: rdv;
+  }
+}
