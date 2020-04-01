@@ -4,7 +4,7 @@
   "description": "Dans le dernier TP de cette série, nous allons intégrer une page web étape par étape en utilisant intelligement flexbox et grid.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Lucas-Hetic/responsive-03-layout-hetic/issues"
   },
-  "homepage": "https://github.com/Lucas-Hetic/responsive-03-layout-hetic#readme"
+  "homepage": "https://github.com/Lucas-Hetic/responsive-03-layout-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.3"
+  }
 }
