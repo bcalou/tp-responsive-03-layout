@@ -1,0 +1,47 @@
+main {
+  width: 100vw;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 2fr 1fr 1fr 1fr 0.5fr 1fr;
+  // grid-template-rows: auto;
+  grid-template-areas:
+    "hero hero fill"
+    "articles articles articles"
+    "articles articles articles"
+    "links links ."
+    "pub pub ."
+    "subs subs subs";
+
+  grid-gap: 1em;
+}
+
+.hero {
+  background: blue;
+  grid-area: hero;
+}
+
+.articles {
+  background: yellowgreen;
+  grid-area: articles;
+}
+
+.links {
+  background: purple;
+  grid-area: links;
+}
+
+.fill {
+  background: red;
+  grid-area: fill;
+}
+
+.pub {
+  background: pink;
+  grid-area: pub;
+}
+
+.subs {
+  background: sandybrown;
+  grid-area: subs;
+}
