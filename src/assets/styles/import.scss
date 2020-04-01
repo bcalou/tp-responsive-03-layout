@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "reset.scss";
+@import "media.scss";
+@import "style.scss";
