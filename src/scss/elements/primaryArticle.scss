@@ -1,0 +1,27 @@
+.primaryArticle {
+
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "article1 article1 article2 article2 article3 article3 "
+               "articleAbonne1 articleAbonne1 articleAbonne1 articleAbonne2 articleAbonne2 articleAbonne2 ";
+    grid-gap: 10px;
+  }  
+
+  @include large {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "article1 article2 article3"
+                         "articleAbonne1 articleAbonne2 .";
+  }
+ 
+}
+
+.primaryArticle__article {
+
+} 
+
+.primary__article--abonne {
+
+}

@@ -3,6 +3,12 @@
 @import '../scss/blocs/header.scss';
 @import '../scss/blocs/main.scss';
 @import '../scss/blocs/footer.scss';
+@import '../scss/elements/primaryInfo.scss';
+@import '../scss/elements/news.scss';
+@import '../scss/elements/primaryArticle.scss';
+@import '../scss/elements/secondaryArticle.scss';
+@import '../scss/elements/advertising.scss';
+@import '../scss/elements/appointment.scss';
 
 
 * {
@@ -16,5 +22,5 @@ img {
 html,
 body {
   width: 100vw;
-  overflow: hidden;
 }
+
