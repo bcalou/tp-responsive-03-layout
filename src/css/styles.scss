@@ -1,0 +1,117 @@
+@import "typography";
+@import "reset";
+@import "media";
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  border-bottom: 1px solid rgba(46, 45, 45, 0.308);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1.5fr repeat(2, 1fr) 1.5fr 0.7fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 56px;
+
+  @include large {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 675px;
+    justify-content: space-evenly;
+    .feed {
+      display: none;
+    }
+  }
+  @include medium {
+    flex-direction: column;
+  }
+}
+
+article {
+}
+
+.article-important {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  flex-basis: auto;
+  min-height: 300px;
+}
+.feed {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: brown;
+  height: 100%;
+  min-height: 300px;
+}
+.articles-1 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: green;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 66%;
+  div {
+    width: 50%;
+    height: 100%;
+  }
+  .article:first-child {
+    background-color: rgb(120, 206, 120);
+  }
+  .article:last-child {
+    background-color: rgb(5, 99, 5);
+  }
+}
+.articles-2 {
+  background-color: rgb(0, 218, 0);
+  grid-area: 2 / 2 / 3 / 3;
+  height: 300px;
+  flex-basis: 33%;
+}
+.articles-3 {
+  background-color: rgb(31, 201, 31);
+  grid-area: 3 / 1 / 4 / 2;
+  min-height: 300px;
+  flex-basis: 100%;
+  div {
+    width: 50%;
+    height: 100%;
+  }
+  .article:first-child {
+    background-color: rgb(19, 87, 19);
+  }
+  .article:last-child {
+    background-color: rgb(23, 48, 23);
+  }
+}
+.articles-list {
+  background-color: rgb(0, 30, 128);
+  grid-area: 4 / 1 / 5 / 2;
+  flex-basis: 100%;
+  min-height: 300px;
+}
+.ads {
+  background-color: rgb(250, 246, 24);
+  grid-area: 5 / 1 / 6 / 2;
+  flex-basis: 100%;
+  @include large {
+    height: 180px;
+  }
+}
+
+.rdv {
+  background-color: black;
+  grid-area: 6 / 1 / 7 / 3;
+  flex-basis: 100%;
+  min-height: 300px;
+}
