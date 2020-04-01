@@ -1,13 +1,21 @@
-.firstArticle {
+.main {
+  display: grid;
+
+  @include large {
+    display: grid;
+  }
+}
+
+.firstInfo {
 }
 
 .fill {
 }
 
-.section3 {
+.secondaryInfo {
 }
 
-.section4 {
+.thirdInfo {
 }
 
 .pub {
