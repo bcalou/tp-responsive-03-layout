@@ -1,3 +1,19 @@
 /************ IMPORT ************/
 
 @import "reset.scss";
+@import "config/medias";
+
+
+//test
+
+body {
+  background-color: green;
+
+  @include medium {
+    background-color: yellow;
+  }
+
+  @include large {
+    background-color: red;
+  }
+}
