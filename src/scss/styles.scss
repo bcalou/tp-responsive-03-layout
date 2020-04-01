@@ -1,11 +1,15 @@
 @import '../scss/reset.scss';
 @import '../scss/media.scss';
+@import '../scss/blocs/header.scss';
+@import '../scss/blocs/main.scss';
+@import '../scss/blocs/footer.scss';
 
-*{
+
+* {
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -14,15 +18,3 @@ body {
   width: 100vw;
   overflow: hidden;
 }
-
-body {
-    background-color: green;
-  
-    @include medium {
-      background-color: yellow;
-    }
-  
-    @include large {
-      background-color: red;
-    }
-  }
