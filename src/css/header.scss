@@ -1,0 +1,24 @@
+.header {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+  &__title {
+    font-size: 72px;
+  }
+
+  &__nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    &--menu {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
