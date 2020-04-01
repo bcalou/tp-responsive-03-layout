@@ -1,0 +1,13 @@
+@import "reset";
+@import "media";
+@import "blocs/header";
+@import "blocs/main";
+@import "blocs/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
