@@ -1,0 +1,27 @@
+header {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  div {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    justify-content: space-around;
+    button {
+      border: none;
+      border-radius: 0.3em;
+      height: 25px;
+      background-color: #fed500;
+      font-weight: bold;
+    }
+  }
+}
+hr {
+  color: #ccc;
+}
+.logo_obs {
+  width: 84px;
+  height: 22px;
+}

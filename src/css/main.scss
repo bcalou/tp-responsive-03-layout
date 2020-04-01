@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 200vh;
+  margin: 10px 20px;
+  div {
+    border: 2px solid red;
+  }
+  &__1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  &__2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background: url("../assets/imgs/article2.jpg") no-repeat;
+  }
+  &__3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  &__4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  &__5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  &__6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+}
