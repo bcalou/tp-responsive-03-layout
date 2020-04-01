@@ -1,0 +1,23 @@
+{
+  "name": "responsive-03-layout-hetic",
+  "version": "1.0.0",
+  "description": "Dans le dernier TP de cette série, nous allons intégrer une page web étape par étape en utilisant intelligement flexbox et grid.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nojaas/responsive-03-layout-hetic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nojaas/responsive-03-layout-hetic/issues"
+  },
+  "homepage": "https://github.com/Nojaas/responsive-03-layout-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
