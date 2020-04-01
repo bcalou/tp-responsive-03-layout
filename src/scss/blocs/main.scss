@@ -1,0 +1,148 @@
+.main{
+
+  width: 100vw;
+  max-width: 100%;
+
+
+  .headingTopic {
+    height: 60vh;
+    background-color: powderblue;
+  }
+
+  .topArticles {
+
+    @include medium {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50% 50%;
+      grid-gap: 5px;
+      grid-template-areas: "a a b b c c"
+                           "d d d e e e";
+    }
+
+    &__first {
+      height: 40vh;
+      background-color: palegoldenrod;
+
+      @include medium {
+        grid-area: a;
+      }
+    }
+
+    &__second {
+      height: 40vh;
+      background-color: rosybrown;
+
+      @include medium {
+        grid-area: b;
+      }
+    }
+
+    &__third {
+      height: 40vh;
+      background-color: plum;
+
+      @include medium {
+        grid-area: c;
+      }
+    }
+
+    &__fourth{
+      height: 40vh;
+      background-color: skyblue;
+
+      @include medium {
+        grid-area: d;
+      }
+    }
+
+    &__fifth {
+      height: 40vh;
+      background-color: honeydew;
+
+      @include medium {
+        grid-area: e;
+      }
+    }
+  }
+
+  .anotherArticles {
+    background-color: seashell;
+
+    @include medium {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 5px;
+      grid-template-areas: "a b"
+                           "c d"
+                           "e f";
+    }
+
+    &__first {
+      height: 20vh;
+      background-color: palegoldenrod;
+
+      @include medium{
+        grid-area: a;
+      }
+    }
+
+    &__second {
+      height: 20vh;
+      background-color: rosybrown;
+
+      @include medium{
+        grid-area: b;
+      }
+    }
+
+    &__third {
+      height: 20vh;
+      background-color: plum;
+
+      @include medium{
+        grid-area: c;
+      }
+    }
+
+    &__fourth{
+      height: 20vh;
+      background-color: skyblue;
+
+      @include medium{
+        grid-area: d;
+      }
+    }
+
+    &__fifth {
+      height: 20vh;
+      background-color: honeydew;
+
+      @include medium{
+        grid-area: e;
+      }
+    }
+
+    &__sixth {
+      height: 20vh;
+      background-color: rgb(140, 207, 140);
+    }
+
+    @include medium{
+      grid-area: f;
+    }
+  }
+
+  .subscribe {
+    height: 30vh;
+    background-color: palevioletred;
+  }
+
+  .events {
+    height: 40vh;
+    background-color: cornsilk;
+  }
+
+
+}
