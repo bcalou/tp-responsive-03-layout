@@ -1,0 +1,30 @@
+$medium: 674px;
+$large: 1024px;
+
+body {
+  display: grid;
+}
+
+@mixin medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
+body {
+  background-color: green;
+
+  @include medium {
+    background-color: yellow;
+  }
+
+  @include large {
+    background-color: red;
+  }
+}
