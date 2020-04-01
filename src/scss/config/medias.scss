@@ -4,14 +4,14 @@
     }  
 } 
 
-/*@mixin medium {
-    @media (min-width: ???px) {
-      @content;
+@mixin medium {
+    @media (min-width: 674px) {
+        @content;
     }
   }
   
-  @mixin large {
-    @media (min-width: ???px) {
-      @content;
+@mixin large {
+    @media (min-width: 1024px) {
+        @content;
     }
-  }*/
+}
