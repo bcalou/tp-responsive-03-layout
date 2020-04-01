@@ -1,0 +1,92 @@
+header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(200, 200, 200, .7);
+
+    h1 img {
+        width: 400px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    & .header-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        font-size: 0.9em;
+
+        .search {
+            margin-left: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            margin-left: 10%;
+
+            div {
+                margin-left: 20px;
+                margin-right: 20px;
+                cursor: pointer;
+                transition: all .4s;
+                height: 100%;
+                border-bottom: 2px solid $white;
+            }
+
+            div:hover {
+                border-bottom-color: black;
+                height: 16px;
+            }
+        }
+    
+        .connection {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            right: 10px;
+
+            .sign-in {
+                width: 120px;
+                margin-top: -6px;
+
+                img {
+                    float: left;
+                }
+
+                p {
+                    text-align: center;
+                    padding-top: 5px;
+                    width: 90%;
+                }
+            }
+
+            .sign-up {
+                background-color:#fed500;
+                margin-top: -6px;
+                height: 20px;
+                width: 85px;
+                text-align: center;
+                padding-top: 5px;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .sign-up:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    #photos {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #videos {
+        display: none;
+    }
+}
