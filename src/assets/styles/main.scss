@@ -1,0 +1,9 @@
+.main {
+  @include medium {
+    display: flex;
+  }
+
+  @include large {
+    display: grid;
+  }
+}
