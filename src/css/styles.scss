@@ -1,0 +1,100 @@
+@import "reset.scss";
+@import "mixins.scss";
+
+* {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  background-color: white;
+
+  &__third {
+    background-color: white;
+  }
+
+  &__live {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.articles {
+  width: 966px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 460px auto auto 180px auto;
+  grid-template-areas:
+    "articlesMain aside"
+    "articlesSecond articlesSecond"
+    "articlesThird ."
+    "advertising ."
+    "fourth fourth";
+
+  @include medium {
+    width: 633px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "articlesMain articlesMain articlesMain articlesMain articlesMain articlesMain"
+      "articlesSecond articlesSecond articlesSecond articlesSecond articlesSecond articlesSecond"
+      "articlesSecond articlesSecond articlesSecond articlesSecond articlesSecond articlesSecond"
+      "advertising ."
+      "fourth fourth";
+  }
+
+  &__main {
+    background-color: green;
+    padding: 10px;
+  }
+
+  &__infos {
+    background-color: red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__secondary {
+    grid-area: articlesSecond;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  &__third {
+    grid-area: articlesThird;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 90px);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  &__advertising {
+    background-color: blueviolet;
+    grid-area: advertising;
+    padding: 10px;
+  }
+
+  &__fourth {
+    background-color: chocolate;
+    grid-area: fourth;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
