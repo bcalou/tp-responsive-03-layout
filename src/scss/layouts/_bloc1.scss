@@ -1,0 +1,114 @@
+.bloc1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-rows: minmax(300px, auto);
+  // justify-content: center;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bloc1__mainArticles bloc1__mainArticles bloc1__filInfo"
+    "bloc1__subArticles bloc1__subArticles bloc1__subArticles";
+
+}
+
+.bloc1__mainArticles {
+  // background: red;
+  grid-area: bloc1__mainArticles;
+}
+
+.mainArticles {
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    position: relative;
+    top: -30px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 95%;
+    background: white;
+    font-family: 'serif';
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+
+.bloc1__filInfo {
+  grid-area: bloc1__filInfo;
+}
+
+.filInfo {
+  border: 1px solid lightgrey;
+  padding: 0px 10px 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__title {
+    position: relative;
+    top: -10px;
+    font-family: 'Avenir Next Condensed';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  // &__infos {}
+
+  &__info {
+    margin: 10px 0;
+    font-size: 14px;
+    border-bottom: 0.7px solid lightgrey;
+    @include flexbox (row, center, baseline);
+
+    time {
+      padding: 10px 15px 10px 0;
+      text-align: left;
+      font-weight: bold;
+
+    }
+
+    a {
+      padding: 10px 15px;
+      line-height: 1.4;
+
+      h2 {
+        font-weight: lighter;
+      }
+    }
+  }
+
+  &__seeAll {
+    margin: 35px 10px 0 0;
+    font-family: 'Avenir Next Condensed';
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    @include flexbox (row, flex-end, flex-end);
+
+    &::after {
+      content: '\003e';
+      margin: 1px 6px;
+      cursor: pointer
+    }
+  }
+}
+
+
+
+
+
+
+.bloc1__subArticles {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 1;
+  grid-area: bloc1__subArticles;
+}
+
+.subArticles {
+  @include card-article;
+}

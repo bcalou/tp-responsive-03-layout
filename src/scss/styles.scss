@@ -2,5 +2,34 @@
 @import 'global/_utilities.scss';
 @import 'global/_variables.scss';
 
+@import 'layouts/_header.scss';
 @import 'layouts/_bloc1.scss';
+@import 'layouts/_bloc2.scss';
 @import 'layouts/_container.scss';
+
+
+.container {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  // background: lightgrey;
+  height: 100vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
+
+a {
+  color: black;
+}
+
+.author-date {
+  color: grey;
+  font-family: arial;
+  font-weight: lighter;
+  font-size: rem(9px);
+  margin: 0 auto;
+  margin-top: 10px;
+
+
+}

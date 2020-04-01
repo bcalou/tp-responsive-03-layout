@@ -9,3 +9,38 @@
   width: 100vw;
   height: 100vh;
 }
+
+
+
+@mixin card-article {
+  max-width: 300px;
+  height: 285px;
+  background: rgb(255, 255, 255);
+  grid-area: bloc1__subArticles;
+  border: 1px solid lightgrey;
+
+
+  &__img {
+
+    img {
+      width: 100%;
+      min-height: 166px;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    position: relative;
+    top: -30px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    width: 90%;
+    background: white;
+    font-family: 'source serif pro';
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: bolder;
+    text-align: center;
+    @include flexbox (column, space-between, space-between);
+  }
+}
