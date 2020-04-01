@@ -1,1 +1,13 @@
 @import "config/medias.scss";
+
+body {
+    @include small {
+        background: green;
+    }
+    @include medium {
+        background: yellow;
+    }
+    @include large {
+        background: red;
+    }
+}
