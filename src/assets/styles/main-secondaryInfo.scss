@@ -1,0 +1,8 @@
+.main__secondaryInfo {
+  background-color: palevioletred; /* Pour tester */
+  height: 100px; /* Pour tester */
+
+  @include large {
+    grid-area: "secondaryInfo";
+  }
+}

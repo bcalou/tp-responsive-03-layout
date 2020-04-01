@@ -1,9 +1,66 @@
 .main {
-  @include medium {
-    display: flex;
-  }
-
+  margin: 20px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  max-width: 660px;
   @include large {
+    max-width: 1024px;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "primary primary fil"
+      "second second second"
+      "tertiary tertiary ."
+      "abo abo ."
+      "rdv rdv rdv";
+  }
+}
+
+.main__primaryInfo {
+  background-color: rgb(255, 217, 1);
+  height: 450px;
+  @include large {
+    grid-area: primary;
+  }
+}
+
+.infoThread {
+  display: none;
+  background-color: teal;
+  @include large {
+    display: block;
+    grid-area: fil;
+  }
+}
+
+.secondaryInfo {
+  background-color: purple;
+  height: 500px;
+  @include large {
+    grid-area: second;
+  }
+}
+
+.tertiaryInfo {
+  background-color: skyblue;
+  height: 320px;
+  @include large {
+    grid-area: tertiary;
+  }
+}
+
+.subscribeAd {
+  background-color: palevioletred;
+  height: 320px;
+  @include large {
+    grid-area: abo;
+  }
+}
+.obsMeeting {
+  background-color: rgb(96, 216, 96);
+  height: 320px;
+  @include large {
+    grid-area: rdv;
   }
 }
