@@ -1,0 +1,12 @@
+.header{
+  text-align: center;
+}
+// @include medium{
+    .header__nav ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      overflow: visible;
+      background-color: grey;
+    }
+// }

@@ -1,0 +1,42 @@
+.main{
+  @include large{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(6, 150px);
+    grid-gap: 5px;
+    grid-template-areas: "main__primaryInfo main__secondaryInfo"
+    "main__terceryInfo main__terceryInfo"
+    "main__fourthInfo ."
+    "main__fifthInfo ."
+    "main__sixthInfo main__sixthInfo";
+
+  }
+}
+
+.main__primaryInfo{
+  grid-area: main__primaryInfo;
+  background: yellow;
+
+}
+.main__secondaryInfo{
+  grid-area: main__secondaryInfo;
+  background: lightblue;
+  
+}
+.main__terceryInfo{
+  grid-area: main__terceryInfo;
+  background: red;
+}
+.main__fourthInfo{
+  grid-area: main__fourthInfo;
+  background: blue;
+}
+.main__fifthInfo{
+  grid-area: main__fifthInfo;
+  background: purple;
+}
+.main__sixthInfo{
+  grid-area: main__sixthInfo;
+  background: pink;
+  
+}
