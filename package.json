@@ -4,8 +4,7 @@
   "description": "Dans le dernier TP de cette série, nous allons intégrer une page web étape par étape en utilisant intelligement flexbox et grid.",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "serve": "parcel src/index.pug"
   },
   "repository": {
     "type": "git",
@@ -18,6 +17,8 @@
   },
   "homepage": "https://github.com/Sebastienbezombes/responsive-03-layout-hetic#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.26.3"
   }
 }
