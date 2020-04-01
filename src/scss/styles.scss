@@ -1,4 +1,6 @@
-h1 {
-  color: red;
-  background: blue;
-}
+@import 'global/_reset.scss';
+@import 'global/_utilities.scss';
+@import 'global/_variables.scss';
+
+@import 'layouts/_bloc1.scss';
+@import 'layouts/_container.scss';
