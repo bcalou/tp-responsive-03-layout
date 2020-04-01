@@ -1,0 +1,166 @@
+.main {
+  @include large {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "one two"
+      "tree tree"
+      "four ."
+      "five ."
+      "six six";
+  }
+}
+
+.main__primaryInfo {
+  background: yellow;
+  @include large {
+    grid-area: one;
+  }
+}
+
+.main__secondaryInfo {
+  display: none;
+  @include large {
+    grid-area: two;
+    display: grid;
+  }
+  background: blue;
+}
+
+.main__thirdInfo {
+  @include large {
+    grid-template-areas:
+      "article__first article__two article__tree"
+      "article__four article__five .";
+  }
+  @include medium {
+    grid-area: tree;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "article__first article__two article__tree"
+      "article__four article__five .";
+  }
+}
+.article__first {
+  @include large {
+    grid-area: article__first;
+  }
+  background: #303180;
+}
+.article__two {
+  @include large {
+    grid-area: article__two;
+  }
+  background: #304180;
+}
+.article__tree {
+  @include large {
+    grid-area: article__tree;
+  }
+  background: #305180;
+}
+.article__four {
+  @include large {
+    grid-area: article__four;
+  }
+  background: #306180;
+}
+
+.article__five {
+  @include large {
+    grid-area: article__five;
+  }
+  background: #307180;
+}
+
+.main__fourInfo {
+  @include large {
+    grid-template-areas:
+      "secondary__ArticleFirst secondary__ArticleTwo "
+      "secondary__ArticleTree secondary__ArticleFour "
+      "secondary__ArticleFive secondary__ArticleSix";
+  }
+
+  @include medium {
+    grid-area: four;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "secondary__ArticleFirst secondary__ArticleTwo "
+      "secondary__ArticleTree secondary__ArticleFour "
+      "secondary__ArticleFive secondary__ArticleSix";
+  }
+}
+.secondary__ArticleFirst {
+  @include large {
+    grid-area: secondary__ArticleFirst;
+  }
+  @include medium {
+    grid-area: secondary__ArticleFirst;
+  }
+  background-color: #917180;
+}
+.secondary__ArticleTwo {
+  @include large {
+    grid-area: secondary__ArticleTwo;
+  }
+  @include medium {
+    grid-area: secondary__ArticleTwo;
+  }
+  background-color: #919280;
+}
+.secondary__ArticleTree {
+  @include large {
+    grid-area: secondary__ArticleTree;
+  }
+  @include medium {
+    grid-area: secondary__ArticleTree;
+  }
+  background-color: #918580;
+}
+
+.secondary__ArticleFour {
+  @include large {
+    grid-area: secondary__ArticleFour;
+  }
+  @include medium {
+    grid-area: secondary__ArticleFour;
+  }
+  background-color: #917580;
+}
+
+.secondary__ArticleFive {
+  @include large {
+    grid-area: secondary__ArticleFive;
+  }
+  @include medium {
+    grid-area: secondary__ArticleFive;
+  }
+  background-color: #a78492;
+}
+.secondary__ArticleSix {
+  @include large {
+    grid-area: secondary__ArticleSix;
+  }
+  @include medium {
+    grid-area: secondary__ArticleSix;
+  }
+  background-color: #8f6576;
+}
+
+.main__fiveInfo {
+  @include large {
+    grid-area: five;
+  }
+  background: purple;
+}
+.main__sixInfo {
+  @include large {
+    grid-area: six;
+  }
+  background: salmon;
+}
