@@ -1,0 +1,24 @@
+@import "global.scss";
+@import "reset.scss";
+@import "medias.scss";
+
+* {
+  box-sizing: border-box;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: darkblue;
+
+  @include medium {
+    background-color: grey;
+  }
+
+  @include large {
+    background-color:white;
+  }
+}
