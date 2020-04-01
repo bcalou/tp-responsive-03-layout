@@ -1,0 +1,35 @@
+@import "/css/media.scss";
+@import "blocs/header";
+@import "blocs/main";
+@import "blocs/footer";
+
+body {
+  background-color: green;
+
+  @include medium {
+    background-color: yellow;
+  }
+
+  @include large {
+    background-color: red;
+  }
+}
+
+.main {
+  display: grid;
+
+  @include large {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 100px;
+    grid-template-areas:1;
+  }
+}
+.main__primaryInfo {
+  background: yellow; /* Pour tester */
+  height: 100px; /* Pour tester */
+
+  @include large {
+    grid-area: 1;
+  }
+}
