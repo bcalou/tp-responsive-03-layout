@@ -8,7 +8,7 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: $max-pourcent;
 }
 
 body {
@@ -22,3 +22,42 @@ body {
     background-color:white;
   }
 }
+
+.header{
+  display: flex;
+  justify-content:center;
+  position: fixed;
+  width: $width;
+  padding: 1,5rem;
+}
+
+.header-content{
+  display: flex;
+  justify-content:center;
+  width: $width;
+  border: 2px orange solid;
+}
+
+.header-logo{
+  width: 250px;
+  position: sticky;
+}
+
+.left--menu{
+  display: flex;
+  .Burger-menu{
+    flex-direction: column;
+    justify-content: center;
+    &-line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 3px 0;
+    }  
+  }
+  .left-loop{
+    margin-left: 20px;
+  }
+}
+
+
