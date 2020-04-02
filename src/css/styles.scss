@@ -1,5 +1,8 @@
 @import "reset.scss";
 @import "medias.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
 
 * {
   box-sizing: border-box;
@@ -9,14 +12,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  background-color: green;
-
-  @include medium {
-    background-color: yellow;
-  }
-
-  @include large {
-    background-color: red;
-  }
+.main {
+  display: grid;
 }
