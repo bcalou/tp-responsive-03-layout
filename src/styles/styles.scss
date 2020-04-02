@@ -6,5 +6,9 @@
 @import 'config/variables';
 @import 'config/global';
 
+// IMPORT FONTS
+@import '../assets/fonts/loader';
+
 // IMPORT BLOCS
 @import 'blocs/header';
+@import 'blocs/main';
