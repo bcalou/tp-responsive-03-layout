@@ -1,34 +1,47 @@
 // Initial Structure
 .main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 500px 555px 270px 185px 301px;
+    @include large {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 500px 555px 270px 185px 301px;
+    }
+
 
 
     .updateArticle{
-        background: lightseagreen;
-        grid-column: 1 /span 2;
+        @include large {
+            background: lightseagreen;
+            grid-column: 1 /span 2;
+        }
     }
 
     .articles{
-        background: pink;
-        grid-row: 2;
-        grid-column: 1 /span 2;
+        @include large {
+            background: pink;
+            grid-row: 2;
+            grid-column: 1 /span 2;
+        }
     }
 
     .imgObs{
-        background: blue;
-        grid-row: 3;
+        @include large {
+            background: blue;
+            grid-row: 3;
+        }
     }
 
     .littleArticle{
-        background: orange;
-        grid-row: 4;
+        @include large {
+            background: orange;
+            grid-row: 4;
+        }
     }
 
     .obsArticle{
-        background: purple;
-        grid-row: 5;
-        grid-column: 1 /span 2;
+        @include large {
+            background: purple;
+            grid-row: 5;
+            grid-column: 1 /span 2;
+        }
     }
 }
