@@ -1,22 +1,34 @@
 .bloc1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-auto-rows: minmax(300px, auto);
-  // justify-content: center;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bloc1__mainArticles bloc1__mainArticles bloc1__filInfo"
-    "bloc1__subArticles bloc1__subArticles bloc1__subArticles";
+  width: 100%;
+  @include flexbox (column, center, center);
 
+
+  @include large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: minmax(300px, auto);
+    // justify-content: center;
+    grid-gap: 30px;
+    grid-template-areas:
+      "bloc1__mainArticles bloc1__mainArticles bloc1__filInfo"
+      "bloc1__subArticles bloc1__subArticles bloc1__subArticles";
+  }
 }
 
 .bloc1__mainArticles {
-  // background: red;
-  grid-area: bloc1__mainArticles;
+
+
+  @include large {
+    grid-area: bloc1__mainArticles;
+  }
 }
 
 .mainArticles {
+  width: 300px;
+  border: 1px solid lightgrey;
+
+
   &__img {
     width: 100%;
   }
@@ -29,14 +41,40 @@
     width: 95%;
     background: white;
     font-family: 'serif';
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bolder;
     text-align: center;
   }
+
+  @include large {
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      position: relative;
+      top: -30px;
+      padding: 10px;
+      margin: 0 auto;
+      width: 95%;
+      background: white;
+      font-family: 'serif';
+      font-size: 40px;
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
+
+
 }
 
 .bloc1__filInfo {
   grid-area: bloc1__filInfo;
+  display: none;
+
+  @include large {
+    display: grid;
+  }
 }
 
 .filInfo {
@@ -102,11 +140,15 @@
 
 
 .bloc1__subArticles {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-grow: 1;
-  grid-area: bloc1__subArticles;
+  @include flexbox (column, center, center);
+
+  @include large {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+    grid-area: bloc1__subArticles;
+  }
 }
 
 .subArticles {

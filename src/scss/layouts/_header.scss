@@ -1,38 +1,61 @@
 .header {
   width: 100vw;
-  height: 150px;
+  height: auto;
   border-bottom: 1px solid lightgrey;
 
 
+  @include large {
+    width: 100vw;
+    height: 150px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+
   &__logo {
-    width: 220px;
-    margin: 20px auto 5px;
+    width: 100px;
+    margin: 13px;
+
+
+    @include large {
+      width: 220px;
+      margin: 20px auto 5px;
+    }
 
   }
 
 
   &__categories {
-    @include flexbox (row, center, center);
+    display: none;
     max-width: 960px;
-    margin: 20px auto;
+    margin: 10px auto;
+
+    @include large {
+      @include flexbox (row, center, center);
+      max-width: 960px;
+      margin: 20px auto;
+    }
+
 
   }
 
   &__category {
-    height: 20px;
-    margin: 20px auto;
-    font-family: 'Avenir Next Condensed';
+    font-family: "Oswald-bold";
+    font-weight: normal;
+    font-size: 8px;
+    margin: 8px auto;
+  }
+
+  @include large {
     font-size: 17px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+  }
 
-    &:hover {
-      border-bottom: 1px solid black;
-      transition: 250ms;
-      ;
-    }
-
+  &:hover {
+    border-bottom: 1px solid black;
+    transition: 250ms;
+    ;
   }
 
 }

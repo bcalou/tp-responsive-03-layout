@@ -13,12 +13,10 @@
 
 
 @mixin card-article {
+  margin: 10px auto;
   max-width: 300px;
   height: 285px;
   background: rgb(255, 255, 255);
-  grid-area: bloc1__subArticles;
-  border: 1px solid lightgrey;
-
 
   &__img {
 
@@ -42,5 +40,29 @@
     font-weight: bolder;
     text-align: center;
     @include flexbox (column, space-between, space-between);
+  }
+
+
+
+  @include large {
+    grid-area: bloc1__subArticles;
+    border: 1px solid lightgrey;
+
+
+  }
+
+
+}
+
+
+@mixin medium {
+  @media (min-width: 673px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1024px) {
+    @content;
   }
 }

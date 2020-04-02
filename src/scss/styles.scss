@@ -10,13 +10,16 @@
 
 
 .container {
-  display: grid;
-  max-width: 960px;
-  margin: 0 auto;
-  // background: lightgrey;
-  height: 100vh;
-  margin-top: 60px;
-  margin-bottom: 60px;
+
+  @include large {
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+    // background: lightgrey;
+    height: 100vh;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
 }
 
