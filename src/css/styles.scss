@@ -1,0 +1,22 @@
+@import "reset.scss";
+@import "medias.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: green;
+
+  @include medium {
+    background-color: yellow;
+  }
+
+  @include large {
+    background-color: red;
+  }
+}

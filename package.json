@@ -1,0 +1,23 @@
+{
+  "name": "package.js",
+  "version": "1.0.0",
+  "description": "Dans le dernier TP de cette série, nous allons intégrer une page web étape par étape en utilisant intelligement flexbox et grid.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramtinattar/responsive-03-layout-hetic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramtinattar/responsive-03-layout-hetic/issues"
+  },
+  "homepage": "https://github.com/ramtinattar/responsive-03-layout-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.3"
+  }
+}
