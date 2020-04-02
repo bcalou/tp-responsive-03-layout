@@ -1,10 +1,10 @@
 //initial structure
 .main {
+    display: grid;
     @include medium {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 662px 247px 328px 185px 345px;
-    
+    }
     @include large {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 500px 555px 270px 185px 301px;
@@ -14,11 +14,12 @@
 
     .updateArticle{
         background: lightseagreen;
+        grid-column: 1;
         @include medium {
             grid-column: 1 /span 4;
         }
         @include large {
-            grid-column: 1 /span 2;
+            grid-column: 1 /span 3;
         }
     }
 
