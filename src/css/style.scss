@@ -1,7 +1,12 @@
 @import "./vendor/reset.scss";
 @import "./config/mixin.scss";
 @import "header.scss";
-@import "main.scss";
+@import "container.scss";
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 h1 {
   color: red;

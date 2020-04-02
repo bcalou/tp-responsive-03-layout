@@ -12,13 +12,18 @@
   }
 
   &__nav {
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-content: center;
 
     &--menu {
-      display: flex;
-      justify-content: space-evenly;
+      display: none;
+      @include large {
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-evenly;
+      }
     }
   }
 }
