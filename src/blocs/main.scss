@@ -1,6 +1,7 @@
 .main {
-  margin: 20px 20px 0px 20px;
+  margin: 20px 15px 0px 15px;
   @include large {
+    margin: 0px 100px 0px 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
@@ -15,8 +16,9 @@
 
 .main__primaryInfo {
   background: #ffd96c; /* Pour tester */
-  height: 454px; /* Pour tester */
+  height: 450px; /* Pour tester */
   @include large {
+    height: 500px;
     grid-area: primary;
   }
 }
@@ -32,34 +34,38 @@
 
 .main__tertiaryInfo {
   background: #bde5ff;
-  height: 1514px;
+  height: 1500px;
   @include large {
     display: block;
     background: #bde5ff;
+    height: 650px;
     grid-area: tertiary;
   }
 }
 
 .main__fourthlyInfo {
   background-color: #ec3027;
-  height: 544px;
+  height: 540px;
   @include large {
+    height: 400px;
     grid-area: fourthly;
   }
 }
 
 .main__fifthlyInfo {
   background-color: #fa8725;
-  height: 117px;
+  height: 110px;
   @include large {
+    height: 150px;
     grid-area: fifthly;
   }
 }
 
 .main__sixthlyInfo {
   background-color: #e8bbd2;
-  height: 965px;
+  height: 960px;
   @include large {
+    height: 350px;
     grid-area: sixthly;
   }
 }
