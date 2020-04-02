@@ -1,0 +1,65 @@
+.main {
+  margin: 20px 20px 0px 20px;
+  @include large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "primary primary secondary"
+      "tertiary tertiary tertiary"
+      "fourthly fourthly ."
+      "fifthly fifthly ."
+      "sixthly sixthly sixthly";
+  }
+}
+
+.main__primaryInfo {
+  background: #ffd96c; /* Pour tester */
+  height: 454px; /* Pour tester */
+  @include large {
+    grid-area: primary;
+  }
+}
+
+.main__secondaryInfo {
+  display: none;
+  @include large {
+    display: block;
+    background: black;
+    grid-area: secondary;
+  }
+}
+
+.main__tertiaryInfo {
+  background: #bde5ff;
+  height: 1514px;
+  @include large {
+    display: block;
+    background: #bde5ff;
+    grid-area: tertiary;
+  }
+}
+
+.main__fourthlyInfo {
+  background-color: #ec3027;
+  height: 544px;
+  @include large {
+    grid-area: fourthly;
+  }
+}
+
+.main__fifthlyInfo {
+  background-color: #fa8725;
+  height: 117px;
+  @include large {
+    grid-area: fifthly;
+  }
+}
+
+.main__sixthlyInfo {
+  background-color: #e8bbd2;
+  height: 965px;
+  @include large {
+    grid-area: sixthly;
+  }
+}

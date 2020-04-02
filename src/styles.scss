@@ -3,15 +3,3 @@
 @import "blocs/header.scss";
 @import "blocs/main.scss";
 @import "blocs/footer.scss";
-
-body {
-  background-color: green;
-
-  @include medium {
-    background-color: yellow;
-  }
-
-  @include large {
-    background-color: red;
-  }
-}
