@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "reset.scss";
+@import "style.scss";
+
+@mixin medium {
+  @media (min-width: 674px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
