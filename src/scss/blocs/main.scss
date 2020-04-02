@@ -14,36 +14,51 @@
 
     .updateArticle{
         background: lightseagreen;
+        @include medium {
+            grid-column: 1 /span 4;
+        }
         @include large {
             grid-column: 1 /span 2;
         }
     }
 
     .articles{
+        background: pink;
+        @include medium {
+            grid-column: 1 /span 4;
+        }
         @include large {
-            background: pink;
             grid-row: 2;
             grid-column: 1 /span 2;
         }
     }
 
     .imgObs{
+        background: blue;
+        @include medium {
+            grid-column: 1 /span 4;
+        }
         @include large {
-            background: blue;
             grid-row: 3;
         }
     }
 
     .littleArticle{
+        background: orange;
+        @include medium {
+            grid-column: 1 /span 4;
+        }
         @include large {
-            background: orange;
             grid-row: 4;
         }
     }
 
     .obsArticle{
+        background: purple;
+        @include medium {
+            grid-column: 1 /span 4;
+        }
         @include large {
-            background: purple;
             grid-row: 5;
             grid-column: 1 /span 2;
         }
