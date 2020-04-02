@@ -5,6 +5,7 @@
 @import 'layouts/_header.scss';
 @import 'layouts/_bloc1.scss';
 @import 'layouts/_bloc2.scss';
+@import 'layouts/_bloc3.scss';
 @import 'layouts/_container.scss';
 
 
@@ -32,4 +33,29 @@ a {
   margin-top: 10px;
 
 
+}
+
+
+@font-face {
+  font-family: "Oswald-bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/assets/fonts/Oswald-bold.woff2") format("woff2"),
+    url("/assets/fonts/Oswald-bold.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "SourceSerifPro-bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/assets/fonts/SourceSerifPro-bold.woff2") format("woff2"),
+    url("/assets/fonts/SourceSerifPro-bold.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "SourceSerifPro-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/SourceSerifPro-regular.woff2") format("woff2"),
+    url("/assets/fonts/SourceSerifPro-regular.woff2") format("woff");
 }
