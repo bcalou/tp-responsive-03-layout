@@ -1,0 +1,29 @@
+.footer {
+  background-color: #f1f1f1;
+}
+
+.footer__nav {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 3rem 0 1.5rem;
+}
+
+.footer__nav li {
+  margin-bottom: 1.5rem;
+}
+
+.footer__link {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin: 0 1.5rem;
+  border-top: 1px solid #ccc;
+}
+
+.footer__link li {
+  display: inline-block;
+  margin: 0 2rem 1.5rem 0;
+  font-size: 0.9rem;
+}

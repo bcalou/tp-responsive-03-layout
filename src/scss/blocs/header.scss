@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+
+.header__subscription {
+  background-color: #fed500;
+  border: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0 0.8rem;
+  height: 1.5rem;
+}
