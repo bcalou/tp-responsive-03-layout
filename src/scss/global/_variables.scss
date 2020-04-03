@@ -13,10 +13,15 @@
 
 
 @mixin card-article {
-  margin: 10px auto;
-  max-width: 300px;
-  height: 285px;
+  // margin: 10px auto;
+  // max-width: 300px;
+  // height: 285px;
   background: rgb(255, 255, 255);
+  margin: 10px 15px;
+  max-width: 600px;
+  min-width: 290px;
+  width: auto;
+
 
   &__img {
 
@@ -24,6 +29,10 @@
       width: 100%;
       min-height: 166px;
       object-fit: cover;
+
+      @include medium {
+        width: 600px;
+      }
     }
   }
 

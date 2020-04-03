@@ -25,6 +25,13 @@
   max-width: 300px;
   margin: 30px 0;
 
+
+  @include medium {
+    align-items: flex-start;
+    max-width: 600px;
+    min-width: 524px;
+  }
+
   @include large {
     display: grid;
     grid-template-columns: 298px 298px;
@@ -73,6 +80,16 @@
   &__img {
     min-width: 74px;
     max-width: 74px;
+
+    @include medium {
+      min-width: 95px;
+    }
+  }
+
+  @include medium {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
   @include large {
@@ -91,6 +108,10 @@
     line-height: 1.2;
     letter-spacing: 0.5px;
     cursor: pointer;
+
+    @include medium {
+      font-size: 18px;
+    }
 
     @include large {
       font-size: rem(17px);
@@ -123,6 +144,10 @@
   min-height: 200px;
   @include flexbox(row, center, center);
 
+  @include medium {
+    min-width: 600px;
+  }
+
   @include large {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -136,6 +161,10 @@
       background: #fed500;
       @include flexbox(column, center, center);
 
+      @include medium {
+        width: 50%;
+      }
+
       @include large {
         @include flexbox(column, center, center);
       }
@@ -148,6 +177,10 @@
       background-position: right;
       background-size: 100%;
       height: 180px;
+
+      @include medium {
+        width: 50%;
+      }
 
       img:nth-of-type(1) {
         height: 153px;

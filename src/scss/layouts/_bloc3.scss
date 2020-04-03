@@ -39,9 +39,14 @@
 
   h1 {
     margin: 0 auto;
-  }
 
+    @include medium {
+      margin: 40px auto;
+      font-size: rem(26px);
+    }
+  }
 }
+
 
 
 
