@@ -1,7 +1,9 @@
 @import "./vendor/reset.scss";
 @import "./config/mixin.scss";
-@import "header.scss";
-@import "container.scss";
+@import "./bloc/header.scss";
+@import "./bloc/main.scss";
+@import "./element/primaryInfo.scss";
+@import "./element/secondaryArticle.scss";
 
 * {
   box-sizing: border-box;

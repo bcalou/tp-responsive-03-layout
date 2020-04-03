@@ -1,0 +1,72 @@
+.main {
+  margin: 20px;
+
+  @include small {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include large {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+      "primaryInfo aside"
+      "primaryArticle primaryArticle"
+      "secondaryArticle ."
+      "advertising ."
+      "appointment appointment";
+  }
+}
+
+.main__primaryInfo {
+  width: 100%;
+  height: 100%;
+
+  @include large {
+    grid-area: primaryInfo;
+  }
+}
+
+.main__aside {
+  width: 100%;
+  height: 100%;
+  color: green;
+
+  @include large {
+    grid-area: aside;
+  }
+}
+
+.main__primaryArticle {
+  background: red;
+
+  @include large {
+    grid-area: primaryArticle;
+  }
+}
+.main__secondaryArticle {
+  display: flex;
+  background: blue;
+  width: 100%;
+
+  @include large {
+    grid-area: secondaryArticle;
+  }
+}
+.main__advertising {
+  display: flex;
+  background: purple;
+
+  @include large {
+    grid-area: advertising;
+  }
+}
+.main__appointment {
+  background: orange;
+  display: flex;
+  @include large {
+    grid-area: appointment;
+  }
+}
