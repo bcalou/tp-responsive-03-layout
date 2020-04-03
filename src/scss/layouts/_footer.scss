@@ -9,6 +9,7 @@
 
   @include large {
     height: 200px;
+
   }
 
   &__categories {
@@ -16,9 +17,9 @@
     border-bottom: 1px solid lightgrey;
     @include flexbox(column, center, center);
 
-    // @include medium {
-    //   @include flexbox(row, center, center);
-    // }
+    @include large {
+      @include flexbox(row, center, center);
+    }
   }
 
   &__category {

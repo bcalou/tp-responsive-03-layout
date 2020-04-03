@@ -3,26 +3,13 @@
 @import 'global/_variables.scss';
 
 @import 'layouts/_header.scss';
+@import 'layouts/_container.scss';
 @import 'layouts/_bloc1.scss';
 @import 'layouts/_bloc2.scss';
 @import 'layouts/_bloc3.scss';
 @import 'layouts/_footer.scss';
-@import 'layouts/_container.scss';
 
 
-.container {
-
-  @include large {
-    display: grid;
-    max-width: 960px;
-    margin: 0 auto;
-    // background: lightgrey;
-    height: 100vh;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-}
 
 a {
   color: black;
@@ -42,7 +29,7 @@ a {
 
 
   @include medium {
-    margin-top: 15px;
+    margin-top: 12px;
     font-size: rem(11px);
   }
 

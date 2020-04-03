@@ -9,7 +9,7 @@
     grid-template-rows: repeat(2, auto);
     grid-auto-rows: minmax(300px, auto);
     // justify-content: center;
-    grid-gap: 30px;
+    grid-gap: 45px;
     grid-template-areas:
       "bloc1__mainArticles bloc1__mainArticles bloc1__filInfo"
       "bloc1__subArticles bloc1__subArticles bloc1__subArticles";
@@ -38,6 +38,13 @@
         height: 600px;
         object-fit: cover;
       }
+
+      @include large {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        width: 650px;
+      }
     }
 
 
@@ -57,10 +64,12 @@
   }
 
   @include large {
-    width: 300px;
+    border: 1px solid lightgrey;
+    margin-bottom: 0;
+    width: 642px;
 
     &__img {
-      width: 100%;
+      width: 642px;
     }
 
     &__title {
@@ -93,6 +102,7 @@
   border: 1px solid lightgrey;
   padding: 0px 10px 10px 10px;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 
   &__title {
     position: relative;
@@ -144,6 +154,8 @@
       cursor: pointer
     }
   }
+
+
 }
 
 
@@ -160,9 +172,17 @@
     flex-direction: row;
     flex-grow: 1;
     grid-area: bloc1__subArticles;
+
   }
 }
 
 .subArticles {
   @include card-article;
+
+  @include large {
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
 }

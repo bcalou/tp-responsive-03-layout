@@ -17,6 +17,9 @@
       "5 6"
       "bloc2__abo";
     border: none;
+
+    padding-bottom: 0;
+
   }
 }
 
@@ -36,39 +39,34 @@
     display: grid;
     grid-template-columns: 298px 298px;
     grid-template-rows: repeat(3, 100px);
-    grid-column-gap: 30px;
+    grid-column-gap: 45px;
+    place-content: flex-start;
     grid-template-areas:
       "1 2"
       "3 4"
       "5 6";
 
     &__smallArticles:nth-of-type(1) {
-      background: burlywood;
       grid-area: 1;
     }
 
     &__smallArticles:nth-of-type(2) {
-      background: burlywood;
       grid-area: 2;
     }
 
     &__smallArticles:nth-of-type(3) {
-      background: burlywood;
       grid-area: 3;
     }
 
     &__smallArticles:nth-of-type(4) {
-      background: burlywood;
       grid-area: 4;
     }
 
     &__smallArticles:nth-of-type(5) {
-      background: burlywood;
       grid-area: 5;
     }
 
     &__smallArticles:nth-of-type(6) {
-      background: burlywood;
       grid-area: 6;
     }
   }
@@ -115,7 +113,6 @@
 
     @include large {
       font-size: rem(17px);
-      padding-right: 1.5rem;
     }
   }
 }
@@ -124,16 +121,17 @@
   @include flexbox(column, center, center);
 
   @include large {
+    width: 990px;
     @include flexbox(row, flex-start, flex-start);
 
     .subArticles:nth-of-type(1) {
-      margin: 30px 30px 0 0;
+      margin: 45px 45px 0 0;
       // grid-column: 1 / span 2;
       grid-area: A;
     }
 
     .subArticles:nth-of-type(2) {
-      margin: 30px 30px 0 0;
+      margin: 45px 45px 0 0;
       // grid-column: 2 / span 4;
       grid-area: B;
     }
@@ -167,6 +165,8 @@
 
       @include large {
         @include flexbox(column, center, center);
+        width: 100%;
+
       }
     }
 
@@ -180,6 +180,10 @@
 
       @include medium {
         width: 50%;
+      }
+
+      @include large {
+        width: 100%;
       }
 
       img:nth-of-type(1) {
@@ -198,7 +202,8 @@
         @include large {
           display: block;
           position: relative;
-          left: -25px;
+          left: 115px;
+          top: -99px;
         }
       }
     }

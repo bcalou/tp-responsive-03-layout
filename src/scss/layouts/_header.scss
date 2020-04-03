@@ -7,6 +7,8 @@
   @include large {
     width: 100vw;
     height: 150px;
+    max-height: 150px;
+
     border-bottom: 1px solid lightgrey;
   }
 
@@ -43,10 +45,14 @@
     font-weight: normal;
     font-size: 8px;
     margin: 8px auto;
+
+    @include large {
+      font-size: 17px;
+    }
+
   }
 
   @include large {
-    font-size: 17px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;

@@ -10,31 +10,31 @@
 
   @include large {
     &__rdvs {
-      font-size: rem(40px);
+      font-size: rem(70px);
     }
 
-    &__rdvs::before {
-      display: flex;
-      position: relative;
-      top: 20px;
-      overflow: hidden;
-      width: 250px;
-      height: 3px;
-      content: "";
-      background-color: #000;
-    }
+    // &__rdvs::before {
+    //   display: flex;
+    //   position: relative;
+    //   top: 20px;
+    //   overflow: hidden;
+    //   width: 250px;
+    //   height: 3px;
+    //   content: "";
+    //   background-color: #000;
+    // }
 
-    &__rdvs::after {
-      display: flex;
-      position: relative;
-      top: -21px;
-      left: 710px;
-      overflow: hidden;
-      width: 250px;
-      height: 3px;
-      content: "";
-      background-color: #000;
-    }
+    // &__rdvs::after {
+    //   display: flex;
+    //   position: relative;
+    //   top: -21px;
+    //   left: 710px;
+    //   overflow: hidden;
+    //   width: 250px;
+    //   height: 3px;
+    //   content: "";
+    //   background-color: #000;
+    // }
   }
 
   h1 {
