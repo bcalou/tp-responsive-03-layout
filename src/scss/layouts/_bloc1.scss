@@ -25,8 +25,8 @@
 }
 
 .mainArticles {
-  width: 300px;
-  border: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
 
 
   &__img {
@@ -47,6 +47,8 @@
   }
 
   @include large {
+    width: 300px;
+
     &__img {
       width: 100%;
     }
