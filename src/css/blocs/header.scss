@@ -1,9 +1,97 @@
 .header {
+  padding: 15px;
   width: 100%;
   height: 66px;
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px rgba(128, 128, 128, 0.5) solid;
 
   @include medium {
     height: 141px;
+    align-items: flex-end;
   }
+}
+
+.menu {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__burger-menu {
+  position: relative;
+  width: 22px;
+  height: 2px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -7px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  @include medium {
+    transform: translateY(-9px);
+  }
+}
+
+.menu__logo {
+  height: 22px;
+
+  @include medium {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    height: 60px;
+  }
+}
+
+.nav {
+  display: none;
+
+  @include medium {
+    width: 60%;
+    display: flex;
+    flex: 5;
+    overflow: hidden;
+  }
+}
+
+.nav__item {
+  font-family: 'Osward';
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.connexion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+.header__abonnement {
+  padding: 3px;
+  border-radius: 3px;
+  font-family: 'SourceSerifPro-regular';
+  background-color: rgba(254, 212, 0);
 }
