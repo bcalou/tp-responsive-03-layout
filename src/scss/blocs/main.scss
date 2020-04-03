@@ -1,60 +1,73 @@
 .main {
-  margin: 1.25rem;
+  margin-top: 4rem;
+  padding: 1.5rem;
 
   @include medium {
     margin: 0 80px;
   }
-  
-  @include large {  
+
+  @include large {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "primaryInfo news"
-                         "primaryArticle primaryArticle"
-                         "secondaryArticle ."
-                         "advertising ."
-                         "appointment appointment";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:"head head" 
+                        "primaryInfo news"
+                        "primaryArticle primaryArticle"
+                        "secondaryArticle ."
+                        "advertising ."
+                        "appointment appointment";
     grid-gap: 20px;
   }
 }
-  
-.main__primaryInfo {
-  background: yellow; /* Pour tester */
 
+
+.header {
+  @include large {
+    grid-area: head;
+  }
+}
+
+.main__primaryInfo {
   @include large {
     grid-area: primaryInfo;
   }
 }
+
+
 .main__news {
-  background: green; /* Pour tester */
+  background: green;
 
   @include large {
     grid-area: news;
   }
 }
-.main__primaryArticle {
-  background:red; /* Pour tester */
 
+.main__primaryArticle {
   @include large {
     grid-area: primaryArticle;
   }
 }
-.main__secondaryArticle {
-  background:blue; /* Pour tester */
 
+.main__secondaryArticle {
+  background: blue;
+  
   @include large {
-    grid-area: secondaryArticle;
+    grid-area: secondaryArticle; 
   }
 }
+
+
 .main__advertising {
-  background: purple; /* Pour tester */
+  background: purple;
 
   @include large {
     grid-area: advertising;
   }
 }
+
+
 .main__appointment {
-  background: orange; /* Pour tester */
+  background: orange;
 
   @include large {
     grid-area: appointment;

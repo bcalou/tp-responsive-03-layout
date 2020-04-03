@@ -1,0 +1,35 @@
+.primaryInfo {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.primaryInfo__imgContainer {
+  position: relative;
+  height: 15.6rem;
+}
+
+.primaryInfo__imgContainer img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.primaryInfo__content {
+  text-align: center;
+  position: relative;
+  margin: -1.6rem 1.5rem 0;
+  background-color: white;
+}
+
+.primaryInfo__title {
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+  padding: 0.6rem 0;
+  margin: 0 1rem;
+}
+
+.primaryInfo__data {
+  font-size: 0.7rem;
+  color: #999;
+}

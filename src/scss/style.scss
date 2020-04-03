@@ -1,0 +1,26 @@
+@import '../scss/vendor/reset.scss';
+@import '../scss/settings/media.scss';
+@import '../scss/blocs/header.scss';
+@import '../scss/blocs/main.scss';
+@import '../scss/blocs/footer.scss';
+@import '../scss/elements/article.scss';
+@import '../scss/sections/primaryInfo.scss';
+@import '../scss/sections/news.scss';
+@import '../scss/sections/primaryArticle.scss';
+@import '../scss/sections/secondaryArticle.scss';
+@import '../scss/sections/advertising.scss';
+@import '../scss/sections/appointment.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+  width: 100vw;
+}
