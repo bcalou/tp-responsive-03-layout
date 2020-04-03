@@ -8,19 +8,62 @@
     <link rel="stylesheet" href="assets/styles/import.scss" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__menu menu">
+        <div class="menu__burger-menu"></div>
+        <img
+          src="assets/imgs/icons/logo.svg"
+          alt="L\'Obs'"
+          class="menu__logo"
+        />
+      </div>
+      <nav class="menu__nav nav">
+        <div class="nav__item">POLITIQUE</div>
+        <div class="nav__item">MONDE</div>
+        <div class="nav__item">ECONOMIE</div>
+        <div class="nav__item">CULTURE</div>
+        <div class="nav__item">OPINIONS</div>
+        <div class="nav__item">DEBATS</div>
+        <div class="nav__item">TENDANCES</div>
+        <div class="nav__item">2049</div>
+        <div class="nav__item">VIDEOS</div>
+        <div class="nav__item">PHOTOS</div>
+      </nav>
+      <div class="header__connexion connexion">
+        <img
+          src="assets/imgs/icons/user.svg"
+          alt="icone de connexion"
+          class="connexion__icon"
+        />
+        <p class="header__abonnement">Je m'abonne</p>
+      </div>
+    </header>
+
     <main class="main">
-      <section class="main__primaryInfo primaryInfo">Primary info</section>
-      <section class="main__infoThread infoThread">Fil d'info</section>
-      <section class="main__secondaryInfo secondaryInfo">Infos 2</section>
-      <section class="main__tertiaryInfo tertiaryInfo">Petites infos</section>
-      <section class="main__subscribeAd subscribeAd">
-        Subscrivez à un abonnement
+      <section class="main__primaryInfo primaryInfo">primaryInfo</section>
+      <section class="main__infoThread infoThread">fillInfo</section>
+      <section class="main__secondaryInfo secondaryInfo">
+        <article class="secondaryInfo__article--free"></article>
+        <article class="secondaryInfo__article--free"></article>
+        <article class="secondaryInfo__article--free"></article>
+        <article class="secondaryInfo__article--premium"></article>
+        <article class="secondaryInfo__article--premium"></article>
       </section>
-      <section class="main__obsMeeting obsMeeting">
-        Rendez-vous de l'obs
+      <section class="main__tertiaryInfo tertiaryInfo">
+        <article class="tertiaryInfo__article"></article>
+        <article class="tertiaryInfo__article"></article>
+        <article class="tertiaryInfo__article"></article>
+        <article class="tertiaryInfo__article"></article>
+        <article class="tertiaryInfo__article"></article>
+        <article class="tertiaryInfo__article"></article>
+      </section>
+      <section class="main__subscribeAd subscribeAd">Abonnement</section>
+      <section class="main__subscribeAd subscribeAd">
+        <article class="subscribeAd__article"></article>
+        <article class="subscribeAd__article"></article>
+        <article class="subscribeAd__article"></article>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">FOOTER</footer>
   </body>
 </html>
