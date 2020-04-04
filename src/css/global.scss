@@ -1,3 +1,9 @@
 $black: black;
 $red: red;
 $max-pourcent: 100%;
+$borld-header-police: Oswald-bold;
+
+@mixin police-bold {
+  font-family: $borld-header-police;
+  
+}
