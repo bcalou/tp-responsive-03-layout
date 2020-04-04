@@ -1,11 +1,19 @@
 .article {
-  margin-bottom: 1.8rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.article--separateur {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  
 }
 
 .article__content {
   text-align: center;
   position: relative;
-  margin: -1.6rem 1.5rem 0;
+  margin: -1.1rem 1.5rem 0;
   background-color: white;
 }
 
