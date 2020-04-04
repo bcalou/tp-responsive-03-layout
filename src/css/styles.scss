@@ -1,15 +1,20 @@
 @import "config/medias";
+@import "config/reset.scss";
 @import "blocs/header";
 @import "blocs/main";
 @import "blocs/footer";
-body {
-  background-color: green;
 
-  @include medium {
-    background-color: yellow;
-  }
+@font-face {
+  font-family: "Oswald-bold";
+  src: url(.././assets/fonts/Oswald-bold.woff2) format("truetype");
+}
 
-  @include large {
-    background-color: red;
-  }
+@font-face {
+  font-family: "SourceSerifPro-bold";
+  src: url(.././assets/fonts/SourceSerifPro-bold.woff2) format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro-regular";
+  src: url(.././assets/fonts/SourceSerifPro-regular.woff2) format("truetype");
 }

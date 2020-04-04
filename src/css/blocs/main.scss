@@ -10,10 +10,41 @@
       "five ."
       "six six";
   }
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main__primaryInfo {
-  background: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-bottom: solid lightgrey 1px;
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    margin: 30px;
+    padding: 10px;
+    font-family: "SourceSerifPro-bold";
+  }
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  img {
+    object-fit: cover;
+    width: 420px;
+    height: 350px;
+  }
   @include large {
     grid-area: one;
   }
@@ -45,38 +76,201 @@
   }
 }
 .article__first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 620px;
+    margin: 40px;
+    padding: 15px;
+    font-family: "SourceSerifPro-bold";
+  }
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  img {
+    object-fit: contain;
+    width: 390px;
+  }
+  @include large {
+    grid-area: one;
+  }
   @include large {
     grid-area: article__first;
   }
-  background: #303180;
 }
 .article__two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 910px;
+    margin: 40px;
+    padding: 15px;
+    font-family: "SourceSerifPro-bold";
+  }
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 62px;
+  }
+  img {
+    object-fit: contain;
+    width: 390px;
+  }
   @include large {
     grid-area: article__two;
   }
-  background: #304180;
 }
 .article__tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-bottom: solid lightgrey 1px;
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 1220px;
+    margin: 40px;
+    padding: 15px;
+    font-family: "SourceSerifPro-bold";
+  }
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 40px;
+    margin-top: 72px;
+  }
+  img {
+    object-fit: contain;
+    width: 390px;
+  }
   @include large {
     grid-area: article__tree;
   }
-  background: #305180;
 }
 .article__four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 1500px;
+    margin: 40px;
+    padding: 15px;
+    font-family: "SourceSerifPro-bold";
+  }
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 72px;
+  }
+  img {
+    object-fit: contain;
+    width: 390px;
+  }
   @include large {
     grid-area: article__four;
   }
-  background: #306180;
 }
 
 .article__five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 1850px;
+    margin: 40px;
+    padding: 15px;
+    font-family: "SourceSerifPro-bold";
+  }
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 62px;
+  }
+  img {
+    object-fit: contain;
+    width: 390px;
+  }
+
   @include large {
     grid-area: article__five;
   }
-  background: #307180;
 }
 
 .main__fourInfo {
+  article {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  p {
+    margin: 10px;
+    font-family: SourceSerifPro-regular;
+  }
   @include large {
     grid-template-areas:
       "secondary__ArticleFirst secondary__ArticleTwo "
@@ -102,7 +296,6 @@
   @include medium {
     grid-area: secondary__ArticleFirst;
   }
-  background-color: #917180;
 }
 .secondary__ArticleTwo {
   @include large {
@@ -111,7 +304,6 @@
   @include medium {
     grid-area: secondary__ArticleTwo;
   }
-  background-color: #919280;
 }
 .secondary__ArticleTree {
   @include large {
@@ -120,7 +312,6 @@
   @include medium {
     grid-area: secondary__ArticleTree;
   }
-  background-color: #918580;
 }
 
 .secondary__ArticleFour {
@@ -130,7 +321,6 @@
   @include medium {
     grid-area: secondary__ArticleFour;
   }
-  background-color: #917580;
 }
 
 .secondary__ArticleFive {
@@ -140,7 +330,6 @@
   @include medium {
     grid-area: secondary__ArticleFive;
   }
-  background-color: #a78492;
 }
 .secondary__ArticleSix {
   @include large {
@@ -149,18 +338,75 @@
   @include medium {
     grid-area: secondary__ArticleSix;
   }
-  background-color: #8f6576;
 }
 
 .main__fiveInfo {
+  display: flex;
+  background-color: rgb(255, 223, 40);
+  font-family: SourceSerifPro-regular;
+  margin: 20px;
+  align-items: center;
+  div {
+    text-align: center;
+    margin: 40px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-family: SourceSerifPro-bold;
+    padding: 5px 10px;
+  }
+  img {
+    margin: 20px 20px 0 0;
+  }
   @include large {
     grid-area: five;
   }
-  background: purple;
 }
 .main__sixInfo {
+  h1 {
+    font-size: 24px;
+    font-family: "Oswald-bold";
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+  h2:nth-of-type(1) {
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 3400px;
+    margin: 40px;
+    padding: 15px;
+    font-family: "SourceSerifPro-bold";
+  }
+
+  h1:hover {
+    transition: 0.2s;
+    color: rgb(73, 71, 71);
+  }
+  p {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 72px;
+  }
+  img {
+    object-fit: contain;
+    width: 390px;
+  }
   @include large {
     grid-area: six;
   }
-  background: salmon;
 }
