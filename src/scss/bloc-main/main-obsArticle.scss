@@ -1,11 +1,20 @@
 .obsArticle {
-    display: grid;
+    @include medium {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 65px 1fr;
+    }
     @include large {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 38px 1fr;
     }
 
     .obsArticle__line1 {
+        @include medium {
+            grid-column: 1;
+            grid-row: 1;
+            background: red;
+        }
         @include large {
             grid-column: 1;
             grid-row: 1;
@@ -14,6 +23,11 @@
     }
 
     .obsArticle__title {
+        @include medium {
+            grid-column: 2;
+            grid-row: 1;
+            background: yellow;
+        }
         @include large {
             grid-column: 2;
             grid-row: 1;
@@ -22,6 +36,11 @@
     }
 
     .obsArticle__line2 {
+        @include medium {
+            grid-column: 3;
+            grid-row: 1;
+            background: yellowgreen;
+        }
         @include large {
             grid-column: 3;
             grid-row: 1;
@@ -30,6 +49,11 @@
     }
 
     .obsArticle__article1 {
+        @include medium {
+            grid-column: 1;
+            grid-row: 2;
+            background: grey;
+        }
         @include large {
             grid-column: 1;
             grid-row: 2;
@@ -38,6 +62,11 @@
     }
 
     .obsArticle__article2 {
+        @include medium {
+            grid-column: 2;
+            grid-row: 2;
+            background: orangered;
+        }
         @include large {
             grid-column: 2;
             grid-row: 2;
@@ -46,6 +75,11 @@
     }
 
     .obsArticle__article3 {
+        @include medium {
+            grid-column: 3;
+            grid-row: 2;
+            background: purple;
+        }
         @include large {
             grid-column: 3;
             grid-row: 2;
