@@ -56,8 +56,6 @@
 
 
 .main__advertising {
-  background: purple;
-
   @include large {
     grid-area: advertising;
   }
