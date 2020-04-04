@@ -2,11 +2,33 @@
   @include medium {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "article1 article1 article2 article2 article3 article3 " "articleAbonne1 articleAbonne1 articleAbonne1 articleAbonne2 articleAbonne2 articleAbonne2 ";
-    grid-gap: 10px;
+    grid-template-areas:"article1 article1 article2 article2 article3 article3 "
+                        "articleAbonne1 articleAbonne1 articleAbonne1 articleAbonne2 articleAbonne2 articleAbonne2 ";
+    grid-gap: 1rem;
+  }
+
+  .article:nth-child(1){
+    grid-area: article1;
+  }
+
+  .article:nth-child(2){
+    grid-area: article2;
+  }
+
+  .article:nth-child(3){
+    grid-area: article3;
+    border: none;
+  }
+
+  .article:nth-child(4){
+    grid-area: articleAbonne1;
+  }
+
+  .article:nth-child(5){
+    grid-area: articleAbonne2;
   }
 }
+
 .primaryArticle {
   @include large {
     grid-template-columns: repeat(3, 1fr);

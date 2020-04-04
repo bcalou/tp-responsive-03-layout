@@ -1,6 +1,11 @@
 .article {
   margin-bottom: 0.9rem;
   padding-bottom: 0.9rem;
+
+  @include medium {
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .article--separateur {
@@ -30,4 +35,8 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
   color: $secondary-font-color;
+
+  @include medium {
+    padding : 0 0.8rem;
+  }
 }

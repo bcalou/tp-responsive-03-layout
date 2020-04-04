@@ -2,16 +2,27 @@
   border-bottom: 1px solid $border-color;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
+
+  @include medium {
+    border: none;
+  }
 }
 
 .primaryInfo__imgContainer {
-  position: relative;
   height: 15.6rem;
+
+  @include medium {
+    height: auto;
+  }
 }
 
 .primaryInfo__imgContainer img {
   object-fit: cover;
   height: 100%;
+
+  @include medium {
+    height: auto;
+  }
 }
 
 .primaryInfo__content {
@@ -25,12 +36,13 @@
   font-family: "sourceSerifPro";
   font-weight: bold;
   font-size: 1.3rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   padding: 0.6rem 0;
   margin: 0 1rem;
 }
 
 .primaryInfo__data {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
   color: $secondary-font-color;
 }

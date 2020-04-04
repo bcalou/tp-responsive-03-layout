@@ -2,10 +2,6 @@
   margin-top: 4rem;
   padding: 1.5rem 1.5rem 0 1.5rem;
 
-  @include medium {
-    margin: 0 80px;
-  }
-
   @include large {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -21,7 +17,6 @@
   }
 }
 
-
 .header {
   @include large {
     grid-area: head;
@@ -33,7 +28,6 @@
     grid-area: primaryInfo;
   }
 }
-
 
 .main__news {
   background: green;
@@ -61,7 +55,6 @@
     grid-area: advertising;
   }
 }
-
 
 .main__appointment {
   @include large {

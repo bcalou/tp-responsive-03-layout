@@ -1,5 +1,5 @@
 .footer {
-  background-color: $primary-color;
+  background-color: #f1f1f1;
   width: 100%;
 }
 
@@ -10,7 +10,13 @@
   font-family: "oswald";
   font-weight: bold;
   letter-spacing: 0.1rem;
-  padding: 3rem 0 1.5rem;
+  padding: 3rem 1.5rem;
+
+  @include medium {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .footer__nav li {

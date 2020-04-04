@@ -1,6 +1,12 @@
 .secondaryArticle {
   display: flex;
   flex-direction: column;
+
+  @include medium {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
   
 }
 
@@ -8,6 +14,12 @@
   display: flex;
   margin-bottom: 0.8rem;
   align-items: center;
+
+  @include medium {
+    &:nth-child(even){
+      margin-left: 4rem;
+    }
+  }
 }
 
 .secondaryArticle__imgContainer {

@@ -4,6 +4,15 @@
   background-color: $optional-color;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
+  background-image: url(../assets/imgs/ad/background.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @include medium {
+    justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .advertising__content {
@@ -12,8 +21,21 @@
   align-items: center;
 }
 
+.advertising__title {
+  display: none;
+
+  @include medium {
+    display: block;
+    font-family: "oswald";
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+}
+
 .advertising__text {
-  padding-bottom: 0.8rem;
+  padding-bottom: 1rem;
   font-family: "sourceSerifPro";
   font-size: 1rem;
   text-align: center;
@@ -30,4 +52,13 @@
   padding: 0 0.5rem;
   height: 2rem;
   width: 9rem;
+}
+
+.advertising__imgContainer img:nth-child(2) {
+  display: none;
+
+  @include medium {
+    display: inline-block;
+    margin-left: -1rem;
+  }
 }

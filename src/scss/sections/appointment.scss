@@ -1,10 +1,63 @@
+.appointment {
+  display: flex;
+  flex-direction: column;;
+}
+
+.appointment__content {
+  @include medium {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.appointment__blockTitle {
+  @include medium {
+    display: block;
+    position: relative;
+  }
+}
+
 .appointment__title {
   font-family: "oswald";
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   padding: 1.5rem 0;
   border-top: 1px solid $border-color;
+
+  @include medium {
+    border: none;
+
+    &::before {
+      content:"";
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      overflow: hidden;
+      width: 25%;
+      height: 1px;
+      background-color: $secondary-color;
+    }
+
+    &::after {
+      content:"";
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      overflow: hidden;
+      width: 25%;
+      height: 1px;
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.appointment__article {
+  @include medium {
+    margin: 0 0.5rem;
+  }
 }
 
