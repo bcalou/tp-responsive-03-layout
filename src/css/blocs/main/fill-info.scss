@@ -1,0 +1,55 @@
+.main__fill-info {
+  position: relative;
+  padding-top: 40px;
+  border: 1px solid black;
+  display: none;
+  border: 1px solid $border-color;
+  flex-direction: column;
+  align-items: center;
+
+  @include large {
+    display: flex;
+    grid-area: fil-info;
+  }
+}
+
+.fill-info__title {
+  position: absolute;
+  font-family: 'Osward';
+  font-weight: bolder;
+  font-size: 1.6rem;
+  background-color: white;
+  padding: 1.2rem;
+  top: -30px;
+}
+
+.fill-info__news {
+  width: 90%;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding: 0.5rem 0;
+  border-bottom: 0.5px solid $border-color;
+
+  &:nth-child(6) {
+    border: none;
+    opacity: 0.3;
+  }
+}
+
+.fill-info__time {
+  font-weight: bold;
+}
+
+.fill-info__text {
+  padding-left: 1.1rem;
+}
+
+.fill-info__button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: 'Osward';
+  font-size: 0.8rem;
+}

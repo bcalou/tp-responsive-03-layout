@@ -1,7 +1,14 @@
 .main {
+  position: relative;
+  top: 70px;
   padding: 20px 10px 20px 10px;
   width: 100%;
   max-width: 660px;
+
+  @include medium {
+    top: 170px;
+  }
+
   @include large {
     max-width: 1024px;
     display: grid;
@@ -13,43 +20,8 @@
       'sub-article sub-article .'
       'abo abo .'
       'rdv rdv rdv';
-  }
-  grid-column-gap: $col-gap;
-  grid-row-gap: $row-gap;
-}
-
-.main__primaryInfo {
-  border: 1px solid black;
-  background-color: gold;
-  height: 450px;
-  @include large {
-    grid-area: primary-info;
-  }
-}
-
-.main__fillInfo {
-  border: 1px solid black;
-  display: none;
-  background-color: teal;
-  @include large {
-    display: block;
-    grid-area: fil-info;
-  }
-}
-
-.main__mainArticles {
-  border: 1px solid black;
-  background-color: salmon;
-  @include large {
-    grid-area: article;
-  }
-}
-
-.main__subArticles {
-  border: 1px solid black;
-  background-color: skyblue;
-  @include large {
-    grid-area: sub-article;
+    grid-column-gap: $col-gap;
+    grid-row-gap: $row-gap;
   }
 }
 

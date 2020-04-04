@@ -4,6 +4,26 @@ body {
   align-items: center;
 }
 
-section {
-  padding: $row-gap/2 0px $row-gap/2 0px;
+h2 {
+  font-family: SourceSerifPro-bold;
 }
+
+.infos {
+  color: $border-color;
+  font-size: 0.8rem;
+  font-family: SourceSerifPro-regular;
+}
+
+.abo:before {
+  content: '';
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 5px;
+  background: url('../assets/imgs/icons/subscriber.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* section {
+  padding: $row-gap/2 0px $row-gap/2 0px;
+} */

@@ -2,10 +2,15 @@
   font-family: 'SourceSerifPro-regular';
   src: url('../assets/fonts/SourceSerifPro-regular.woff2') format('woff2');
   font-weight: normal;
+}
 
-  @font-face {
-    font-family: 'Osward';
-    src: url('../assets/fonts/Oswald-bold.woff2');
-    font-weight: normal;
-  }
+@font-face {
+  font-family: 'Osward';
+  src: url('../assets/fonts/Oswald-bold.woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SourceSerifPro-bold';
+  src: url('../assets/fonts/SourceSerifPro-bold.woff2') format('woff2');
 }
