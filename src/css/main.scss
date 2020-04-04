@@ -15,7 +15,7 @@ main {
         "articles articles"
         "actu ."
         "ad ."
-        "subs subs"
+        "sub sub"
         ;
         grid-column-gap: 10px;
     }
@@ -103,7 +103,31 @@ img{
 
 .actu {
     background: red;
-    height: 250px;
+    height: 600px;
+.actu1{
+    display: flex;
+    flex-direction: row;
+}
+.actu2{
+    display: flex;
+    flex-direction: row;
+}
+.actu3{
+    display: flex;
+    flex-direction: row;
+}
+.actu4{
+    display: flex;
+    flex-direction: row;
+}
+.actu5{
+    display: flex;
+    flex-direction: row;
+}
+.actu6{
+    display: flex;
+    flex-direction: row;
+}
     @include large {
         grid-area: actu;
         height: 400px;
@@ -119,11 +143,37 @@ img{
     }
 }
 
-.subs {
+.sub {
     background: sandybrown;
-    height: 300px;
+    height: 800px;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .sub__text {
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        margin: -15px 15px 0px;
+        background: white;
+        padding: 10px 20px;
+        h2 {
+            font-size: 22px;
+        }
+        span {
+            color: grey;
+        }
+    }
+    .sub__image{
+        display: flex;
+        justify-content: center;
+    }
     @include large {
-        grid-area: subs;
+        grid-area: sub;
         height: 400px;
     }
 }
