@@ -1,0 +1,91 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include large {
+        display: grid;
+        flex-direction: none;
+        justify-content: none;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 4fr 3fr 3fr 2.5fr 2fr 3fr;
+        grid-template-areas: 
+        "hero info"
+        "articles articles"
+        "articles articles"
+        "actu ."
+        "ad ."
+        "subs subs"
+        ;
+    }
+
+}
+
+.hero {
+    background: blue;
+    height: 400px;
+    @include large {
+        grid-area: hero;
+        display: flex;
+        justify-content: flex-end;
+    }
+.hero__image{
+    position: relative;
+ 
+}
+.hero__title{
+    width: 400px;
+    background: white;
+    position: absolute;
+    left:250px;
+    right: 0;
+    top: 45%;
+    z-index: 1;
+ 
+    h2{
+        text-align: center;
+        font-size: 22px;
+    }
+}
+}
+
+.info {
+    background: yellowgreen;
+    height:400px;
+    @include large {
+        grid-area: info;
+    }
+}
+  
+.articles {
+    background: purple;
+    height: 600px;
+    @include large {
+        grid-area: articles;
+    }
+}
+
+.actu {
+    background: red;
+    height: 250px;
+    @include large {
+        grid-area: actu;
+    }
+}
+
+.ad {
+    background: pink;
+    height: 200px;
+    @include large {
+        grid-area: ad;
+    }
+}
+
+.subs {
+    background: sandybrown;
+    height: 300px;
+    @include large {
+        grid-area: subs;
+    }
+}
