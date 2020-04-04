@@ -7,8 +7,11 @@
 @import "blocs/main.scss";
 @import "blocs/footer.scss";
 
-// Second grid
-@import "blocs2/main2.scss";
+// Second grid for main
+@import "bloc-main/main-updateArticle.scss";
+@import "bloc-main/main-articles.scss";
+@import "bloc-main/main-littleArticle.scss";
+@import "bloc-main/main-obsArticle.scss";
 
 // ---------- Initial Code ----------
 
