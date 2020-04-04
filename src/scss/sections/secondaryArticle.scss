@@ -20,6 +20,12 @@
       margin-left: 4rem;
     }
   }
+
+  @include large {
+    &:nth-child(even){
+      margin-left: 3rem;
+    }
+  }
 }
 
 .secondaryArticle__imgContainer {

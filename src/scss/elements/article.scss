@@ -6,13 +6,28 @@
     padding-bottom: 2rem;
     margin-bottom: 1.5rem;
   }
+
+  @include large {
+    border: 1px solid $border-color;
+  }
 }
 
 .article--separateur {
   border-bottom: 1px solid $border-color;
   padding-bottom: 2rem;
   margin-bottom: 1.5rem;
+
+  @include medium {
+    border: none;
+  }
   
+  @include large {
+    border: 1px solid $border-color;
+  }
+}
+
+.article img {
+  width: 100%;
 }
 
 .article__content {

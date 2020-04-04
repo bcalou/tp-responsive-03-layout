@@ -19,6 +19,7 @@
 .primaryInfo__imgContainer img {
   object-fit: cover;
   height: 100%;
+  width: 100%;
 
   @include medium {
     height: auto;
@@ -39,6 +40,11 @@
   line-height: 1.5rem;
   padding: 0.6rem 0;
   margin: 0 1rem;
+
+  @include large {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 
 .primaryInfo__data {

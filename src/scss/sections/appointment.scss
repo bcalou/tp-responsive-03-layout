@@ -39,6 +39,10 @@
       width: 25%;
       height: 1px;
       background-color: $secondary-color;
+
+      @include large {
+        width: 35%;
+      }
     }
 
     &::after {
@@ -51,6 +55,10 @@
       width: 25%;
       height: 1px;
       background-color: $secondary-color;
+
+      @include large {
+        width: 35%;
+      }
     }
   }
 }

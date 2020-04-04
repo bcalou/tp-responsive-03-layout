@@ -21,6 +21,10 @@
 
 .footer__nav li {
   margin-bottom: 1.5rem;
+
+  @include medium {
+    margin: 0;
+  }
 }
 
 .footer__link {
