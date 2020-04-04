@@ -18,6 +18,10 @@
   width: 120px;
   justify-content: space-between;
   align-items: center;
+
+  @include medium {
+    width: 22px;
+  }
 }
 
 .menu__burger-menu {
@@ -67,11 +71,13 @@
 
 .nav {
   display: none;
+  width: 70%;
+  margin-left: 5%;
 
   @include medium {
-    width: 60%;
     display: flex;
-    flex: 5;
+    justify-content: space-between;
+    //justify-self: right;
     overflow: hidden;
   }
 }
@@ -79,7 +85,33 @@
 .nav__item {
   font-family: 'Osward';
   font-weight: bold;
-  margin-right: 20px;
+
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i + 5}) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 847px) {
+    &:nth-child(6) {
+      display: block;
+    }
+  }
+  @media (min-width: 965px) {
+    &:nth-child(7) {
+      display: block;
+    }
+  }
+  @media (min-width: 1077px) {
+    &:nth-child(8) {
+      display: block;
+    }
+  }
+  @media (min-width: 1177px) {
+    &:nth-child(9) {
+      display: block;
+    }
+  }
 }
 
 .connexion {
