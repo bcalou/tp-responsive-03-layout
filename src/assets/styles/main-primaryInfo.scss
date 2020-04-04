@@ -1,8 +1,0 @@
-.main__primaryInfo {
-  background: yellow; /* Pour tester */
-  height: 100px; /* Pour tester */
-
-  @include large {
-    grid-area: "primaryInfo";
-  }
-}

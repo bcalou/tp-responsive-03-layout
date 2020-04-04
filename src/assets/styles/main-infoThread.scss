@@ -1,8 +1,0 @@
-.main__infoThread {
-  background: lightgreen; /* Pour tester */
-  height: 100px; /* Pour tester */
-
-  @include large {
-    grid-area: "filTread";
-  }
-}
