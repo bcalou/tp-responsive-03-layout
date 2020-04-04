@@ -1,0 +1,14 @@
+@import "reset";
+@import "medias";
+
+body {
+    background-color: green;
+  
+    @include medium {
+      background-color: yellow;
+    }
+  
+    @include large {
+      background-color: red;
+    }
+  }
