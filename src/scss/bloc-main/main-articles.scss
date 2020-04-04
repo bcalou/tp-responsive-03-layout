@@ -1,11 +1,20 @@
 .articles {
-    display: grid;
+    @include medium {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr;
+    }
     @include large {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
     .articles__article1 {
+        @include medium {
+            grid-column: 1/span 2;
+            grid-row: 1;
+            background: royalblue;
+        }
         @include large {
             grid-column: 1;
             grid-row: 1;
@@ -14,6 +23,11 @@
     }
 
     .articles__article2 {
+        @include medium {
+            grid-column: 3/span 4;
+            grid-row: 1;
+            background: pink;
+        }
         @include large {
             grid-column: 2;
             grid-row: 1;
@@ -22,6 +36,11 @@
     }
 
     .articles__article3 {
+        @include medium {
+            grid-column: 5/span 6;
+            grid-row: 1;
+            background: red;
+        }
         @include large {
             grid-column: 3;
             grid-row: 1;
@@ -30,6 +49,11 @@
     }
 
     .articles__article4 {
+        @include medium {
+            grid-column: 1/span 3;
+            grid-row: 2;
+            background: orange;
+        }
         @include large {
             grid-column: 1;
             grid-row: 2;
@@ -38,6 +62,11 @@
     }
 
     .articles__article5 {
+        @include medium {
+            grid-column: 4/span 6;
+            grid-row: 2;
+            background: blue;
+        }
         @include large {
             grid-column: 2;
             grid-row: 2;

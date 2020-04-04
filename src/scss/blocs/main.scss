@@ -3,7 +3,7 @@
     display: grid;
     @include medium {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 662px 247px 328px 185px 345px;
+        grid-template-rows: 662px 590px 328px 185px 345px;
     }
     @include large {
         grid-template-columns: 2fr 1fr;
