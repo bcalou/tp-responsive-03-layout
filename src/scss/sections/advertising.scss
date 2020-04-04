@@ -1,7 +1,7 @@
 .advertising {
   display: flex;
   align-items: center;
-  background-color: #fed500;
+  background-color: $optional-color;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -14,16 +14,17 @@
 
 .advertising__text {
   padding-bottom: 0.8rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "sourceSerifPro";
   font-size: 1rem;
   text-align: center;
 }
 
 .advertising__button {
-  background-color: black;
-  color: #f1f1f1;
+  background-color: $secondary-color;
+  color: $primary-color;
   border: none;
   outline: none;
+  font-family: "sourceSerifPro";
   font-weight: bold;
   font-size: 1rem;
   padding: 0 0.5rem;

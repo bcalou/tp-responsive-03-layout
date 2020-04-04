@@ -1,6 +1,6 @@
 .main {
   margin-top: 4rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 
   @include medium {
     margin: 0 80px;
@@ -9,13 +9,14 @@
   @include large {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas:"head head" 
                         "primaryInfo news"
                         "primaryArticle primaryArticle"
                         "secondaryArticle ."
                         "advertising ."
-                        "appointment appointment";
+                        "appointment appointment"
+                        "footer footer";
     grid-gap: 20px;
   }
 }
@@ -63,8 +64,13 @@
 
 
 .main__appointment {
-
   @include large {
     grid-area: appointment;
+  }
+}
+
+.footer {
+  @include large {
+    grid-area: footer;
   }
 }

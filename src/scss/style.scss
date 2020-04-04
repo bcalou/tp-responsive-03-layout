@@ -1,5 +1,7 @@
 @import '../scss/vendor/reset.scss';
 @import '../scss/settings/media.scss';
+@import '../scss/settings/color.scss';
+@import '../scss/settings/fonts.scss';
 @import '../scss/blocs/header.scss';
 @import '../scss/blocs/main.scss';
 @import '../scss/blocs/footer.scss';
@@ -23,4 +25,8 @@ img {
 html,
 body {
   width: 100vw;
+}
+
+body {
+  background-color: $primary-color;
 }

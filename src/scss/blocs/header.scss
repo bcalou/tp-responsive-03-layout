@@ -5,11 +5,11 @@
   z-index: 10;
   width: 100%;
   height: 4rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $border-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+  background-color: $primary-color;
 }
 
 .header__title {
@@ -18,9 +18,10 @@
 }
 
 .header__subscription {
-  background-color: #fed500;
+  background-color: $optional-color;
   border: none;
   outline: none;
+  font-family: "sourceSerifPro";
   font-weight: bold;
   font-size: 0.8rem;
   padding: 0 0.8rem;
