@@ -18,16 +18,16 @@
 }
 
 .main__primaryInfo {
-  background-color: rgb(255, 217, 1);
   height: 450px;
   @include large {
+    margin-bottom: 8%;
     grid-area: primary;
   }
 }
 
 .infoThread {
   display: none;
-  background-color: teal;
+  margin-bottom: 8%;
   @include large {
     display: block;
     grid-area: fil;
@@ -35,7 +35,7 @@
 }
 
 .secondaryInfo {
-  background-color: purple;
+  margin-bottom: 8%;
   height: 500px;
   @include large {
     grid-area: second;
@@ -43,7 +43,7 @@
 }
 
 .tertiaryInfo {
-  background-color: skyblue;
+  margin-bottom: 8%;
   height: 320px;
   @include large {
     grid-area: tertiary;
@@ -51,14 +51,14 @@
 }
 
 .subscribeAd {
-  background-color: palevioletred;
+  margin-bottom: 8%;
   height: 320px;
   @include large {
     grid-area: abo;
   }
 }
 .obsMeeting {
-  background-color: rgb(96, 216, 96);
+  margin-bottom: 8%;
   height: 320px;
   @include large {
     grid-area: rdv;
