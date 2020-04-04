@@ -13,34 +13,28 @@
 // -----------------------------------------
 
     .updateArticle{
-        background: lightseagreen;
+        
         grid-column: 1;
         @include medium {
             grid-column: 1 /span 4;
+            background: lightseagreen;
         }
         @include large {
-            grid-column: 1 /span 3;
-        }
-    }
-
-    .articles{
-        background: pink;
-        @include medium {
-            grid-column: 1 /span 4;
-        }
-        @include large {
-            grid-row: 2;
+            background: blue;
             grid-column: 1 /span 2;
         }
     }
 
-    .imgObs{
-        background: blue;
+    .articles{
+        
         @include medium {
+            background: pink;
             grid-column: 1 /span 4;
         }
         @include large {
-            grid-row: 3;
+            background: cornflowerblue;
+            grid-row: 2;
+            grid-column: 1 /span 2;
         }
     }
 
@@ -50,10 +44,21 @@
             grid-column: 1 /span 4;
         }
         @include large {
-            grid-row: 4;
+            grid-row: 3;
+            grid-column: 1;
         }
     }
 
+    .imgObs{
+        background: blue;
+        @include medium {
+            grid-column: 1 /span 4;
+        }
+        @include large {
+            grid-row: 4;
+            grid-column: 1;
+        }
+    }
     .obsArticle{
         background: purple;
         @include medium {
