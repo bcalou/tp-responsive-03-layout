@@ -1,11 +1,18 @@
 .updateArticle {
-    display: grid;
+    @include medium {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     @include large {
         grid-template-columns: 2fr 1fr;
     }
     
 
     .updateArticle__newArticle {
+        @include medium {
+            grid-column: 1;
+            background: purple;
+        }
         @include large {
             grid-column: 1;
             background: yellow;
@@ -13,6 +20,9 @@
     }
 
     .updateArticle__filInfo {
+        @include medium {
+            display: none;
+        }
         @include large {
             grid-column: 2;
             background: green;
