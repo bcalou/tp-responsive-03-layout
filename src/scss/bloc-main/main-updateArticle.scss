@@ -1,0 +1,15 @@
+.updateArticle {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .updateArticle__newArticle {
+        grid-column: 1;
+        background: yellow;
+
+    }
+
+    .updateArticle__filInfo {
+        grid-column: 2;
+        background: green;
+    }
+}
