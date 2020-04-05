@@ -9,210 +9,272 @@
   </head>
   <body>
     <header class="header">
-      <h1>L'OBS</h1>
-      <div>  
-        <p>POLITIQUE</p>
-        <p>MONDE </p>
-        <p>ÉCONOMIE </p>
-        <p>CULTURE</p>
-        <p>OPINIONS</p>
-        <p>DÉBATS</p>
-        <p>TENDANCES</p>
-        <img src="./assets/imgs/icons/user.svg" alt=""><button class="login">M'identifier</button>
-        <button class="subscribe">Je m'abonne</button>
+      <div>
+        <img class="header_logo" src="./assets/imgs/icons/logo.svg" alt="">
+
+        <img class="header_login" src="./assets/imgs/icons/user.svg" alt="" />
+        <button class="header_login">
+          M'identifier
+        </button>
+        <button class="header_login subscribe">Je m'abonne</button>
       </div>
+
+      <ul>
+        <li>POLITIQUE</li>
+        <li>MONDE</li>
+        <li>ÉCONOMIE</li>
+        <li>CULTURE</li>
+        <li>OPINIONS</li>
+        <li>DÉBATS</li>
+        <li>TENDANCES</li>
+      </ul>
+
+      <hr />
     </header>
 
     <main class="main">
       <section class="main__firstInfo firstInfo">
-        <img
-          src="./assets/imgs/article1.jpg"
+        <div>
+          <img src="./assets/imgs/article1.jpg"
           alt="Manifestation sur la réforme des retraites"
         />
-        <p>
+        <h2>
           Ces 10 graphiques éclairent l’emploi des seniors (et ce n’est pas
           réjouissant)
-        </p>
+        </h2>
+      </div>
+      <div>
         <p>Economie - Publié il y a 2 heures</p>
       </section>
 
       <section class="main__fill fill"></section>
 
       <section class="main__secondaryInfo secondaryInfo">
-        <div>
-          <img src="./assets/imgs/article2.jpg" alt="Réforme des retraites" />
-          <div>
-            <p>Comment la réforme des retraites a été dévoyée</p>
-            <p>Edito - Publié il y a 14 heures</p>
+        <div class="secondaryInfo__contenair" >
+          <div class="secondaryInfo__one">
+            <img src="./assets/imgs/article2.jpg" alt="Réforme des retraites" />
+            <div>
+              <p>Comment la réforme des retraites a été dévoyée</p>
+              <p>Edito - Publié il y a 14 heures</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <img
-            src="./assets/imgs/article3.jpg"
-            alt="Ségolène Royal estime être licenciée"
-          />
-          <div>
-            <p>
-              Ségolène Royal estime qu’elle a été licenciée de sa fonction
-              d’ambassadrice des pôles
-            </p>
-            <p>Politique - Publié il y a 3 heures</p>
+          <div class="secondaryInfo__two">
+            <img
+              src="./assets/imgs/article3.jpg"
+              alt="Ségolène Royal estime être licenciée"
+            />
+            <div>
+              <p>
+                Ségolène Royal estime qu’elle a été licenciée de sa fonction
+                d’ambassadrice des pôles
+              </p>
+              <p>Politique - Publié il y a 3 heures</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <img
-            src="./assets/imgs/article4.jpg"
-            alt="À quoi ressembleront les océans en 2049"
-          />
-          <div>
-            <p>Les océans, un trésor à préserver : revivez notre conférence</p>
-            <p>2049 - Publié il y a 2 heures</p>
+          <div class="secondaryInfo__three">
+            <img
+              src="./assets/imgs/article4.jpg"
+              alt="À quoi ressembleront les océans en 2049"
+            />
+            <div>
+              <p>Les océans, un trésor à préserver : revivez notre conférence</p>
+              <p>2049 - Publié il y a 2 heures</p>
+            </div>
+            <div></div>
           </div>
-          <div></div>
-        </div>
-        <div>
-          <img
-            src="./assets/imgs/article5.jpg"
-            alt="Un avion abattu à Téhéran"
-          />
-          <div>
-            <p>
-              <img src="./assets/imgs/icons/subscriber.svg" alt="">
-              Comment l’avion abattu à Téhéran fragilise le régime des mollahs
-            </p>
-            <p>Monde - Publié il y a 6 heures</p>
+          <div class="secondaryInfo__four">
+            <img
+              src="./assets/imgs/article5.jpg"
+              alt="Un avion abattu à Téhéran"
+            />
+            <div>
+              <p>
+                <img src="./assets/imgs/icons/subscriber.svg" alt="" />
+                Comment l’avion abattu à Téhéran fragilise le régime des mollahs
+              </p>
+              <p>Monde - Publié il y a 6 heures</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src="./assets/imgs/article6.jpg" alt="Photo d'Elif Shafak" />
-          <div>
-            <p><img src="./assets/imgs/icons/subscriber.svg" alt="">Elif Shafak, star du roman turc et bête noire d’Erdogan</p>
-            <p>Romans - Publié il y a 4 heures</p>
+          <div class="secondaryInfo__five">
+            <img src="./assets/imgs/article6.jpg" alt="Photo d'Elif Shafak" />
+            <div>
+              <p>
+                <img src="./assets/imgs/icons/subscriber.svg" alt="" />Elif
+                Shafak, star du roman turc et bête noire d’Erdogan
+              </p>
+              <p>Romans - Publié il y a 4 heures</p>
+            </div>
           </div>
-        </div>
+       </div>
       </section>
 
       <section class="main__thirdInfo thirdInfo">
-        <div>
-          <img src="./assets/imgs/article7.jpg" alt="censure de Mélenchon" />
-          <p>La motion de censure de Mélenchon fait pschitt</p>
-        </div>
+        
+          <ul class="thirdInfo__contenair" >
+          <li class="thirdInfo__one">
+            <article>
+              <div>
+                <img src="./assets/imgs/article7.jpg" alt="censure de Mélenchon" />
+                <p>La motion de censure de Mélenchon fait pschitt</p>
+              </div>
+              <div></div>
+            </article>
+          </li>
 
-        <div>
-          <img
-            src="./assets/imgs/article8.jpg"
-            alt="la réforme des retraites vous fera travailler plus
-          longtemps"
-          />
-          <p><img src="./assets/imgs/icons/subscriber.svg" alt="">
-            Pourquoi la réforme des retraites vous fera travailler plus
-            longtemps
-          </p>
-        </div>
+          <li class="thirdInfo__two">
+            <div>
+              <img
+                src="./assets/imgs/article8.jpg"
+                alt="la réforme des retraites vous fera travailler plus
+              longtemps"
+              />
+              <p>
+                <img src="./assets/imgs/icons/subscriber.svg" alt="" />
+                Pourquoi la réforme des retraites vous fera travailler plus
+                longtemps
+              </p>
+            </div>
+          </li>
 
-        <div>
-          <img
-            src="./assets/imgs/article9.jpg"
-            alt="Carlos Ghosn, sa folle tournée médiatique "
-          />
-          <p>La folle tournée médiatique de Carlos Ghosn</p>
-        </div>
+          <li class="thirdInfo__three">
+            <div>
+              <img
+                src="./assets/imgs/article9.jpg"
+                alt="	La folle tournée médiatique de Carlos Ghosn"
+              />
+              <p>
+                <img src="./assets/imgs/icons/subscriber.svg" alt="" />         	
+                La folle tournée médiatique de Carlos Ghosn
 
-        <div>
-          <img
-            src="./assets/imgs/article10.jpg"
-            alt="La légitimité perdue des mollahs"
-          />
-          <p><img src="./assets/imgs/icons/subscriber.svg" alt="">En Iran, la légitimité perdue des mollahs</p>
-        </div>
+              </p>
+            </div>
+          </li>
 
-        <div>
-          <img
-            src="./assets/imgs/article11.jpg"
-            alt="Benoît XVI retire son nom d’un livre"
-          />
-          <p>Benoît XVI retire son nom d’un livre controversé</p>
-        </div>
+        <li class="thirdInfo__four">
+            <div>
+              <img
+                src="./assets/imgs/article10.jpg"
+                alt="La légitimité perdue des mollahs"
+              />
+              <p>
+                <img src="./assets/imgs/icons/subscriber.svg" alt="" />En Iran, la
+                légitimité perdue des mollahs
+              </p>
+            </div>
+        </li>
 
-        <div>
-          <img src="./assets/imgs/article12.jpg" alt="Affaire Preynat" />
-          <p><img src="./assets/imgs/icons/subscriber.svg" alt="">Affaire Preynat : pourquoi un procès 30 ans après les faits</p>
-        </div>
+        <li class="thirdInfo__five">
+          <div>
+            <img
+              src="./assets/imgs/article11.jpg"
+              alt="Benoît XVI retire son nom d’un livre"
+            />
+            <p>Benoît XVI retire son nom d’un livre controversé</p>
+          </div>
+        </li>
+
+        <li class="thirdInfo__six">
+          <div>
+            <img src="./assets/imgs/article12.jpg" alt="Affaire Preynat" />
+            <p>
+              <img src="./assets/imgs/icons/subscriber.svg" alt="" />Affaire
+              Preynat : pourquoi un procès 30 ans après les faits
+            </p>
+          </div>
+        </li>
+
+        </ul>
+    
       </section>
 
       <section class="main__pub pub">
-        <div><img src="./assets/imgs/ad/background.png" alt="background jaune" />
-          <img src="./assets/imgs/ad/cover1.png" alt="Couverture de L'OBS">
-          <img src="./assets/imgs/ad/cover2.png" alt="Couverture TÉLÉOBS"></div>
-          <p>L'OBS EN NUMÉRIQUE
-          Web + tablette + mobile
-          à partir de 1€</p>
-        <button class="subscribe">Je m'abonne</button>
-      
+        <div>
+          <img src="./assets/imgs/ad/background.png" alt="background jaune" />
+          <img src="./assets/imgs/ad/cover1.png" alt="Couverture de L'OBS" />
+          <img src="./assets/imgs/ad/cover2.png" alt="Couverture TÉLÉOBS" />
+        </div>
 
+        <p>L'OBS EN NUMÉRIQUE Web + tablette + mobile à partir de 1€</p>
+        <button class="subscribe">Je m'abonne</button>
       </section>
 
       <section class="main__fourthInfo fourthInfo">
         <h3>LES RENDEZ-VOUS DE L'OBS</h3>
         <div>
-          <img src="./assets/imgs/rdv1.png" alt="Places à gagner pour la Pièce « An Iliad »">
-          <p> <img src="./assets/imgs/icons/subscriber.svg" alt="">Gagnez vos places pour la pièce « An Iliad » au théâtre du Rond-Point</p>
+          <img
+            src="./assets/imgs/rdv1.png"
+            alt="Places à gagner pour la Pièce « An Iliad »"
+          />
+          <p>
+            <img src="./assets/imgs/icons/subscriber.svg" alt="" />Gagnez vos
+            places pour la pièce « An Iliad » au théâtre du Rond-Point
+          </p>
           <p>Club Abonnés - Publié il y a 1 jour</p>
         </div>
 
         <div>
-          <img src="./assets/imgs/rdv2.jpg" alt="Places à gagner pour l'exposition hommage à Vladimir Velickovic">
-          <p> <img src="./assets/imgs/icons/subscriber.svg" alt="">Gagnez vos places pour l’exposition hommage à Vladimir Velickovic</p>
+          <img
+            src="./assets/imgs/rdv2.jpg"
+            alt="Places à gagner pour l'exposition hommage à Vladimir Velickovic"
+          />
+          <p>
+            <img src="./assets/imgs/icons/subscriber.svg" alt="" />Gagnez vos
+            places pour l’exposition hommage à Vladimir Velickovic
+          </p>
           <p>Club Abonnés - Publié il y a 1 jour</p>
         </div>
-
-
 
         <div>
-          <img src="./assets/imgs/rdv3.jpg" alt="Places de cinéma à gagner pour le film « Revenir »">
-          <p><img src="./assets/imgs/icons/subscriber.svg" alt="">Gagnez vos places de cinéma pour le film « Revenir » de Jessica Palud</p>
+          <img
+            src="./assets/imgs/rdv3.jpg"
+            alt="Places de cinéma à gagner pour le film « Revenir »"
+          />
+          <p>
+            <img src="./assets/imgs/icons/subscriber.svg" alt="" />Gagnez vos
+            places de cinéma pour le film « Revenir » de Jessica Palud
+          </p>
           <p>Club Abonnés - Publié il y a 1 jour</p>
         </div>
-
-
-
       </section>
     </main>
 
     <footer class="footer">
-      <div><p>POLITIQUE </p>
-      <p>MONDE </p>
-      <p> PÉCONOMIE</p>
-      <p>CULTURE</p>
-      <p>OPINIONS </p>
-      <p>DÉBATS</p>
-      <p>VIDÉOS</p>
-      <p>PHOTOS</p>
-    </div>
-    <hr>
 
+      <ul>
+        <div class="footer__one">
+          <li>POLITIQUE</li>
+          <li>MONDE</li>
+          <li>ÉCONOMIE</li>
+          <li>CULTURE</li>
+          <li>OPINIONS</li>
+          <li>DÉBATS</li>
+          <li>VIDÉOS</li>
+          <li>PHOTOS</li>
+       </div>
+      </ul>
+      <hr/>
 
+      <ul>
+        <div class="footer__two">
+          <li>TéléObs</li>
+          <li>BibliObs</li>
+          <li>"O"</li>
+          <li>Rue 89</li>
+          <li>Newsletters</li>
+          <li>Services</li>
+          <li>Index</li>
+          <li>RSS</li>
+          <li>Plan du site</li>
+          <li>Mentions légales</li>
+          <li>Copyright</li>
+          <li>Publicité</li>
 
-    <div>
-      <p>éléObs </p>
-      <p>BibliObs</p>
-      <p>"O"</p>
-      <p>Rue 89</p>
-      <p>Newsletters</p>      
-      <p>Services</p>
-      <p>Index</p>
-      <p>RSS</p>
-      <p>Plan du site</p>
-      <p>Mentions légales</p>
-      <p>Copyright</p>
-      <p>Publicité</p>         
-    </div>
+          <li>Politique de confidentialité</li>
+          <li>Contact</li>
+          <li>FAQ</li> 
+        </div>
+      </ul>
 
-    <div>
-      <p>Politique de confidentialité</p>
-      <p>Contact</p>
-      <p>FAQ</p>
-    </div>
     </footer>
   </body>
 </html>

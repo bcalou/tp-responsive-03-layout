@@ -1,0 +1,13 @@
+$SourceSerifPro-bold: "SourceSerifPro-bold", sans-serif;
+
+body {
+  font-family: $SourceSerifPro-bold;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h2 :nth-child(1) {
+  font-size: 22px;
+}

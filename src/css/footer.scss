@@ -1,2 +1,24 @@
 .footer {
+  text-align: center;
+}
+
+.footer {
+  &__one {
+    text-transform: uppercase;
+    @include large {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 40px;
+      padding-bottom: 25px;
+    }
+  }
+
+  @include large {
+    &__two {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+  }
 }

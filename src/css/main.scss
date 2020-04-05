@@ -1,25 +1,118 @@
 .main {
   display: grid;
+  text-align: center;
 
   @include large {
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "firstInfo fills"
+      "secondaryInfo  secondaryInfo"
+      "thirInfo . "
+      "pub . "
+      "fourthInfo fourthInfo";
   }
 }
 
-.firstInfo {
+@include large {
+  .firstInfo {
+    grid-area: firstInfo;
+    background-color: red;
+  }
+
+  .fill {
+    grid-area: fills;
+    background-color: green;
+  }
+
+  .secondaryInfo {
+    grid-area: secondaryInfo;
+    background-color: yellow;
+  }
+
+  .thirdInfo {
+    grid-area: thirInfo;
+    background-color: blue;
+  }
+
+  .pub {
+    grid-area: pub;
+    background-color: pink;
+  }
+
+  .fourthInfo {
+    grid-area: fourthInfo;
+    background-color: brown;
+  }
 }
 
-.fill {
+@include large {
+  .secondaryInfo__contenair {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "one two three" "four five .";
+  }
+
+  .secondaryInfo {
+    &__one {
+      grid-area: one;
+    }
+    &__two {
+      grid-area: two;
+    }
+    &__three {
+      grid-area: three;
+    }
+    &__four {
+      grid-area: four;
+    }
+    &__five {
+      grid-area: five;
+    }
+  }
 }
 
-.secondaryInfo {
-}
+@include large {
+  .thirdInfo__contenair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
 
-.thirdInfo {
-}
+  .thirdInfo {
+    &__one {
+      grid-area: one;
+    }
 
-.pub {
-}
+    &__two {
+      grid-area: two;
+    }
 
-.appointment {
+    &__three {
+      grid-area: three;
+    }
+
+    &__four {
+      grid-area: four;
+    }
+
+    &__five {
+      grid-area: five;
+    }
+
+    &__six {
+      grid-area: six;
+    }
+  }
+  .thirdInfo__contenair {
+    img {
+      float: left;
+    }
+  }
 }
