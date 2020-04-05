@@ -1,0 +1,65 @@
+.main {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  max-width: 670px;
+  @include large {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+            'm m sb'
+            'a a a'
+            'sa sa .'
+            'ab ab .'
+            'r r r';
+  }
+}
+
+.main__mainInfo {
+  background-color: yellow;
+  height: 400px;
+  @include large {
+    grid-area: m;
+  }
+}
+
+.main__sidebar {
+  display: none;
+  background-color: magenta;
+  @include large {
+    display: block;
+    grid-area: sb;
+  }
+}
+
+.main__mainArticles {
+  background-color: tomato;
+  height: 600px;
+  @include large {
+    grid-area: a;
+  }
+}
+
+.main__subArticles {
+  background-color: olive;
+  height: 350px;
+  @include large {
+    grid-area: sa;
+  }
+}
+
+.main__abonnement {
+  background-color: pink;
+  height: 250px;
+  @include large {
+    grid-area: ab;
+  }
+}
+.main__rdv {
+  background-color: aquamarine ;
+  height: 300px;
+  @include large {
+    grid-area: r;
+  }
+}

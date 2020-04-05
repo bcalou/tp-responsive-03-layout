@@ -13,13 +13,7 @@ img {
 }
 
 body {
-  background-color: green;
-
-  @include medium {
-    background-color: yellow;
-  }
-
-  @include large {
-    background-color: red;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
