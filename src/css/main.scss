@@ -1,0 +1,309 @@
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include large {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr 0.75fr 0.75fr 1fr 0.5fr 1fr;
+        grid-template-areas: 
+        "hero info"
+        "articles articles"
+        "articles articles"
+        "actu ."
+        "ad ."
+        "sub sub"
+        ;
+        grid-column-gap: 10px;
+    }
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero {
+    background: blue;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include large {
+        height: 400px;
+        grid-area: hero;
+    }
+    .hero__border{
+        box-sizing: content-box;
+        width: auto;
+        height: auto;
+        border:1px solid grey;
+    }
+    .hero__image{
+        margin: 0px 15px;
+}
+    .hero__text{
+        justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: -15px 15px 0px;
+    background: white;
+    padding: 10px 20px;
+    h2 {
+        font-size: 22px;
+    }
+    span {
+        color: grey;
+    }
+}
+}
+
+.info {
+    background: yellowgreen;
+    height:400px;
+    @include large {
+        grid-area: info;
+        height: 400px;
+    }
+}
+
+
+
+.articles {
+    background: purple;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include large {
+        grid-area: articles;
+        height: 600px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article{
+        @include large {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas: 
+            "articles1 articles2 articles3"
+            "articles4 articles5 ."
+            ;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+    }
+            .articles1 {
+                box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;     
+            }
+            .articles2 {
+                box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;       
+            }
+            .articles3 {
+                box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;       
+            }
+            .articles4 {
+                box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;       
+            }
+            .articles5 {
+                box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+                       
+            }
+        
+
+//.article{
+//    margin: 0px 15px;
+//}
+
+.articles__image{
+    display: flex;
+    justify-content: center;
+}
+
+.articles__text{
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: -15px 15px 0px;
+    background: white;
+    padding: 10px 20px;
+    h2 {
+        font-size: 22px;
+    }
+    span {
+        color: grey;
+    }
+}
+
+}
+
+
+
+
+
+.actu {
+    background: red;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    @include large {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "actu1 actu2"
+        "actu3 actu4"
+        "actu5 actu6"
+        ;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+
+.actu__title{
+    background: white;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    width: 177px;
+}
+img{
+    height: 88px;
+    width: 88px;
+}
+.actu1{
+    display: flex;
+    flex-direction: row;
+}
+.actu2{
+    display: flex;
+    flex-direction: row;
+}
+.actu3{
+    display: flex;
+    flex-direction: row;
+}
+.actu4{
+    display: flex;
+    flex-direction: row;
+}
+.actu5{
+    display: flex;
+    flex-direction: row;
+}
+.actu6{
+    display: flex;
+    flex-direction: row;
+}
+    @include large {
+        grid-area: actu;
+        height: 400px;
+    }
+}
+
+
+
+.ad {
+    background: pink;
+    height: 200px;
+    @include large {
+        grid-area: ad;
+        height: 200px;
+    }
+}
+
+
+
+.sub {
+    background: sandybrown;
+    height: 800px;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .subs{
+        @include large {
+            grid-area: sub;
+            display: flex;
+            flex-direction: row;
+        }
+        @include medium {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .sub__text {
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: auto;
+        margin: -15px 15px 1px ;
+        background: white;
+        padding: 10px 20px;
+        h2 {
+            font-size: 22px;
+        }
+        span {
+            color: grey;
+        }
+    }
+    .sub__image{
+        display: flex;
+        justify-content: center;
+    }
+    @include large {
+        grid-area: sub;
+        height: 400px;
+    }
+    .sub1{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+    }
+    .sub2{
+        @include large{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+        }
+    }
+    .sub3{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+    }
+}
