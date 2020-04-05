@@ -3,14 +3,4 @@
 @import "blocs/main";
 @import "blocs/footer";
 
-body {
-  background-color: green;
-
-  @include medium {
-    background-color: yellow;
-  }
-
-  @include large {
-    background-color: red;
-  }
-}
+body {}

@@ -1,5 +1,68 @@
 .main {
   @include large {
     display: grid;
+    grid-template-columns: 150px 2fr 1fr 150px;
+    grid-template-rows: 200px 100px 100px 150px 80px 120px;
+    grid-template-areas:
+      ". primaryInfo wireInfo ."
+      ". secondaryInfo secondaryInfo ."
+      ". secondaryInfo . ."
+      ". othersInfo . ."
+      ". subscribe . ."
+      ". appointment appointment .";
+  }
+}
+
+.main__primaryInfo {
+  background-color: rgb(255, 255, 0);
+  height: 100px;
+
+  @include large {
+    grid-area: primaryInfo;
+  }
+}
+
+.main__wireInfo {
+  background-color: blue;
+  height: 100px;
+
+  @include large {
+    grid-area: wireInfo;
+  }
+}
+
+.main__secondaryInfo {
+  background-color: red;
+  height: 100px;
+
+  @include large {
+    grid-area: secondaryInfo;
+  }
+}
+
+.main__othersInfo {
+  background-color: green;
+  height: 100px;
+
+  @include large {
+    grid-area: othersInfo;
+  }
+}
+
+.main__subscribe {
+  background-color: brown;
+  height: 100px;
+
+  @include large {
+    grid-area: subscribe;
+  }
+}
+
+.main__appointment {
+  background-color: magenta;
+  height: 100px;
+
+  @include large {
+    grid-area: appointment;
   }
 }
