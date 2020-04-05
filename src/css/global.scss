@@ -1,9 +1,31 @@
 $black: black;
 $red: red;
 $max-pourcent: 100%;
-$borld-header-police: Oswald-bold;
+$bold-header-police: 'Oswald-bold';
+$bold-source-police: 'SourceSerifPro-bold';
+$regular-source-police: 'SourceSerifPro-regular';
 
-@mixin police-bold {
-  font-family: $borld-header-police;
-  
+/*Don't Work because of the reset.scss*/
+@mixin oswald {
+  @font-face {
+  font-family: $bold-header-police;
+  src: url('../assets/fonts/Oswald-bold.woff2');
+  font-weight: normal;
+  }
+}
+
+@mixin source-bold {
+  @font-face {
+  font-family: $bold-source-police;
+  src: url('../assets/fonts/SourceSerifPro-bold.woff2');
+  font-weight: normal;
+  }
+}
+
+@mixin source-regular {
+  @font-face {
+  font-family: $regular-source-police;
+  src: url('../assets/fonts/SourceSerifPro-regular.woff2');
+  font-weight: normal;
+  }
 }

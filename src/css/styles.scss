@@ -2,11 +2,14 @@
 @import "reset.scss";
 @import "medias.scss";
 @import "header.scss";
+@import "main.scss";
 
 * {
   box-sizing: border-box;
-  color: $black;
   background-color: #fff;
+  @include oswald;
+  @include source-bold;
+  @include source-regular;
 }
 
 img {
@@ -27,12 +30,3 @@ body {
   }
 }
 
-.main{
-  width: $max-pourcent;
-  position: relative;
-  z-index: 2;
-}
-
-.news-big{
-
-}
