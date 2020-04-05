@@ -9,26 +9,32 @@
   </head>
   <body>
     <header class="header">
-      <div>
-        <img class="header_logo" src="./assets/imgs/icons/logo.svg" alt="" />
-
-        <img class="header_login" src="./assets/imgs/icons/user.svg" alt="" />
-        <button class="header_login">
-          M'identifier
-        </button>
-        <button class="header_login subscribe">Je m'abonne</button>
+      <img class="header__logo" src="./assets/imgs/icons/logo.svg" alt="" />
+      <div class="header__container">
+        <div class="header__menu">
+          <div class="header__icon"></div>
+        </div>
+        <ul class="header__nav">
+          <li>POLITIQUE</li>
+          <li>MONDE</li>
+          <li>ÉCONOMIE</li>
+          <li>CULTURE</li>
+          <li>OPINIONS</li>
+          <li>DÉBATS</li>
+          <li>TENDANCES</li>
+        </ul>
+        <div class="header__user user">
+          <div class="user__account">
+            <img
+              class="user__login"
+              src="./assets/imgs/icons/user.svg"
+              alt=""
+            />
+            <p class="identify">M'identifier</p>
+          </div>
+          <button class="user__subscribe">Je m'abonne</button>
+        </div>
       </div>
-
-      <ul>
-        <li>POLITIQUE</li>
-        <li>MONDE</li>
-        <li>ÉCONOMIE</li>
-        <li>CULTURE</li>
-        <li>OPINIONS</li>
-        <li>DÉBATS</li>
-        <li>TENDANCES</li>
-      </ul>
-
       <hr />
     </header>
     <main class="main">
@@ -195,6 +201,43 @@
       </section>
       <section class="main__sextenaryInfo sextenaryInfo"></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <footer class="footer">
+        <ul>
+          <div class="footer__headings">
+            <li>POLITIQUE</li>
+            <li>MONDE</li>
+            <li>ÉCONOMIE</li>
+            <li>CULTURE</li>
+            <li>OPINIONS</li>
+            <li>DÉBATS</li>
+            <li>VIDÉOS</li>
+            <li>PHOTOS</li>
+          </div>
+        </ul>
+        <hr />
+
+        <ul>
+          <div class="footer__two">
+            <li>TéléObs</li>
+            <li>BibliObs</li>
+            <li>"O"</li>
+            <li>Rue 89</li>
+            <li>Newsletters</li>
+            <li>Services</li>
+            <li>Index</li>
+            <li>RSS</li>
+            <li>Plan du site</li>
+            <li>Mentions légales</li>
+            <li>Copyright</li>
+            <li>Publicité</li>
+
+            <li>Politique de confidentialité</li>
+            <li>Contact</li>
+            <li>FAQ</li>
+          </div>
+        </ul>
+      </footer>
+    </footer>
   </body>
 </html>

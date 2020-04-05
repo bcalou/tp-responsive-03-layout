@@ -1,24 +1,95 @@
 .header {
-  &_logo {
-    height: 22px;
+  &__logo {
+    height: 50px;
+    width: calc(100% / 1 - 0.01px);
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
-  ul {
-    display: none;
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
-  @include large {
-    ul {
-      display: flex;
-      justify-content: space-around;
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      width: 30px;
+      height: 3px;
+      background-color: black;
+    }
+
+    .header__icon::before,
+    .header__icon::after {
+      content: "";
+      display: block;
+    }
+
+    .header__icon::before {
+      transform: translateY(-7px);
+    }
+
+    .header__icon::after {
+      transform: translateY(5px);
     }
   }
 
-  .subscribe {
+  .header__nav {
+    display: none;
+    @include large {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      font-family: $oswaldBold;
+      transform: translateX(10%);
+
+      li {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+.header__user {
+  display: flex;
+  justify-content: flex-end;
+  font-family: $sourceSerifProBold;
+
+  .user__account {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    .identify {
+      display: none;
+      @include medium {
+        display: block;
+      }
+    }
+
+    .user__login {
+      margin-right: 5px;
+      font-family: $sourceSerifProBold;
+      font-family: 13px;
+    }
+  }
+  .user__subscribe {
     background-color: #fed500;
     display: inline-block;
-    font-family: SourceSerifPro-bold;
-    padding: 0 10px;
+    font-family: $sourceSerifProBold;
+    font-size: 14px;
+    padding: 10px;
     line-height: 25px;
     border: none;
     border-radius: 3px;

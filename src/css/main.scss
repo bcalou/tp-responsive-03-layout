@@ -1,4 +1,5 @@
 .main {
+  padding: 30px 50px 30px;
   @include large {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -9,6 +10,7 @@
       "tertiary . "
       "quaternary . "
       "quinquennial quinquennial";
+    grid-gap: 20px 20px;
   }
 }
 
@@ -51,6 +53,7 @@
     grid-template-areas:
       "one two three"
       "four five .";
+    grid-gap: 20px 20px;
   }
 }
 @include large {
@@ -87,46 +90,6 @@
   }
 }
 
-
-@include large {
-  .tertiaryInfo__one {
-    grid-area: one;
-  }
-
-  .tertiaryInfo__two {
-    grid-area: two;
-  }
-
-  .tertiaryInfo__three {
-    grid-area: three;
-  }
-
-  .tertiaryInfo__four {
-    grid-area: four;
-  }
-
-  .tertiaryInfo__five {
-    grid-area: five;
-  }
-
-  .tertiaryInfo__six {
-    grid-area: six;
-  }
-}
-
-.tertiaryInfo__contenair {
-  @include large {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-      "one two"
-      "three four"
-      "five six";
-  }
-}
-
-
 @include medium {
   .tertiaryInfo__one {
     grid-area: one;
@@ -151,4 +114,9 @@
   .tertiaryInfo__six {
     grid-area: six;
   }
+}
+
+.main__quinquennialInfo {
+  display: flex;
+  justify-content: space-between;
 }
