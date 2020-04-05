@@ -29,6 +29,7 @@
     align-items: center;
     margin-bottom: 20px;
     width: 90%;
+    cursor: pointer;
 
     @include medium {
       width: 100%;
@@ -69,7 +70,8 @@
     text-align: center;
   }
 
-  &__title {
+  &__title,
+  &__title-subs {
     font-family: "SourceSerifPro";
     font-weight: bold;
     font-size: 20px;
@@ -82,6 +84,18 @@
     @include large {
       font-size: 24px;
       line-height: 26px;
+    }
+  }
+
+  &__title-subs {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background-image: url("../assets/imgs/icons/subscriber.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 
