@@ -297,6 +297,9 @@ img{
     }
 }
 .sub {
+    display: flex;
+    flex-direction: column;
+      align-items: center;
     height: 800px;
     h1{
         display: flex;
