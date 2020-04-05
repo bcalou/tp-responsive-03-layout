@@ -7,3 +7,19 @@ img {
 }
 
 @import "reset.scss";
+@import "medias.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
+// body {
+//   background-color: green;
+
+//   @include medium {
+//     background-color: yellow;
+//   }
+
+//   @include large {
+//     background-color: red;
+//   }
+// }
