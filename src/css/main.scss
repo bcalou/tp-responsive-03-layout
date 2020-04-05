@@ -13,44 +13,142 @@
 }
 
 .main__primaryInfo {
-  height: 100px;
-  background-color: purple;
   @include large {
     grid-area: primary;
   }
 }
 .main__secondaryInfo {
-  height: 100px;
-  background-color: green;
   @include large {
     grid-area: secondary;
   }
 }
 .main__tertiaryInfo {
-  height: 100px;
-  background-color: blue;
   @include large {
     grid-area: tertiary;
   }
 }
 .main__quaternaryInfo {
-  height: 100px;
-  background-color: darkcyan;
   @include large {
     grid-area: quaternary;
   }
 }
 .main__quinquennialInfo {
-  height: 100px;
-  background-color: orange;
   @include large {
     grid-area: quinquennial;
   }
 }
 .main__sextenaryInfo {
-  height: 100px;
-  background-color: pink;
   @include large {
     grid-area: sextenary;
+  }
+}
+
+.secondaryInfo__contenair {
+  @include large {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "one two three"
+      "four five .";
+  }
+}
+@include large {
+  .secondaryInfo__one {
+    grid-area: one;
+  }
+
+  .secondaryInfo__two {
+    grid-area: two;
+  }
+
+  .secondaryInfo__three {
+    grid-area: three;
+  }
+
+  .secondaryInfo__four {
+    grid-area: four;
+  }
+
+  .secondaryInfo__five {
+    grid-area: five;
+  }
+}
+
+.tertiaryInfo__contenair {
+  @include large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+}
+
+
+@include large {
+  .tertiaryInfo__one {
+    grid-area: one;
+  }
+
+  .tertiaryInfo__two {
+    grid-area: two;
+  }
+
+  .tertiaryInfo__three {
+    grid-area: three;
+  }
+
+  .tertiaryInfo__four {
+    grid-area: four;
+  }
+
+  .tertiaryInfo__five {
+    grid-area: five;
+  }
+
+  .tertiaryInfo__six {
+    grid-area: six;
+  }
+}
+
+.tertiaryInfo__contenair {
+  @include large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+}
+
+
+@include medium {
+  .tertiaryInfo__one {
+    grid-area: one;
+  }
+
+  .tertiaryInfo__two {
+    grid-area: two;
+  }
+
+  .tertiaryInfo__three {
+    grid-area: three;
+  }
+
+  .tertiaryInfo__four {
+    grid-area: four;
+  }
+
+  .tertiaryInfo__five {
+    grid-area: five;
+  }
+
+  .tertiaryInfo__six {
+    grid-area: six;
   }
 }
