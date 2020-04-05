@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+  &__burger-container {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__links {
+    display: none;
+
+    @include large {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-family: "Oswald";
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  &__logo {
+    height: 22px;
+    margin-left: 30px;
+    @include large {
+      display: none;
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 1px;
+    background: black;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: black;
+    }
+
+    &::before {
+      transform: translateY(-7px);
+    }
+
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+
+  &__right,
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search {
+    display: none;
+
+    @include large {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+
+  &__sub {
+    font-family: SourceSerifPro;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 12px;
+    background-color: #fed500;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+
+  &__log {
+    display: none;
+    font-family: SourceSerifPro;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+    @include large {
+      display: block;
+    }
+  }
+}
