@@ -1,0 +1,12 @@
+.main {
+  margin: auto;
+  max-width: 1000px;
+  
+  @include large {
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: repeat(5, auto); 
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;     
+  }
+}

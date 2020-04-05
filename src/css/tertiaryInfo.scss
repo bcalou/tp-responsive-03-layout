@@ -1,0 +1,23 @@
+.tertiaryInfo {
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 28px;
+        grid-row-gap: 8px;
+    }
+
+    @include large {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    img {
+        width: 100px;
+        margin-right: 20px;
+    }
+}

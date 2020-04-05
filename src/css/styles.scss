@@ -1,5 +1,17 @@
 @import "reset.scss";
 
-h1 {
-    color: red;
-}
+@import "medias.scss";
+
+@import "main.scss";
+
+@import "primaryInfo.scss";
+
+@import "newsFeed.scss";
+
+@import "secondaryInfo.scss";
+
+@import "tertiaryInfo.scss";
+
+@import "subscription.scss";
+
+@import "games.scss";

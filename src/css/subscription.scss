@@ -1,0 +1,49 @@
+.subscription {
+    background: #ffd700;
+    @include large {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .cover2 {
+        display: none;
+
+        @include medium {
+            display: inline;
+        }
+    }
+
+    h3 {
+        display: none;
+        font-size: 24px;
+        font-weight: 700;
+
+        @include medium {
+            display: block;
+        }
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        padding: 10px 20px;
+        background-color: black;
+        width: fit-content;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .images > *{
+        text-align: center;
+        position: relative;
+    }
+
+    .sub * {
+        text-align: center;
+        margin-bottom: 8px;
+        white-space: nowrap;
+    }
+}
