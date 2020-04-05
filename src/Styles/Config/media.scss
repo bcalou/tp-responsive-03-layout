@@ -1,0 +1,23 @@
+@mixin large {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @mixin medium {
+    @media (min-width: 675px) {
+      @content;
+    }
+  }
+
+  body {
+    background-color: green;
+  
+    @include medium {
+      background-color: yellow;
+    }
+  
+    @include large {
+      background-color: red;
+    }
+  }
