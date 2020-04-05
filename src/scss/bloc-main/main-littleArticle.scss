@@ -1,11 +1,20 @@
 .littleArticle {
-    display: grid;
+    @include medium {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
     @include large {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
     .littleArticle__article1 {
+        @include medium {
+            grid-column: 1;
+            grid-row: 1;
+            background: rgb(111, 124, 196);
+        }
         @include large {
             grid-column: 1;
             grid-row: 1;
@@ -14,6 +23,11 @@
     }
     
     .littleArticle__article2 {
+        @include medium {
+            grid-column: 2;
+            grid-row: 1;
+            background: rgb(173, 15, 15);
+        }
         @include large {
             grid-column: 2;
             grid-row: 1;
@@ -22,6 +36,11 @@
     }
 
     .littleArticle__article3 {
+        @include medium {
+            grid-column: 1;
+            grid-row: 1;
+            background: rgb(111, 124, 196);
+        }
         @include large {
             grid-column: 1;
             grid-row: 2;
@@ -30,6 +49,11 @@
     }
 
     .littleArticle__article4 {
+        @include medium {
+            grid-column: 2;
+            grid-row: 2;
+            background: rgb(196, 111, 129);
+        }
         @include large {
             grid-column: 2;
             grid-row: 2;
@@ -38,6 +62,11 @@
     }
 
     .littleArticle__article5 {
+        @include medium {
+            grid-column: 1;
+            grid-row: 3;
+            background: rgb(214, 58, 188);
+        }
         @include large {
             grid-column: 1;
             grid-row: 3;
@@ -46,6 +75,11 @@
     }
 
     .littleArticle__article6 {
+        @include medium {
+            grid-column: 2;
+            grid-row: 3;
+            background: rgb(51, 189, 23);
+        }
         @include large {
             grid-column: 2;
             grid-row: 3;
