@@ -86,9 +86,6 @@
 }
 
 .nav__item {
-  font-family: 'Osward';
-  font-weight: bold;
-
   @for $i from 1 through 5 {
     &:nth-child(#{$i + 5}) {
       display: none;
