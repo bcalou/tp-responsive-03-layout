@@ -1,0 +1,34 @@
+.lists {
+  background-color: #f1f1f1;
+  @include flex-column;
+  padding-top: 5rem;
+
+  &__categories {
+    font-family: OswaldBold;
+    padding-bottom: 1rem;
+
+    @include medium {
+      display: flex;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      @include medium {
+        margin-right: 1rem;
+      }
+    }
+  }
+  &__brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc;
+    padding: 2rem 0.5rem;
+    font-family: arial;
+    font-size: 0.9rem;
+
+    li {
+      margin: 0.5rem 0.8rem;
+    }
+  }
+}
