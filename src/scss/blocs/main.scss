@@ -91,7 +91,6 @@
   }
 
   &__events {
-    height: 40vh;
 
     @include large {
       grid-area: g;
@@ -405,13 +404,18 @@
 
 .events {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @include large {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .firstEvent {
-
+  height: 40vh;
   
 
   &__title {
@@ -425,6 +429,7 @@
 }
 
 .secondEvent {
+  height: 40vh;
 
   &__title {
     background-color: $white;
@@ -437,6 +442,7 @@
 }
 
 .thirdEvent {
+  height: 40vh;
 
   &__title {
     background-color: $white;
