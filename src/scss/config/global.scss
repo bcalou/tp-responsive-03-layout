@@ -40,5 +40,17 @@ $sourceSerifProRegular: "SourceSerifPro-Regular";
   
 }
 
+@mixin anotherInfoText {
+  font-size: 14px;
+  font-family: $sourceSerifProRegular;
+}
+
+@mixin anotherInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 
