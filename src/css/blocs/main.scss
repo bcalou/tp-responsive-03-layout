@@ -19,6 +19,8 @@
 
   @include large {
     grid-area: primaryInfo;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 
