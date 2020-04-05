@@ -1,11 +1,60 @@
-body {
-  background-color: green;
+.main {
+  margin: 15px;
+  display: grid;
+}
 
-  @include medium {
-    background-color: yellow;
+.primaryInfo {
+  display: grid;
+  border-bottom: 1px solid lightgrey;
+  .primaryInfo__title {
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 5px;
   }
+  .primaryInfo__meta {
+    text-align: center;
+    color: lightgrey;
+    padding-bottom: 10px;
+  }
+}
 
-  @include large {
-    background-color: red;
+.secondaryInfo {
+  display: grid;
+  margin-top: 10px;
+  .secondaryInfo__title {
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .secondaryInfo__meta {
+    text-align: center;
+    color: lightgrey;
+    padding-bottom: 10px;
+  }
+}
+
+.thirdInfo {
+  display: grid;
+  .thirdInfo__title {
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+}
+
+.rdvInfo {
+  .rdvInfo__title {
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .rdvInfo__meta {
+    text-align: center;
+    color: lightgrey;
+    padding-bottom: 10px;
   }
 }

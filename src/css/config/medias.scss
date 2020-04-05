@@ -1,10 +1,8 @@
-/*     ??????
 @mixin small {
   @media (min-width: 673px) {
     @content;
   }
 }
-*/
 
 @mixin medium {
   @media (min-width: 768px) {
