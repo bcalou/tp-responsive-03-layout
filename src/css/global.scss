@@ -6,6 +6,24 @@ body {
   align-items: center;
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-bold.woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SourceSerifPro";
+  src: url("../assets/fonts/SourceSerifPro-regular.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SourceSerifPro";
+  src: url("../assets/fonts/SourceSerifPro-bold.woff2");
+  font-weight: bold;
+}
+
 main {
   width: 90%;
 
@@ -16,6 +34,7 @@ main {
   @include large {
     width: 1000px;
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1.5fr 0.5fr 1fr;
     grid-template-areas:
@@ -29,8 +48,6 @@ main {
 }
 
 .hero {
-  background: blue;
-  height: 200px;
   grid-area: hero;
 }
 
