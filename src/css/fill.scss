@@ -1,0 +1,7 @@
+.fill {
+  display: none;
+
+  @include large {
+    display: block;
+  }
+}
