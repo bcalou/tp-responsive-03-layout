@@ -1,6 +1,11 @@
+$SourceSerifPro-bold: "SourceSerifPro-bold", sans-serif;
+
 .header {
+  margin-top: 15px;
   &_logo {
     height: 22px;
+    transform: translate(70px, 0px);
+    position: absolute;
   }
 
   ul {
@@ -10,16 +15,96 @@
   @include large {
     ul {
       display: flex;
-      justify-content: space-around;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Oswald-bold;
+      padding-top: 25px;
+      padding-bottom: 20px;
     }
   }
 }
-.subscribe {
-  background-color: #fed500;
-  display: inline-block;
-  font-family: SourceSerifPro-bold;
-  padding: 0 10px;
-  line-height: 25px;
-  border: none;
-  border-radius: 3px;
+
+.nav {
+  top: 35px;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  transform: translate(0px, -33px);
+  //float: left;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span,
+span::before,
+span::after {
+  height: 2px;
+  background-color: black;
+  width: 100%;
+  //position: absolute;
+  top: 20px;
+}
+
+span::before,
+span::after {
+  content: "";
+  display: block;
+}
+
+span:before {
+  content: "";
+  transform: translateY(-7px);
+}
+
+span:after {
+  content: "";
+  transform: translateY(5px);
+}
+
+.b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    padding: 10px;
+  }
+}
+
+.header__user {
+  display: flex;
+  justify-content: flex-end;
+  font-family: $SourceSerifPro-bold;
+
+  .user__account {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .user__login {
+    margin-right: 5px;
+  }
+
+  .user__log {
+    display: none;
+
+    @include medium {
+      display: block;
+    }
+  }
+
+  .user__subscribe {
+    background-color: #fed500;
+    display: inline-block;
+    font-family: $SourceSerifPro-bold;
+    padding: 0 10px;
+    line-height: 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+  }
 }

@@ -1,24 +1,49 @@
+$Oswald-bold: "Oswald-bold", sans-serif;
+
 .footer {
   text-align: center;
-}
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  font-size: 14px;
 
-.footer {
   &__one {
     text-transform: uppercase;
-    @include large {
+    font-family: $Oswald-bold;
+    font-weight: bold;
+
+    li {
+      letter-spacing: 0.1rem;
+      padding-bottom: 20px;
+    }
+
+    @include medium {
+      letter-spacing: 0.1rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       padding-top: 40px;
       padding-bottom: 25px;
+
+      li {
+        margin: 0 10px;
+
+        @include large {
+          font-size: 18px;
+        }
+      }
     }
   }
+}
 
-  @include large {
-    &__two {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 20px;
-      padding-bottom: 50px;
-    }
+.footer__two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  li {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+    margin: 0 15px;
   }
 }

@@ -1,4 +1,15 @@
 $SourceSerifPro-bold: "SourceSerifPro-bold", sans-serif;
+$Oswald-bold: "Oswald-bold", sans-serif;
+
+@font-face {
+  font-family: Oswald-bold;
+  src: url(../assets/fonts/Oswald-bold.woff2);
+}
+
+@font-face {
+  font-family: SourceSerifPro-bold;
+  src: url(../assets/fonts/SourceSerifPro-bold.woff2);
+}
 
 body {
   font-family: $SourceSerifPro-bold;
