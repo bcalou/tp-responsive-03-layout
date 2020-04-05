@@ -1,24 +1,30 @@
 /*
 @mixin nametype {
-    @media (){          //min-width OR max-width
+    @media (){          //min-width OR max-width    can use     min-width and max-width
         //@content;
     }
 };
 */
 @mixin small {
-    @media () {
+    @media (min-width: 320px) and (max-width: 767px){       //Add MENU
         @content;
     }
 };
 
 @mixin medium {
-    @media () {
+    @media (min-width: 768px) and (max-width: 1023px) {     //Add FIL INFO
         @content;
     }
 };
 
 @mixin large {
-    @media () {
+    @media (min-width: 1024px) and (max-width: 1267px) {    //Add all menu last is PHOTO
+        @content;
+    }
+};
+
+@mixin infinit {
+    @media (min-width: 1267px) {    //Add for TV format ....
         @content;
     }
 };
