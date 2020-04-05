@@ -20,6 +20,7 @@
   .primaryInfo {
     height: 60vh;
     position: relative;
+    margin: 10px;
 
     @include large {
       margin-top: 24px;
@@ -91,7 +92,6 @@
 
   &__events {
     height: 40vh;
-    background-color: cornsilk;
 
     @include large {
       grid-area: g;
@@ -100,6 +100,8 @@
 }
 
 .secondaryInfo{
+
+  margin: 20px;
 
   @include medium {
     display: grid;
@@ -404,7 +406,49 @@
 .events {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.firstEvent {
+
+  
+
+  &__title {
+    background-color: $white;
+    position: relative;
+    text-align: center;
+    margin: 0 30px;
+    padding: 10px 10px;
+    bottom: 15px;
+    }
+}
+
+.secondEvent {
+
+  &__title {
+    background-color: $white;
+    position: relative;
+    text-align: center;
+    margin: 0 30px;
+    padding: 10px 10px;
+    bottom: 15px;
+    }
+}
+
+.thirdEvent {
+
+  &__title {
+    background-color: $white;
+    position: relative;
+    text-align: center;
+    margin: 0 30px;
+    padding: 10px 10px;
+    bottom: 15px;
+    }
+}
+
+
 
 
 
