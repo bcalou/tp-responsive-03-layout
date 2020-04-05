@@ -50,7 +50,7 @@
     }
 
     .imgObs{
-        background-image: url("../../assets/imgs/ad/background.png");
+        background: yellow;
         @include medium {
             grid-column: 1 /span 4;
         }
