@@ -1,7 +1,6 @@
 .main {
   padding: 20px 10px 20px 10px;
   width: 100%;
-  max-width: 660px;
   @include large {
     max-width: 1024px;
     display: grid;
@@ -93,7 +92,7 @@
 
 .main__subarticles {
   border: solid black 2px;
-  background-color: skyblue;
+  background-color: yellowgreen;
   height: 320px;
   @include large {
     grid-area: sub-article;
@@ -123,11 +122,11 @@
 //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS
 //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS
 .rdv {
+  background-color: darkgoldenrod;
   border: solid black 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   @include medium {
     flex-direction: row;
     justify-content: space-between;
@@ -160,7 +159,6 @@
 
 // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE // SUBARTICLE // SUBARTICLE // SUBARTICLE
 // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE // SUBARTICLE // SUBARTICLE // SUBARTICLE
-
 .subarticles {
   border: solid black 2px;
   display: flex;
