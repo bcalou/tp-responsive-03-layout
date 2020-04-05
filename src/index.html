@@ -4,8 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.scss" />
+    <title>L'Obs - Actualités du jour en direct</title>
+    <link rel="icon" href="https://www.nouvelobs.com/icons/lobs/favicon.ico" />
+    <link rel="stylesheet" href="./styles/styles.scss" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class='header__container'>
+        <div class='tools'>
+          <div class='burger__menu'>
+            <span class='burger__bar'></span>
+          </div>
+          <svg class='search__logo' 
+            version="1.0" id="Recherche" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="19.498px" height="19.496px" viewBox="5.251 5.252 19.498 19.496"
+    style="enable-background:new 5.251 5.252 19.498 19.496;" xml:space="preserve">
+  <path style="fill:#666666;" d="M24.749,23.238c0,0.406-0.15,0.758-0.453,1.059c-0.299,0.303-0.652,0.451-1.061,0.451
+    c-0.406,0-0.756-0.145-1.051-0.441l-4.009-4.01c-0.698,0.479-1.444,0.838-2.233,1.084c-0.791,0.244-1.604,0.367-2.444,0.367
+    c-1.134,0-2.204-0.217-3.211-0.652c-1.008-0.432-1.882-1.02-2.624-1.762c-0.741-0.742-1.329-1.615-1.763-2.625
+    c-0.433-1.004-0.649-2.076-0.649-3.21s0.217-2.202,0.65-3.212C6.335,9.28,6.923,8.406,7.664,7.664
+    c0.742-0.741,1.616-1.329,2.624-1.761c1.008-0.435,2.078-0.651,3.211-0.651c1.134,0,2.204,0.217,3.211,0.651
+    c1.008,0.435,1.882,1.021,2.624,1.761c0.742,0.742,1.33,1.616,1.767,2.623c0.434,1.01,0.647,2.078,0.647,3.213
+    c0,0.841-0.122,1.657-0.368,2.456c-0.24,0.797-0.604,1.541-1.08,2.224l4.01,4.01C24.603,22.48,24.749,22.83,24.749,23.238z
+    M18.745,13.499c0-0.728-0.139-1.409-0.409-2.046c-0.271-0.635-0.646-1.193-1.123-1.669c-0.476-0.475-1.03-0.851-1.668-1.122
+    c-0.638-0.272-1.317-0.409-2.046-0.409c-0.727,0-1.409,0.135-2.046,0.409c-0.638,0.272-1.193,0.647-1.669,1.122
+    c-0.475,0.476-0.85,1.032-1.123,1.669c-0.272,0.637-0.409,1.318-0.409,2.046s0.137,1.41,0.409,2.046
+    c0.273,0.639,0.648,1.193,1.123,1.67c0.476,0.475,1.031,0.848,1.669,1.123c0.636,0.27,1.317,0.408,2.046,0.408
+    s1.41-0.139,2.047-0.408c0.639-0.275,1.191-0.648,1.669-1.123c0.478-0.477,0.853-1.031,1.123-1.67
+    C18.606,14.91,18.745,14.227,18.745,13.499z"/>
+          </svg>
+        </div>
+      </div>
+      <div class='obs__logo'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 631.407 164.583">
+          <path id="Tracé_355" data-name="Tracé 355" d="M950.565,72.033c0-17.248-22.085-30.663-46.587-30.663-43.484,0-61.051,22.358-59.728,44.853,2.738,46.04,92.535,35.864,92.535,77.752,0,21.263-13.416,38.055-42.617,38.465-6.753,0-14.556,1-28.609-6.525,4.563-3.65,8.35-6.89,8.122-18.023-.182-10.175-6.8-20.077-18.069-20.077-5.886,0-12.183,5.977-12.183,14.51,0,17.02,23,32.944,50.739,32.944,32.578,0,63.469-16.7,63.469-50.055,0-51.561-91.029-42.207-91.029-76.474,0-20.077,14.647-34.769,37.051-34.4,12.365.228,18.525,2.692,23.452,5.247a42.442,42.442,0,0,0-4.334,16.791c0,9.947,5.749,19.666,16.517,19.666,5.977,0,11.271-5.7,11.271-14.008ZM757.419,120.4c23.271-2.1,45.72-14.921,45.72-37.279,0-30.754-27.057-41.7-60.184-41.7H668.763v1.551c11.042,4.654,20.9,3.65,20.442,28.29V176.112c.091,26.191-9.4,23.636-20.442,28.29v1.551H747.7c37.279,0,61.462-11.635,61.462-42.891.046-27.514-28.518-41.75-51.743-42.663Zm-17.065-1.825H712.384v-74.1h27.971c23.726,0,39.924,14.008,39.924,37.507,0,23.545-16.2,36.594-39.924,36.594Zm45.309,43.393c0,25.142-14.92,39.606-41.385,39.606H712.385v-78.8h31.894c26.465,0,41.385,14.008,41.385,39.2Zm-134.6-37.279c0-50.192-39.331-82.862-81.447-82.862-42.07,0-81.447,32.67-81.447,82.862s39.331,81.22,81.447,81.22,81.447-31.028,81.447-81.22Zm-29.841,0c0,45.857-13.734,77.706-51.606,78.208-42.435.547-52.108-32.351-52.108-78.208,0-45.9,14.373-79.851,52.108-79.851,38.738.046,51.606,33.994,51.606,79.851Zm-180.05,81.22,11.863-52.154h-1.916c-11.544,24.594-30.48,49.051-54.936,49.051h-29.75V70.025c0-15.286,5.019-21.719,15.513-26.328V41.416H326.321v1.916c10.495,4.654,17.156,11.362,17.156,26.647V177.207c0,15.286-6.753,22.267-17.247,26.921v1.78Zm9.4-141.4c0-12.776-5.976-20.944-16.471-20.944a16.656,16.656,0,0,0-16.289,16.7,19.4,19.4,0,0,0,7.528,14.921c7.027,4.974,10.175,10.266,10.175,16.335,0,6.753-5.11,13.324-12.091,18.982a39.194,39.194,0,0,1-9.217,4.928v2.19c20.669-4.517,36.365-37.142,36.365-53.112Z" transform="translate(-326.23 -41.37)"/>
+        </svg>
+      </div>
+      <div class='user__features'>
+        <div class='user__acount'>
+          <svg class='user__logo' version="1.0" id="User" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="21.996px" height="22px" viewBox="4.002 4 21.996 22" style="enable-background:new 4.002 4 21.996 22;"
+	 xml:space="preserve" >
+<path style="fill:#000000;" d="M15,4C8.936,4,4.002,8.935,4.002,15.001C4.002,21.064,8.936,26,15,26
+	c6.064,0,10.998-4.936,10.998-10.999C25.998,8.935,21.064,4,15,4z M21.782,22.537c-0.245-0.104-0.496-0.203-0.769-0.311
+	c-0.322-0.125-0.673-0.254-1.041-0.389c-0.359-0.131-0.677-0.25-0.941-0.355c-0.27-0.107-0.487-0.203-0.654-0.285
+	c-0.441-0.232-0.779-0.551-1.005-0.953c-0.229-0.42-0.341-0.867-0.341-1.346c0-0.313,0.18-0.684,0.539-1.102
+	c0.216-0.229,0.406-0.582,0.574-1.063c0.515-0.217,0.771-0.646,0.771-1.289c0-0.479-0.085-0.834-0.251-1.062l0.08-0.682
+	c0.027-0.243,0.059-0.497,0.081-0.772l0.011-0.181l-0.011-0.183c-0.015-0.563-0.101-1.063-0.263-1.499
+	c-0.162-0.438-0.375-0.794-0.638-1.067c-0.252-0.275-0.538-0.505-0.862-0.683c-0.32-0.181-0.65-0.307-0.984-0.379
+	c-0.504-0.107-0.956-0.155-1.355-0.143c-0.402,0.011-0.668,0.053-0.801,0.123c-0.168,0.098-0.313,0.225-0.439,0.388
+	c-0.125,0.16-0.213,0.292-0.26,0.387L13.15,9.913L13.13,9.931c-0.229-0.096-0.511-0.063-0.845,0.094
+	c-0.338,0.142-0.611,0.411-0.827,0.809c-0.155,0.272-0.251,0.585-0.287,0.932c-0.059,0.383-0.078,0.652-0.053,0.807l0.053,0.361
+	l0.09,0.844l0.072,0.611c-0.168,0.202-0.252,0.557-0.252,1.063c0,0.646,0.258,1.072,0.771,1.287
+	c0.166,0.472,0.354,0.822,0.559,1.064c0.369,0.405,0.556,0.77,0.556,1.1c0,0.49-0.118,0.938-0.356,1.347
+	c-0.229,0.418-0.557,0.733-0.987,0.952c-0.167,0.082-0.389,0.179-0.664,0.287c-0.275,0.104-0.592,0.229-0.951,0.354
+	c-0.681,0.257-1.271,0.486-1.791,0.695c-2.065-1.86-3.374-4.55-3.374-7.538C4.843,9.4,9.399,4.841,15,4.841
+	c5.602,0,10.157,4.559,10.157,10.16C25.157,17.99,23.85,20.678,21.782,22.537z"/>
+</svg>
+          <p>M'identifier</p>
+        </div>
+        <div class='subscribe__cta'>
+          <p>Je m'abonne</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class='container__articles'>
+        <article class='article article__first'>
+          <img class='article__img' src='./assets/imgs/article1.jpg' alt='homme âgé de profil portant un béret rouge et un magazine "La CGT" devant lui concernant les retraités avec pour titre "pour une retraite digne du vint et unième siècle"'>
+          <div class='article__title'>
+            <h2>Ces 10 graphiques éclairent l'emploi 
+              des seniors (et ce n'est pas réjouissant)</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Économie</span>
+            <time datetime="2020-01-14 19:11:50">- Publié il y a 2 heures</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/article2.jpg' alt='Portrait d Édouard Philippe de profil'>
+          <div class='article__title'>
+            <h2>Comment la réforme des retraite a été dévoyée</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Édito</span>
+            <time datetime="2020-01-14 07:11:50">- Publié il y a 14 heures</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/article3.jpg' alt='Portrait de Sègolène Royal devant un micro'>
+          <div class='article__title'>
+            <h2>Ségolène Royal estime qu'elle a été licenciée de sa fonction d'ambassadrice des pôles</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Politique</span>
+            <time datetime="2020-01-14 18:11:50">- Publié il y a 3 heures</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/article4.jpg' alt='image d une vague'>
+          <div class='article__title'>
+            <h2>À quoi ressembleront les océans en 2049 ? Suivez notre conférence en direct</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>2049</span>
+            <time datetime="2020-01-14 17:11:50">- Publié il y a 4 heures</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/article5.jpg' alt='personnes en deuil à Téhéran brandissant une affiche avec un avion et pour légende Inocence'>
+          <div class='article__title'>
+            <h2>Comment l'avion abattu à Téhéran fragilise le régime des mollahs</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Monde</span>
+            <time datetime="2020-01-14 15:11:50">- Publié il y a 6 heures</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/article6.jpg' alt='portrait d Elif Shafak'>
+          <div class='article__title'>
+            <h2>Elif Shafak, star du roman turc et bête noire d'Erdogan</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Roman</span>
+            <time datetime="2020-01-14 15:11:50">- Publié il y a 6 heures</time>
+          </div>
+        </article>
+
+        <!-- Deuxième vague d'articles -->
+        <article class='article__type2'>
+          <img class='article__type2__img' src='./assets/imgs/article7.jpg'>
+          <h3>La motion de censure de Mélanchon fait pschitt</h3>
+        </article>
+        <article class='article__type2'>
+          <img class='article__type2__img' src='./assets/imgs/article8.jpg'>
+          <h3>Pourquoi la réforme des retraites vous fera travailler plus longtemps</h3>
+        </article>
+        <article class='article__type2'>
+          <img class='article__type2__img' src='./assets/imgs/article9.jpg'>
+          <h3>La folle tournée médiatique de Carlos Ghosn</h3>
+        </article>
+        <article class='article__type2'>
+          <img class='article__type2__img' src='./assets/imgs/article10.jpg'>
+          <h3>En Iran, la légitimité perdue des mollahs</h3>
+        </article>
+        <article class='article__type2'>
+          <img class='article__type2__img' src='./assets/imgs/article11.jpg'>
+          <h3>Benoît XVI retire son nom d'un livre controversé</h3>
+        </article>
+        <article class='article__type2'>
+          <img class='article__type2__img' src='./assets/imgs/article12.jpg'>
+          <h3>Affaire Preynat : pourquoi un procès 30 ans après les faits</h3>
+        </article>
+      </div>
+
+      <!-- Abonnement -->
+      <div class='obs__abo'>
+        <div class='obs__abo__infos'>
+          <p class='obs__abo__text'>Web + tablette + mobile à partir de 1€</p>
+          <div class='subscribe__cta2'>
+            Je m'abonne
+          </div>
+        </div>
+        <img class='obs__abo__cover1' src='./assets/imgs/ad/cover1.png'>
+      </div>
+      <!-- Rdv de l'obs -->
+      <div class='obs__rdv'>
+        <h1 class='obs__rdv__title'>le rendez-vous de l'obs</h1>
+      </div>
+      <div class='obs__rdv__container'>
+        <article class='article article__rdv'>
+          <img class='article__img' src='./assets/imgs/rdv1.png' alt='portrait d Elif Shafak'>
+          <div class='article__title'>
+            <h2>Gagnez vos places pour la pièce "An Iliad" au théâtre Rond-Point</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Club Abonnés</span>
+            <time datetime="2020-01-13 15:11:50">- Publié il y a 1 jour</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/rdv2.jpg' alt='portrait d Elif Shafak'>
+          <div class='article__title'>
+            <h2>Gagnez vos places pour l'exposition hommage à Vladimir Velickovic</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Club Abonnés</span>
+            <time datetime="2020-01-13 15:11:50">- Publié il y a 1 jour</time>
+          </div>
+        </article>
+        <article class='article'>
+          <img class='article__img' src='./assets/imgs/rdv3.jpg' alt='portrait d Elif Shafak'>
+          <div class='article__title'>
+            <h2>Gagnez vos places de cinéma "Revenir" de Jessica Palud</h2>
+          </div>
+          <div class='article__more'>
+            <span class='article__category'>Club Abonnés</span>
+            <time datetime="2020-01-13 15:11:50">- Publié il y a 1 jour</time>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class='category__container'>
+        <p>politique</p>
+        <p>monde</p>
+        <p>économie</p>
+        <p>culture</p>
+        <p>opinion</p>
+        <p>débat</p>
+        <p>photos</p>
+        <p>vidéos</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,135 @@
+.container__articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    &__first {
+        margin-top: 50px;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+    }
+    &__title {
+        position: relative;
+        margin: -5px 20px 0px;
+        background-color:white;
+        padding: 10px 10px;
+        z-index: 1;
+        font-family: SSPb;
+        font-size: 18px;
+        text-align: center;
+        line-height: 140%;
+        transform: translateY(-15px);
+    }
+    &__more {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        color: lightgrey;
+        transform: translateY(-15px);
+    }
+    
+
+    //seconde type articles
+    
+    &__type2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 150%;
+    margin-bottom: 20px;
+    &__img {
+        width: 90px;
+        height: auto;
+        margin-right: 20px;
+        }
+    }
+}
+
+.obs__abo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    height: 130px;
+    background-image: url(../assets/imgs/ad/background.png);
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    &__text {
+        margin-bottom: 20px;
+    }
+    &__cover1 {
+        width: 80px;
+        height: auto;
+        margin-right: 10px;
+    }
+    .subscribe__cta2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        width: 130px;
+        height: 30px;
+    }
+}
+
+// RDV DE L'OBS
+
+.obs__rdv {
+    &__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__title {
+        font-family: Oswald;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-top: 1px solid grey;
+    }
+}
+
+// FOOTER
+.category__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Oswald;
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: #f1f1f1;
+    & > p {
+        margin-bottom: 20px;
+    }
+}

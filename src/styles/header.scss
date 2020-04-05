@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    .tools {
+        display: flex;
+        align-items: center;
+        .search__logo {
+            height: auto;
+            display: none;
+            flex: none;
+        }
+        .burger {
+            &__menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
+            &__bar {
+                display: block;
+                width: 25px;
+                height: 2px;
+                background-color: black;
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 25px;
+                    height: 2px;
+                    background-color: inherit;
+                    transform: translateY(-7px);
+    
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 25px;
+                    height: 2px;
+                    background-color: inherit;
+                    transform: translateY(7px);
+                }
+                }
+                
+        }
+    }
+    .obs__logo {
+        width: 80px;
+        height: auto;
+        margin: 10px;
+    }
+    .user {
+        &__features {
+            display: flex;
+            font-size: 12px;
+        }
+        &__acount {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        &__acount > p {
+            display: none;
+        }
+        &__logo {
+            height: auto;
+            fill: black;
+        }
+    }
+    .subscribe__cta {
+        font-family: SSPb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 90px;
+        font-weight: bold;
+        background-color: #fed500;
+        border-radius: 5px;
+    }
+    
+};

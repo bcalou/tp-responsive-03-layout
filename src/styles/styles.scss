@@ -1,0 +1,35 @@
+@import "./reset.scss";
+@import "./mixins.scss";
+@import "./header.scss";
+@import "./articles.scss";
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../assets/fonts/Oswald-bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SSP';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../assets/fonts/SourceSerifPro-regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SSPb';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../assets/fonts/SourceSerifPro-bold.woff2) format('woff2');
+}
+
+
+body {
+    font-family: SSP;
+    scroll-behavior: smooth;
+}
+
+main {
+    justify-content: center;
+}
