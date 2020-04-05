@@ -12,9 +12,16 @@
   }
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.article__container {
+  padding: 15px;
+  & > img {
+    width: 390px;
+    object-fit: contain;
+  }
+}
 .main__primaryInfo {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   margin: 20px;
@@ -22,12 +29,7 @@
   h1 {
     font-size: 22px;
     text-align: center;
-    background-color: white;
-    position: absolute;
-    margin: 40px;
-    padding: 15px;
     font-family: "SourceSerifPro-bold";
-    top: 300px;
   }
   h1:hover {
     transition: 0.2s;
@@ -36,7 +38,6 @@
   p {
     font-size: 12px;
     color: grey;
-    margin-top: 70px;
     margin-bottom: 20px;
   }
 
@@ -59,6 +60,15 @@
   background: blue;
 }
 
+.subscriber {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  margin: -48px auto 0;
+  padding: 15px;
+  width: 80%;
+}
 .main__thirdInfo {
   @include large {
     grid-template-areas:
@@ -85,11 +95,9 @@
   h1 {
     font-size: 18px;
     text-align: center;
-    background-color: white;
-    position: absolute;
-    margin: 40px;
-    padding: 15px;
+
     font-family: "SourceSerifPro-bold";
+    flex-grow: 1;
   }
   h1:hover {
     transition: 0.2s;
@@ -99,19 +107,10 @@
     font-size: 12px;
     color: grey;
     margin-bottom: 20px;
-    margin-top: 50px;
-  }
-  img {
-    object-fit: contain;
-    width: 390px;
   }
 }
 
 .article__first {
-  h1 {
-    top: 620px;
-  }
-
   @include large {
     grid-area: one;
   }
@@ -121,12 +120,6 @@
 }
 
 .article__two {
-  h1 {
-    top: 910px;
-  }
-  p {
-    margin-top: 62px;
-  }
   @include large {
     grid-area: article__two;
   }
@@ -135,13 +128,6 @@
 .article__tree {
   border-bottom: solid lightgrey 1px;
 
-  h1 {
-    top: 1220px;
-  }
-  p {
-    margin-bottom: 40px;
-    margin-top: 72px;
-  }
   @include large {
     grid-area: article__tree;
   }
@@ -153,24 +139,12 @@
   height: 15px;
 }
 .article__four {
-  h1 {
-    top: 1500px;
-  }
-
   @include large {
     grid-area: article__four;
   }
 }
 
 .article__five {
-  h1 {
-    top: 1850px;
-  }
-
-  p {
-    margin-top: 77px;
-  }
-
   @include large {
     grid-area: article__five;
   }
@@ -207,7 +181,6 @@
 }
 
 .image__othersArticle {
-  width: 90px;
   height: 90px;
 }
 .secondary__ArticleFirst {
@@ -289,6 +262,7 @@
     grid-area: five;
   }
 }
+
 .main__sixInfo {
   title {
     font-size: 24px;
@@ -296,32 +270,5 @@
   }
   @include large {
     grid-area: six;
-  }
-}
-
-.rdv__first {
-  h1 {
-    top: 3000px;
-  }
-  p {
-    margin-top: 65px;
-  }
-}
-
-.rdv__secondary {
-  h1 {
-    top: 3300px;
-  }
-  p {
-    margin-top: 65px;
-  }
-}
-
-.rdv__tree {
-  h1 {
-    top: 3600px;
-  }
-  p {
-    margin-top: 65px;
   }
 }
