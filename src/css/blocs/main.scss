@@ -1,22 +1,59 @@
 .main{
-  @include large{
+
+  @include medium{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(6, 150px);
-    grid-gap: 5px;
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: "main__primaryInfo main__secondaryInfo"
     "main__terceryInfo main__terceryInfo"
     "main__fourthInfo ."
     "main__fifthInfo ."
     "main__sixthInfo main__sixthInfo";
+    grid-gap: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    .main__terceryInfo{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
 
+    }
+    .main__fourthInfo{
+      grid-area: main__fourthInfo;
+      background: blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      div{
+        display: flex;
+        margin-bottom: 8px;
+        text-align: justify;
+      }
+      p{
+        width: 200px;
+        margin-left: 8px;
+      }
+    }
+
+  }
+
+  @include large{
+    grid-template-areas: "main__primaryInfo main__secondaryInfo"
+    "main__terceryInfo main__terceryInfo"
+    "main__fourthInfo"
+    "main__fifthInfo"
+    "main__sixthInfo main__sixthInfo";
+    // .main__terceryInfo{
+    //   display: grid;
+    //   grid-template-columns: 2fr 1fr;
+    // }
   }
 }
 
 .main__primaryInfo{
   grid-area: main__primaryInfo;
   background: yellow;
-
 }
 .main__secondaryInfo{
   grid-area: main__secondaryInfo;
@@ -27,16 +64,26 @@
   grid-area: main__terceryInfo;
   background: red;
 }
-.main__fourthInfo{
-  grid-area: main__fourthInfo;
-  background: blue;
-}
+
+
 .main__fifthInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
   grid-area: main__fifthInfo;
-  background: purple;
+  background: #fed500;
+img{
+    align-self: flex-end;
+  }
 }
 .main__sixthInfo{
   grid-area: main__sixthInfo;
   background: pink;
-  
+  .sixthInfo__articles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
