@@ -1,47 +1,65 @@
-main {
-  width: 100vw;
-  height: 200vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 2fr 1fr 1fr 1fr 0.5fr 1fr;
-  // grid-template-rows: auto;
-  grid-template-areas:
-    "hero hero fill"
-    "articles articles articles"
-    "articles articles articles"
-    "links links ."
-    "pub pub ."
-    "subs subs subs";
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  grid-gap: 1em;
+main {
+  width: 90%;
+
+  @include medium {
+    width: 666px;
+  }
+
+  @include large {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1.5fr 0.5fr 1fr;
+    grid-template-areas:
+      "hero aside"
+      "articles articles"
+      "articles articles"
+      "links ."
+      "ad ."
+      "subs subs";
+  }
 }
 
 .hero {
   background: blue;
+  height: 200px;
   grid-area: hero;
 }
 
 .articles {
   background: yellowgreen;
+  height: 200px;
   grid-area: articles;
 }
 
 .links {
   background: purple;
+  height: 150px;
   grid-area: links;
 }
 
 .fill {
   background: red;
-  grid-area: fill;
+  height: 200px;
+  grid-area: aside;
 }
 
-.pub {
+.ad {
   background: pink;
-  grid-area: pub;
+  grid-area: ad;
+  height: 50px;
 }
 
 .subs {
   background: sandybrown;
   grid-area: subs;
+  height: 100px;
 }
