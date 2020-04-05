@@ -1,4 +1,8 @@
-@import "config/medias";
+@import "../../config/medias.scss";
+@import "main.scss";
+@import "header.scss";
+@import "footer.scss";
+
 body {
     background-color: green;
   
@@ -9,4 +13,4 @@ body {
     @include large {
       background-color: red;
     }
-  }
+}

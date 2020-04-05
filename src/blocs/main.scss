@@ -1,0 +1,171 @@
+.oneInfo { grid-area: item1; }
+.twoInfo { grid-area: item2; }
+.threeInfo { grid-area: item3; }
+.fourInfo { grid-area: item4; }
+.fiveInfo { grid-area: item5; }
+.sixInfo { grid-area: item6; }
+.sevenInfo { grid-area: item7; }
+.eightInfo { grid-area: item8; }
+.nineInfo { grid-area: item9; }
+.tenInfo { grid-area: item10; }
+.elevenInfo { grid-area: item11; }
+.twelveInfo { grid-area: item12; }
+
+
+
+.main {
+  display: grid;
+    
+  grid-template-columns: auto;
+  grid-template-rows: 300px 200px 200px 200px 200px 200px 250px 150px 200px 200px 200px;
+  grid-template-areas:  ' item1 '
+                        ' item3 '
+                        ' item4 '
+                        ' item5 '
+                        ' item6 '
+                        ' item7 '
+                        ' item8 '
+                        ' item9 '
+                        ' item10 '
+                        ' item11 '
+                        ' item12 '
+                        ;
+  
+  .display {
+    display: none;
+  }
+
+  @include medium {
+    display: grid;
+    
+    grid-template-columns: auto auto ;
+    grid-template-rows: 300px 200px 200px 200px 250px 150px 200px 200px;
+    grid-template-areas:  ' item1 item1 '
+                          ' item3 item4 '
+                          ' item5 item6 '
+                          ' item7 . '
+                          ' item8 item8 '
+                          ' item9 item9 '
+                          ' item10 item11 '
+                          ' item12 . '
+                          ;
+    
+    .display {
+      display: none;
+    }
+  }
+
+  @include large {
+    display: grid;
+    
+    grid-template-columns: auto 400px 400px 300px auto;
+    grid-template-rows: 400px 200px 200px 300px 150px 200px;
+    grid-template-areas:  '. item1 item1 item2 . '
+                          '. item3 item4 item5 .'
+                          '. item6 item7 . .'
+                          '. item8 item8 . .'
+                          '. item9 item9 . .'
+                          '. item10 item11 item12 .'
+                          ;
+  
+    .display {
+      display: grid;
+    }
+  }
+}
+
+.main__oneInfo {
+  background: yellow; /* Pour tester */
+
+  @include large {
+    grid-area: item1;
+  }
+}
+
+.main__twoInfo {
+  background: green; /* Pour tester */
+
+  @include large {
+    grid-area: item2;
+  }
+}
+
+.main__threeInfo {
+  background: blue; /* Pour tester */
+
+  @include large {
+    grid-area: item3;
+  }
+}
+
+.main__fourInfo {
+  background: black; /* Pour tester */
+
+  @include large {
+    grid-area: item4;
+  }
+}
+
+.main__fiveInfo {
+  background: blueviolet; /* Pour tester */
+
+  @include large {
+    grid-area: item5;
+  }
+}
+
+.main__sixInfo {
+  background: orange; /* Pour tester */
+
+  @include large {
+    grid-area: item6;
+  }
+}
+
+.main__sevenInfo {
+  background: red; /* Pour tester */
+
+  @include large {
+    grid-area: item7;
+  }
+}
+
+.main__eightInfo {
+  background:darkgoldenrod; /* Pour tester */
+
+  @include large {
+    grid-area: item8;
+  }
+}
+
+.main__nineInfo {
+  background: pink; /* Pour tester */
+
+  @include large {
+    grid-area: item9;
+  }
+}
+
+.main__tenInfo {
+  background:brown; /* Pour tester */
+
+  @include large {
+    grid-area: item10;
+  }
+}
+
+.main__elevenInfo {
+  background: darkgreen; /* Pour tester */
+
+  @include large {
+    grid-area: item11;
+  }
+}
+
+.main__twelveInfo {
+  background: gold; /* Pour tester */
+
+  @include large {
+    grid-area: item12;
+  }
+}
