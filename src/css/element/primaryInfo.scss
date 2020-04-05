@@ -1,1 +1,9 @@
-
+.primaryInfo {
+  &__content {
+    width: 100%;
+    background-color: white;
+    font-family: SourceSerifPro-bold;
+    font-size: 36px;
+    padding: 1rem 3rem;
+  }
+}

@@ -1,0 +1,13 @@
+.appoinement {
+  &__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include small {
+      flex-direction: row;
+    }
+  }
+}

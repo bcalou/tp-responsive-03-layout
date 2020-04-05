@@ -1,16 +1,19 @@
 @import "./vendor/reset.scss";
 @import "./config/mixin.scss";
+@import "./config/font.scss";
 @import "./bloc/header.scss";
 @import "./bloc/main.scss";
+@import "./bloc/footer.scss";
 @import "./element/primaryInfo.scss";
 @import "./element/secondaryArticle.scss";
 @import "./element/primaryArticle.scss";
+@import "./element/advertising.scss";
+@import "./element/apoinement.scss";
 
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
-h1 {
-  color: red;
+img {
+  max-width: 100%;
 }

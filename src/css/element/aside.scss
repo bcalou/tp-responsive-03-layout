@@ -1,0 +1,16 @@
+.aside {
+  width: 100%;
+  height: 100%;
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &--date {
+      width: 10%;
+    }
+    &--text {
+      width: 10%;
+    }
+  }
+}
