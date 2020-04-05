@@ -48,7 +48,7 @@
     }
 
     .imgObs{
-        background: yellow;
+        background: var(--primary-color);
         @include medium {
             grid-column: 1 /span 4;
         }

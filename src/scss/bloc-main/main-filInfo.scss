@@ -40,9 +40,10 @@
     }
 
     .updateArticle__filInfo5 {
-        @include large {}
+        @include large {
         grid-column: 1;
         grid-row: 5;
         background: orange;
     }
+}
 }
