@@ -11,7 +11,7 @@
     height: 90%;
   }
 
-  @include medium {
+  @include small {
     &:nth-child(1) {
       grid-row: 1;
       grid-column: 1 / span 2;
