@@ -18,32 +18,26 @@
 @include large {
   .firstInfo {
     grid-area: firstInfo;
-    background-color: red;
   }
 
   .fill {
     grid-area: fills;
-    background-color: green;
   }
 
   .secondaryInfo {
     grid-area: secondaryInfo;
-    background-color: yellow;
   }
 
   .thirdInfo {
     grid-area: thirInfo;
-    background-color: blue;
   }
 
   .pub {
     grid-area: pub;
-    background-color: pink;
   }
 
   .fourthInfo {
     grid-area: fourthInfo;
-    background-color: brown;
   }
 }
 
