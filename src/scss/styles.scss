@@ -1,4 +1,15 @@
-@import 'global/mixins';
-@import 'global/header';
-@import 'global/footer';
-@import 'global/main';
+@import "global/reset";
+@import "global/mixins";
+@import "global/header";
+@import "global/footer";
+@import "global/main";
+@import "global/body";
+@import "global/main_arti";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}

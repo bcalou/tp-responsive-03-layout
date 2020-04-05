@@ -1,11 +1,141 @@
-body {
-    background-color: green;
-  
-    @include medium {
-      background-color: yellow;
-    }
-  
-    @include large {
-      background-color: red;
-    }
+.main {
+  padding: 20px 10px 20px 10px;
+  width: 100%;
+  max-width: 660px;
+  @include large {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "primary-info primary-info fil-info"
+      "article article article"
+      "sub-article sub-article ."
+      "abo abo ."
+      "rdv rdv rdv";
   }
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.main__firstinfo {
+  border: solid black 2px;
+  background-color: gold;
+  height: 450px;
+  @include large {
+    grid-area: primary-info;
+  }
+}
+
+.main__fillinfo {
+  border: solid black 2px;
+  display: none;
+  background-color: orangered;
+  @include large {
+    display: block;
+    grid-area: fil-info;
+  }
+}
+
+.main__articles {
+  border: solid black 2px;
+  background-color: purple;
+  @include large {
+    grid-area: article;
+  }
+}
+
+.main__subarticles {
+  border: solid black 2px;
+  background-color: skyblue;
+  height: 320px;
+  @include large {
+    grid-area: sub-article;
+  }
+}
+
+.main__abonnement {
+  border: solid black 2px;
+  background-color:yellow;
+  height: 320px;
+  @include large {
+    grid-area: abo;
+  }
+}
+.main__rdv {
+  border: solid black 2px;
+ 
+  height: 320px;
+  @include large {
+    grid-area: rdv;
+  }
+}
+.fillinfo__article{
+  border: black solid 2px;
+}
+
+//RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS
+//RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS //RENDEZ_VOUS
+.rdv {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include medium {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include large {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+
+.rdv__article {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border: solid black 2px;
+
+  @include medium {
+    margin: 0px;
+    width: 190px;
+    height: 200px;
+  }
+
+  @include large {
+    width: 100%;
+  }
+}
+
+// SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE // SUBARTICLE // SUBARTICLE // SUBARTICLE
+// SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE  // SUBARTICLE // SUBARTICLE // SUBARTICLE // SUBARTICLE
+
+.subarticles {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+
+.sub__article {
+  border: solid black 2px;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+
+  @include medium {
+    margin: 0;
+  }
+}
