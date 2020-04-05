@@ -19,16 +19,15 @@
   align-items: center;
   margin: 20px;
   border-bottom: solid lightgrey 1px;
-
   h1 {
     font-size: 22px;
     text-align: center;
     background-color: white;
     position: absolute;
-    top: 300px;
-    margin: 30px;
-    padding: 10px;
+    margin: 40px;
+    padding: 15px;
     font-family: "SourceSerifPro-bold";
+    top: 300px;
   }
   h1:hover {
     transition: 0.2s;
@@ -40,6 +39,7 @@
     margin-top: 70px;
     margin-bottom: 20px;
   }
+
   img {
     object-fit: cover;
     width: 420px;
@@ -75,7 +75,8 @@
       "article__four article__five .";
   }
 }
-.article__first {
+
+.article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +87,6 @@
     text-align: center;
     background-color: white;
     position: absolute;
-    top: 620px;
     margin: 40px;
     padding: 15px;
     font-family: "SourceSerifPro-bold";
@@ -105,6 +105,13 @@
     object-fit: contain;
     width: 390px;
   }
+}
+
+.article__first {
+  h1 {
+    top: 620px;
+  }
+
   @include large {
     grid-area: one;
   }
@@ -112,142 +119,56 @@
     grid-area: article__first;
   }
 }
-.article__two {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
 
+.article__two {
   h1 {
-    font-size: 18px;
-    text-align: center;
-    background-color: white;
-    position: absolute;
     top: 910px;
-    margin: 40px;
-    padding: 15px;
-    font-family: "SourceSerifPro-bold";
-  }
-  h1:hover {
-    transition: 0.2s;
-    color: rgb(73, 71, 71);
   }
   p {
-    font-size: 12px;
-    color: grey;
-    margin-bottom: 20px;
     margin-top: 62px;
-  }
-  img {
-    object-fit: contain;
-    width: 390px;
   }
   @include large {
     grid-area: article__two;
   }
 }
+
 .article__tree {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
   border-bottom: solid lightgrey 1px;
 
   h1 {
-    font-size: 18px;
-    text-align: center;
-    background-color: white;
-    position: absolute;
     top: 1220px;
-    margin: 40px;
-    padding: 15px;
-    font-family: "SourceSerifPro-bold";
-  }
-  h1:hover {
-    transition: 0.2s;
-    color: rgb(73, 71, 71);
   }
   p {
-    font-size: 12px;
-    color: grey;
     margin-bottom: 40px;
     margin-top: 72px;
-  }
-  img {
-    object-fit: contain;
-    width: 390px;
   }
   @include large {
     grid-area: article__tree;
   }
 }
+.icon {
+  width: inherit;
+  height: inherit;
+  width: 15px;
+  height: 15px;
+}
 .article__four {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  &__icon {
-    width: 15px;
-    height: 15px;
-  }
   h1 {
-    font-size: 18px;
-    text-align: center;
-    background-color: white;
-    position: absolute;
     top: 1500px;
-    margin: 40px;
-    padding: 15px;
-    font-family: "SourceSerifPro-bold";
   }
-  h1:hover {
-    transition: 0.2s;
-    color: rgb(73, 71, 71);
-  }
-  p {
-    font-size: 12px;
-    color: grey;
-    margin-bottom: 20px;
-    margin-top: 72px;
-  }
-  img {
-    object-fit: contain;
-    width: 390px;
-  }
+
   @include large {
     grid-area: article__four;
   }
 }
 
 .article__five {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-
   h1 {
-    font-size: 18px;
-    text-align: center;
-    background-color: white;
-    position: absolute;
     top: 1850px;
-    margin: 40px;
-    padding: 15px;
-    font-family: "SourceSerifPro-bold";
   }
-  h1:hover {
-    transition: 0.2s;
-    color: rgb(73, 71, 71);
-  }
+
   p {
-    font-size: 12px;
-    color: grey;
-    margin-bottom: 20px;
-    margin-top: 62px;
-  }
-  img {
-    object-fit: contain;
-    width: 390px;
+    margin-top: 77px;
   }
 
   @include large {
@@ -259,12 +180,7 @@
   article {
     display: flex;
     align-items: center;
-    margin: 30px;
-  }
-
-  img {
-    width: 90px;
-    height: 90px;
+    margin: 20px;
   }
 
   p {
@@ -288,6 +204,11 @@
       "secondary__ArticleTree secondary__ArticleFour "
       "secondary__ArticleFive secondary__ArticleSix";
   }
+}
+
+.image__othersArticle {
+  width: 90px;
+  height: 90px;
 }
 .secondary__ArticleFirst {
   @include large {
@@ -369,44 +290,38 @@
   }
 }
 .main__sixInfo {
-  h1 {
+  title {
     font-size: 24px;
     font-family: "Oswald-bold";
   }
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  &__icon {
-    width: 15px;
-    height: 15px;
-  }
-  h2:nth-of-type(1) {
-    font-size: 18px;
-    text-align: center;
-    background-color: white;
-    position: absolute;
-    top: 3400px;
-    margin: 40px;
-    padding: 15px;
-    font-family: "SourceSerifPro-bold";
-  }
-
-  h1:hover {
-    transition: 0.2s;
-    color: rgb(73, 71, 71);
-  }
-  p {
-    font-size: 12px;
-    color: grey;
-    margin-bottom: 20px;
-    margin-top: 72px;
-  }
-  img {
-    object-fit: contain;
-    width: 390px;
-  }
   @include large {
     grid-area: six;
+  }
+}
+
+.rdv__first {
+  h1 {
+    top: 3000px;
+  }
+  p {
+    margin-top: 65px;
+  }
+}
+
+.rdv__secondary {
+  h1 {
+    top: 3300px;
+  }
+  p {
+    margin-top: 65px;
+  }
+}
+
+.rdv__tree {
+  h1 {
+    top: 3600px;
+  }
+  p {
+    margin-top: 65px;
   }
 }
