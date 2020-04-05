@@ -18,11 +18,16 @@
 
     &--menu {
       display: none;
-      @include large {
+
+      @include medium {
         width: 100%;
-        font-size: 14px;
+        font-size: 10px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+      }
+
+      @include large {
+        font-size: 14px;
       }
     }
   }
