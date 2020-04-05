@@ -1,0 +1,45 @@
+.updateArticle__filInfo {
+    @include large {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .updateArticle__filInfo1 {
+        @include large {
+            grid-column: 1;
+            grid-row: 1;
+            background: yellowgreen;
+        }
+    }
+
+    .updateArticle__filInfo2 {
+        @include large {
+            grid-column: 1;
+            grid-row: 2;
+            background: pink;
+        }
+    }
+
+    .updateArticle__filInfo3 {
+        @include large {
+            grid-column: 1;
+            grid-row: 3;
+            background: red;
+        }
+    }
+
+    .updateArticle__filInfo4 {
+        @include large {
+            grid-column: 1;
+            grid-row: 4;
+            background: purple;
+        }
+    }
+
+    .updateArticle__filInfo5 {
+        @include large {}
+        grid-column: 1;
+        grid-row: 5;
+        background: orange;
+    }
+}

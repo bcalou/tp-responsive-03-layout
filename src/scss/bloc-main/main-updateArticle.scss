@@ -26,6 +26,8 @@
         @include large {
             grid-column: 2;
             background: green;
+            display: grid;
         }
+
     }
 }
