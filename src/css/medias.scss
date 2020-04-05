@@ -1,0 +1,24 @@
+/*
+@mixin nametype {
+    @media (){          //min-width OR max-width
+        //@content;
+    }
+};
+*/
+@mixin small {
+    @media () {
+        @content;
+    }
+};
+
+@mixin medium {
+    @media () {
+        @content;
+    }
+};
+
+@mixin large {
+    @media () {
+        @content;
+    }
+};
