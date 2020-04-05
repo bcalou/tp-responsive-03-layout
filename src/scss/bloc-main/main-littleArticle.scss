@@ -38,7 +38,7 @@
     .littleArticle__article3 {
         @include medium {
             grid-column: 1;
-            grid-row: 1;
+            grid-row: 2;
             background: rgb(111, 124, 196);
         }
         @include large {
