@@ -3,52 +3,352 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/scss/syles.scss" />
+    <link rel="stylesheet" type="text/css" href="../src/scss/styles.scss" />
+    <link rel="stylesheet" type="text/css" href="../src/scss/reset.css" />
+    <title>L'OBS</title>
   </head>
-  <header>
-    <span class="header--'OBS-logo">
-      <img src="/src/assets/imgs/icons/logo.svg" />
-    </span>
-    <br />
-    <span class="header---burger-menu"></span>
-    <span class="header--search-bar">
-      <img src="/src/assets/imgs/icons/search.svg" />
-    </span>
-    <span class="header--categories">
-      <span class="header--categories__politics">politque</span>
-      <span class="header--categories__world">monde</span>
-      <span class="header--categories__economy">économie</span>
-      <span class="header--categories__culture">culture</span>
-      <span class="header--categories__opinions">opinions</span>
-      <span class="header--categories__debates">débats</span>
-      <span class="header--categories__tendances">tendances</span>
-      <span class="header--categories__2049">2049</span>
-      <span class="header--categories__videos">vidéos</span>
-      <span class="header--categories__pictures">photos</span>
-    </span>
-    <span class="header--business">
-      <span class="header--business__identify"
-        ><img src="/src/assets/imgs/icons/user.svg" />M'identifier</span
-      >
-      <span class="header--business__subscribe"
-        ><img src="/src/assets/imgs/icons/subscriber.svg>" />Je m'abonne</span
-      >
-    </span>
-  </header>
   <body>
-    <div class="frontArticle">
-      <img
-        src="/src/assets/imgs/article1.jpg"
-        alt="Lors d'une manifestation contre la réforme des retraites à Toulouse, le 17 décembre"
-      />
-      <p class="frontArticle--title">
-        Ces 10 graphiques éclairent l’emploi des seniors (et ce n’est pas
-        réjouissant)
-      </p>
-      <p class="frontArticle--timeStamp">Economie - Publié il y a 2 heures</p>
-    </div>
-    <div class="subArticles"</div>
+    <body>
+      <header class="header">
+        <div class="header__menu menu">
+          <div class="menu__burger-menu"></div>
+          <img
+            src="assets/imgs/icons/logo.svg"
+            alt="L\'Obs'"
+            class="menu__logo"
+          />
+        </div>
+        <ul class="menu__nav nav">
+          <li class="nav__item">
+            POLITIQUE
+          </li>
+          <li class="nav__item">
+            MONDE
+          </li>
+          <li class="nav__item">
+            ECONOMIE
+          </li>
+          <li class="nav__item">
+            CULTURE
+          </li>
+          <li class="nav__item">
+            OPINIONS
+          </li>
+          <li class="nav__item">
+            DEBATS
+          </li>
+          <li class="nav__item">
+            TENDANCES
+          </li>
+          <li class="nav__item">
+            2049
+          </li>
+          <li class="nav__item">
+            VIDEOS
+          </li>
+          <li class="nav__item">
+            PHOTOS
+          </li>
+        </ul>
+        <div class="header__connexion connexion">
+          <img
+            src="assets/imgs/icons/user.svg"
+            alt="icone de connexion"
+            class="connexion__icon"
+          />
+          <p class="header__abonnement">Je m'abonne</p>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__primary-info primary-info">
+          <div class="primary-info__content">
+            <div class="primary-info__picture">
+              <img
+                src="assets/imgs/article1.jpg"
+                alt="retraité en manifestation CGT"
+              />
+            </div>
+            <div class="primary-info__text">
+              <h2 class="primary-info__title">
+                Ces 10 graphiques éclairent l'emploi des seniors (et ce n'est
+                pas réjouissant)
+              </h2>
+              <div class="primary-info__infos infos">
+                Economie - Publié il ya 2heures
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__fill-info fill-info">
+          <h1 class="fill-info__title">FIL INFO</h1>
+          <div class="fill-info__news">
+            <p class="fill-info__time">20:20</p>
+            <p class="fill-info__text">
+              Municipales à Paris: avec Hidalgo, 10 candidats pour un jeu
+              d'alliance incertain
+            </p>
+          </div>
+          <div class="fill-info__news">
+            <p class="fill-info__time">19:50</p>
+            <p class="fill-info__text">
+              Violences policières: Macron fait pression dur l'Intérieur, les
+              syndicats agacés
+            </p>
+          </div>
+          <div class="fill-info__news">
+            <p class="fill-info__time">19:45</p>
+            <p class="fill-info__text">
+              Dopage: le fondeur autrichien Dominik Baldauf condamné à 5 mois de
+              prison avec sursis
+            </p>
+          </div>
+          <div class="fill-info__news">
+            <p class="fill-info__time">19:45</p>
+            <p class="fill-info__text">
+              La guerre est déclarée entre le gouvernement et Royal qui s'estime
+              licenciée
+            </p>
+          </div>
+          <div class="fill-info__news">
+            <p class="fill-info__time">19:20</p>
+            <p class="fill-info__text">
+              Retraites: fidèle à son cadre
+            </p>
+          </div>
+          <p class="fill-info__button">TOUT VOIR ></p>
+        </section>
+        <section class="main__mainArticles mainArticles">
+          <article class="mainArticles__article article article--free">
+            <div class="article__content">
+              <img
+                class="article__picture"
+                src="assets/imgs/article2.jpg"
+                alt="Edouard Philippe"
+              />
+              <div class="article__text">
+                <h2 class="article__title">
+                  Comment la réforme des retraites a été dévoyée
+                </h2>
+                <p class="article__infos infos">
+                  Edito - Publié il y a 14 heures
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="mainArticles__article article article--free">
+            <div class="article__content">
+              <img
+                class="article__picture"
+                src="assets/imgs/article3.jpg"
+                alt="Segolène Royale"
+              />
+              <div class="article__text">
+                <h2 class="article__title">
+                  Ségolène Royal estime qu'elle a été licenciée de sa fonction
+                  d'embassadrice de pôles
+                </h2>
+                <p class="article__infos infos">
+                  Politique - Publié il y a 3 heures
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="mainArticles__article article article--free">
+            <div class="article__content">
+              <img
+                class="article__picture"
+                src="assets/imgs/article4.jpg"
+                alt="Grosse Vague"
+              />
+              <div class="article__text">
+                <h2 class="article__title">
+                  A quoi les ressembleront les océans en 2049? Suivez notre
+                  conférence en direct
+                </h2>
+                <p class="article__infos infos">
+                  2019 - Publié il y a 2 heures
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="mainArticles__article article article--premium">
+            <div class="article__content">
+              <img
+                class="article__picture"
+                src="assets/imgs/article5.jpg"
+                alt="Manifestation à Téhéran"
+              />
+              <div class="article__text">
+                <h2 class="article__title abo">
+                  Comment l'avion abattu a Téhéran fragilise le régime des
+                  mollahs
+                </h2>
+                <p class="article__infos infos">
+                  Monde - Publié il y a 6 heures
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="mainArticles__article article article--premium">
+            <div class="article__content">
+              <img
+                class="article__picture"
+                src="assets/imgs/article6.jpg"
+                alt="Elif Shafak"
+              />
+              <div class="article__text">
+                <h2 class="article__title abo">
+                  Elif Shafak, star du roman turc et bête noir d'Erdogan
+                </h2>
+                <p class="article__infos infos">
+                  Romans - Publié il y a 4 heures
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="main__sub-articles sub-articles">
+          <article class="sub-articles__article">
+            <img src="assets/imgs/article7.jpg" alt="Jean-Luc Mélanchon" />
+            <p>La motion de censure de Mélenchon fait pshitt</p>
+          </article>
+          <article class="sub-articles__article">
+            <img src="assets/imgs/article8.jpg" alt="Manif" />
+            <p class="abo">
+              Pourquoi la réforme des retraites vous fera travailler plus
+              longtemps
+            </p>
+          </article>
+          <article class="sub-articles__article">
+            <img src="assets/imgs/article9.jpg" alt="Carlos Ghosn" />
+            <p>La folle tournée médiatique de Carlos Ghosn</p>
+          </article>
+          <article class="sub-articles__article">
+            <img src="assets/imgs/article10.jpg" alt="Manif Iran" />
+            <p class="abo">En Iran, la légitimité perdue des mollahs</p>
+          </article>
+          <article class="sub-articles__article">
+            <img src="assets/imgs/article11.jpg" alt="Le pape Benoit XVI" />
+            <p>Benoît XVI retire son nom d'un livre controversé</p>
+          </article>
+          <article class="sub-articles__article">
+            <img src="assets/imgs/article12.jpg" alt="Pretre dans une eglise" />
+            <p class="abo">
+              Affaire Preynat: pourquoi un procès 30 ans après les faits
+            </p>
+          </article>
+        </section>
+        <section class="main__abonnement abonnement">
+          <div class="abonnement__text">
+            <h1>L'OBS EN NUMERIQUE</h1>
+            <p>
+              Web + tablette + mobile <br />
+              à partir de 1 €
+            </p>
+            <button>Je m'abonne</button>
+          </div>
+
+          <div class="abonnement__pictures">
+            <img
+              class="obs-couv"
+              src="assets/imgs/cover.jpg"
+              alt="Couverture de l'obs"
+            />
+            <img
+              class="tele-obs-couv"
+              src="assets/imgs/tele-obs-cover.jpg"
+              alt="Couverture de l'obs tele"
+            />
+          </div>
+        </section>
+        <section class="main__rdv rdv">
+          <h1>LES RENDEZ-VOUS DE L'OBS</h1>
+          <article class="rdv__article">
+            <div class="rdv__content">
+              <img
+                class="rdv__picture"
+                src="assets/imgs/rdv1.png"
+                alt="Affiche pièce de théâtre An ILiad"
+              />
+              <div class="rdv__text">
+                <h2 class="rdv__title abo">
+                  Gagnez vos places pour la pièce "An Iliad" au théâtre du
+                  Rond-Point
+                </h2>
+                <p class="rdv__infos infos">
+                  Club Abonnés - Publié il y a 1 jour
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="rdv__article">
+            <div class="rdv__content">
+              <img
+                class="rdv__picture"
+                src="assets/imgs/rdv2.jpg"
+                alt="Vladimir Velickovic"
+              />
+              <div class="rdv__text">
+                <h2 class="rdv__title abo">
+                  Gagnez vos places pour l'exposition hommage à Vladimir
+                  Velickovic
+                </h2>
+                <p class="rdv__infos infos">
+                  Club Abonnés - Publié il y a 1 jour
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="rdv__article">
+            <div class="rdv__content">
+              <img
+                class="rdv__picture"
+                src="assets/imgs/rdv3.jpg"
+                alt="Affiche pièce de théâtre An ILiad"
+              />
+              <div class="rdv__text">
+                <h2 class="rdv__title abo">
+                  Gagnez vos places de cinéma pour le film "Revenir" de Jessica
+                  Palud
+                </h2>
+                <p class="rdv__infos infos">
+                  Club Abonnés - Publié il y a 1 jour
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        <ul class="footer__rubs">
+          <li>POLITIQUE</li>
+          <li>MONDE</li>
+          <li>ECONOMIE</li>
+          <li>CULTURE</li>
+          <li>OPINIONS</li>
+          <li>DEBATS</li>
+          <li>VIDEOS</li>
+          <li>PHOTOS</li>
+        </ul>
+        <ul class="footer__brands">
+          <li>TéléObs</li>
+          <li>BibliObs</li>
+          <li>"O"</li>
+          <li>Rue 89</li>
+          <li>Newsletters</li>
+          <li>Services</li>
+          <li>Codes promo</li>
+          <li>Index</li>
+          <li>RSS</li>
+          <li>Plan du site</li>
+          <li>Mentions Légales</li>
+          <li>Copyright</li>
+          <li>Publicité</li>
+          <li>Politique de confidentialité</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </footer>
+    </body>
   </body>
 </html>
