@@ -37,7 +37,6 @@ img{
 }
 
 .hero {
-    background: blue;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -72,13 +71,13 @@ img{
 }
 
 .fillinfo {
-    background: yellowgreen;
     height:400px;
     display: none;
     @include large {
         grid-area: info;
         height: 400px;
         display: block;
+        border:1px solid grey;
     }
     h2{
         display: flex;
@@ -135,7 +134,6 @@ img{
 
 
 .articles {
-    background: purple;
     height: 1500px;
     display: flex;
     justify-content: center;
@@ -224,7 +222,6 @@ img{
 }
 
 .actu {
-    background: red;
     height: 600px;
     justify-content: center;
     align-items: center;
@@ -293,7 +290,6 @@ img{
     }
 }
 .ad {
-    background: pink;
     height: 200px;
     @include large {
         grid-area: ad;
@@ -301,7 +297,6 @@ img{
     }
 }
 .sub {
-    background: sandybrown;
     height: 800px;
     h1{
         display: flex;
