@@ -1,0 +1,55 @@
+@import "reset.css";
+
+:root {
+  --large-font: "SourceSerifPro-bold";
+  --medium-font: "SourceSerifPro-regular";
+}
+@font-face {
+  font-family: "SourceSerifPro-bold";
+  src: url("../assets/fonts/SourceSerifPro-bold.woff2") format("woff2");
+  font-family: "SourceSerifPro-regular";
+  src: url("../assets/fonts/SourceSerifPro-regular.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7;
+  overflow: hidden;
+  line-height: 1.2;
+  margin: 10%;
+}
+h1 {
+  font-family: var(--large-font);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.article {
+  display: flex;
+  margin: 10%;
+}
+.article-text {
+  background-color: white;
+  position: relative;
+  bottom: 10%;
+  width: 90%;
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+}
+.article1:first-child {
+  justify-content: center;
+  flex-direction: column;
+  img {
+    border: solid red;
+  }
+}
+.article-img {
+  margin: auto;
+  border: solid blue 3px;
+}

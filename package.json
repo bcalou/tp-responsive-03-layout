@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/clem51/responsive-03-layout-hetic#readme",
   "dependencies": {
+    "css": "^2.2.4",
     "parcel": "^1.12.4",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "reset.css": "^2.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
 }
