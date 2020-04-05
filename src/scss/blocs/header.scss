@@ -1,8 +1,63 @@
 .header {
   height: 10vh;
-  background-color: pink;
+  border-bottom: $border;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  
 
   @include large {
     height: 20vh;
   }
+
+  &__title {
+    font-family: $sourceSerifProRegular;
+    font-size: 40px;
+  }
+
+  .connection {
+    display: flex;
+    flex-direction: row;
+
+    &__login {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin: 4px;
+    }
+
+    &__subscribe {
+      background-color: $yellow;
+      color: $black;
+      font-size: 11px;
+      font-family: $sourceSerifProBold;
+      border-radius: 4px;
+
+      @include medium {
+        font-size: 14px;
+      }
+
+      @include large {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: $black;
+    margin: 6px 0;
+    margin-left: 10px;
+    transition: 0.4s;
+}
 }

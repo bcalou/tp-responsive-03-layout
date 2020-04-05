@@ -1,4 +1,8 @@
 .main{
+
+  @include medium {
+    margin: 0 20vh;
+  }
   
 
   @include large {
@@ -13,20 +17,54 @@
 
 
 
-  &__primaryInfo {
+  .primaryInfo {
     height: 60vh;
-    background-color: powderblue;
+    position: relative;
 
     @include large {
       grid-area: a;
+    }
+
+    &__image {
+      position: absolute;
+    }
+
+    &__text {
+      background-color: $white;
+      position: absolute;
+      text-align: center;
+      margin: 0 16px;
+      padding: 10px 20px;
+      top: 120px;
+
+
+
+      @include large {
+        padding: 10px 30px;
+      }
+    }
+
+    .primaryInfoText {
+      &__title {
+        font-size: 22px;
+        font-family: $sourceSerifProBold;
+
+        @include large {
+          font-size: 40px;
+        }
+
+      }
+
+      &__meta {
+        color: $grey;
+        margin-top: 16px;
+      }
     }
 
   }
 
   &__secondaryInfo {
 
-    height: 80vh;
-    
 
     @include large {
       grid-area: c;
@@ -34,7 +72,6 @@
   }
 
   &__anotherArticles {
-    height: 60vh;
 
     @include large {
       grid-area: e;
@@ -78,6 +115,27 @@
     grid-gap: 5px;
     grid-template-areas: "a b c"
                          "d e f";
+
+    .secondaryInfoFirst {
+
+      position: relative;
+      align-content: center;
+
+      &__image {
+        margin-left: 10px;
+        max-width: 100%;
+      }
+
+      &__text {
+      background-color: $white;
+      position: absolute;
+      text-align: center;
+      margin: 0 15px;
+      padding: 10px 20px;
+      top: -15px;
+      }
+
+    }
   }
 
 
@@ -206,7 +264,7 @@
 
   }
 
-  &__fourth{
+  &__fourth {
     height: 20vh;
     background-color: skyblue;
 

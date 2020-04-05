@@ -1,0 +1,22 @@
+$black : black;
+$white: white;
+$yellow: #fed500;
+$grey: #999999;
+
+$border: 0.5px solid $black;
+
+/************ FONTS ************/
+
+$oswaldBold: "Oswald-bold";
+$sourceSerifProBold: "SourceSerifPro-Bold";
+$sourceSerifProRegular: "SourceSerifPro-Regular";
+
+/************ MIXINS ************/
+
+@mixin secondaryTitle {
+  font-family: $sourceSerifProBold;
+  font-size: 18px;
+}
+
+
+
