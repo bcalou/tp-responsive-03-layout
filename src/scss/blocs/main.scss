@@ -116,27 +116,8 @@
     grid-template-areas: "a b c"
                          "d e f";
 
-    .secondaryInfoFirst {
-
-      position: relative;
-      align-content: center;
-
-      &__image {
-        margin-left: 10px;
-        max-width: 100%;
-      }
-
-      &__text {
-      background-color: $white;
-      position: absolute;
-      text-align: center;
-      margin: 0 15px;
-      padding: 10px 20px;
-      top: -15px;
-      }
-
     }
-  }
+  
 
 
 
@@ -144,21 +125,29 @@
   &__first {
     height: 40vh;
 
-    background-color: palegoldenrod;
-
     @include medium {
       grid-area: a;
     }
 
     @include large {
       grid-area: a;
+    }
+
+    .secondaryInfoFirst {
+      @include secondaryInfo;
+    }
+
+    .secondaryInfoFirstText{
+
+      &__title {
+        @include secondaryInfoTitle;
+      }
     }
 
   }
 
   &__second {
     height: 40vh;
-    background-color: rosybrown;
 
     @include medium {
       grid-area: b;
@@ -166,13 +155,23 @@
 
     @include large {
       grid-area: b;
+    }
+
+    .secondaryInfoSecond {
+      @include secondaryInfo;
+    }
+
+    .secondaryInfoSecondText{
+
+      &__title {
+        @include secondaryInfoTitle;
+      }
     }
 
   }
 
   &__third {
     height: 40vh;
-    background-color: plum;
 
     @include medium {
       grid-area: c;
@@ -180,6 +179,17 @@
 
     @include large {
       grid-area: c;
+    }
+
+    .secondaryInfoThird {
+      @include secondaryInfo;
+    }
+
+    .secondaryInfoThirdText{
+
+      &__title {
+        @include secondaryInfoTitle;
+      }
     }
 
  
@@ -187,7 +197,6 @@
 
   &__fourth{
     height: 40vh;
-    background-color: skyblue;
 
     @include medium {
       grid-area: d;
@@ -195,6 +204,17 @@
 
     @include large {
       grid-area: d;
+    }
+
+    .secondaryInfoFourth {
+      @include secondaryInfo;
+    }
+
+    .secondaryInfoFourthText{
+
+      &__title {
+        @include secondaryInfoTitle;
+      }
     }
 
 
@@ -202,7 +222,6 @@
 
   &__fifth {
     height: 40vh;
-    background-color: honeydew;
 
     @include medium {
       grid-area: e;
@@ -210,6 +229,17 @@
 
     @include large {
       grid-area: e;
+    }
+
+    .secondaryInfoFifth {
+      @include secondaryInfo;
+    }
+
+    .secondaryInfoFifthText{
+
+      &__title {
+        @include secondaryInfoTitle;
+      }
     }
 
   

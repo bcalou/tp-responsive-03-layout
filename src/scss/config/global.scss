@@ -13,9 +13,31 @@ $sourceSerifProRegular: "SourceSerifPro-Regular";
 
 /************ MIXINS ************/
 
-@mixin secondaryTitle {
+@mixin secondaryInfoTitle {
   font-family: $sourceSerifProBold;
   font-size: 18px;
+}
+
+@mixin secondaryInfo {
+  
+
+    position: absolute;
+    align-content: center;
+
+    &__image {
+      align-content: center;
+      margin-left: 10px;
+    }
+
+    &__text {
+    background-color: $white;
+    position: relative;
+    text-align: center;
+    margin: 0 15px;
+    padding: 10px 20px;
+    bottom: 15px;
+    }
+  
 }
 
 
