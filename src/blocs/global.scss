@@ -4,13 +4,13 @@
 @import "footer.scss";
 
 body {
-    background-color: green;
+    background-color: white;
   
     @include medium {
-      background-color: yellow;
+      background-color: white;
     }
   
     @include large {
-      background-color: red;
+      background-color: white;
     }
 }

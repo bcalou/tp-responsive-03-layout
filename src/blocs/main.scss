@@ -75,9 +75,10 @@
 }
 
 .main__oneInfo {
-  background: yellow; /* Pour tester */
-
   @include large {
+    background: white;
+    display: flex;
+    flex-direction: column;
     grid-area: item1;
   }
 }
@@ -165,9 +166,20 @@
 .main__twelveInfo {
   background: gold; /* Pour tester */
 
-  
+
   @include large {
     grid-area: item12;
   }
+}
+
+.main__oneInfo__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main__oneInfo__meta  {
+  text-align: center;
+  font-size: 12px;
 }
 
