@@ -24,11 +24,3 @@
     grid-row-gap: $row-gap;
   }
 }
-
-.main__rdv {
-  border: 1px solid black;
-  background-color: yellowgreen;
-  @include large {
-    grid-area: rdv;
-  }
-}

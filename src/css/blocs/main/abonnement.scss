@@ -2,9 +2,10 @@
   background-color: rgb(254, 213, 0);
   height: 140px;
   display: flex;
-  margin: 40px 0;
+  margin: 20px 0;
 
   @include medium {
+    margin: 40px 0;
     height: 180px;
   }
 
