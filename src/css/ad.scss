@@ -1,0 +1,68 @@
+.ad {
+  height: 180px;
+  width: 100%;
+  background-image: url("../assets/imgs/ad/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fed500;
+  background-position: right;
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+
+  &__info {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: "Oswald";
+    font-size: 26px;
+    font-weight: bold;
+    display: none;
+    @include medium {
+      display: block;
+    }
+  }
+
+  &__text {
+    font-family: SourceSerifPro;
+    // font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  &__button {
+    font-family: SourceSerifPro;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding: 6px 18px;
+    background: black;
+    cursor: pointer;
+  }
+
+  &__imgs {
+    width: 40%;
+    position: relative;
+  }
+
+  &__cover {
+    position: absolute;
+    &:nth-child(1) {
+      height: 90%;
+      bottom: 0;
+      left: 15%;
+    }
+
+    &:nth-child(2) {
+      width: 30%;
+      right: 15%;
+      bottom: 0;
+    }
+  }
+}

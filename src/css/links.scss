@@ -1,0 +1,52 @@
+.links {
+  @include medium {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+      "1 2"
+      "3 4"
+      "5 6";
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    margin-bottom: 30px;
+
+    @for $i from 1 through 6 {
+      .links__link:nth-child(#{$i}) {
+        grid-area: $i;
+      }
+    }
+
+    @include medium {
+      margin: 0;
+    }
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__title {
+    font-family: SourceSerifPro;
+    font-size: 17px;
+    margin-left: 20px;
+
+    &--subs {
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-image: url("../assets/imgs/icons/subscriber.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
