@@ -1,0 +1,16 @@
+@mixin box {
+  word-wrap: break-word;
+  background-color: #fff;
+  text-align: center;
+}
+
+@mixin flex-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:root {
+  --font-article: SourceBold;
+}
