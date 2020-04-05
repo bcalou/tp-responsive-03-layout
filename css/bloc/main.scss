@@ -13,8 +13,8 @@ main {
         "hero info"
         "articles articles"
         "articles articles"
-        "actu ."
-        "ad ."
+        "actua ."
+        "abo ."
         "sub sub"
         ;
         grid-column-gap: 10px;
@@ -235,7 +235,7 @@ img{
         flex-direction: row;
     }
         @include large {
-            grid-area: actu;
+            grid-area: actua;
             height: 400px;
         }
     }
@@ -272,10 +272,14 @@ img{
 .sub {
     height: 800px;
     background: purple;
+    
     h1{
         display: flex;
         justify-content: center;
         font-size: 30px;
+        color: black;
+        font-weight: bold;
+        padding: auto;
     }
     .subs{
         @include large {
@@ -288,7 +292,7 @@ img{
             flex-direction: row;
         }
     }
-    .sub__text {
+    .sub__txt {
         justify-content: center;
         flex-direction: column;
         position: relative;
@@ -305,7 +309,7 @@ img{
             color: grey;
         }
     }
-    .sub__image{
+    .sub__img{
         display: flex;
         justify-content: center;
     }
