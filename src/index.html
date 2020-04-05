@@ -4,23 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Responsive Layout(3)</title>
     <link rel="stylesheet" href="css/styles.scss" />
   </head>
   <body>
-    <body>
-      <header class="header"></header>
+      <header class="header">
+        <section class="header__élem">
+          <img class="header__élem--search" src="assets/imgs/icons/search.svg">
+          <img class="header__logo" src="/assets/imgs/icons/logo.svg" width="84.39px" height="22px">
+          <div class="header__élem--users">
+            <img src="/assets/imgs/icons/user.svg">
+            <p>M'identifer</p>
+            <p class="abo">Je m'abonne</p>
+          </div>
+        </section>
+      </header>
+      
       <main class="main">
-        <section class="main__primaryInfo primaryInfo">hello !</section>
-        <section class="fil">fil</section>
-        <section class="main__secondaryInfo">
-          <div class="main__secondaryInfo--1">Article1</div>
-          <div class="main__secondaryInfo--2">Article2</div>
-          <div class="main__secondaryInfo--3">Article3</div>
-          <div class="main__secondaryInfo--4">Article4</div>
+        <section class="main__primaryInfo--primaryInfo">
+          <img src="assets/imgs/article1.jpg" width="632.98px" height="305.98px">
+          <h2 class="title">Ces 10 graphiques éclairent l’emploi des seniors (et ce n’est pas réjouissant)</h2>
+          <p class="subtitle">Economie-Publié il y a 2 heures</p>
+        </section>
+
+        <section class="main__primaryInfo--fil">
+          <h2>FIL INFO</h2>
+          <div class="info">
+            <p class="hour">20:20</p>
+            <p class="title">Municipales à Paris: avec Hidalgo, 10 candidats pour un jeu d'alliances incertain</p>
+          </div>
+          <div class="info">
+            <p class="hour">19:50</p>
+            <p class="title">Violences policières:Macron fait pression sur l'interieur, les syndicats agacés</p>
+          </div>
+          <div class="info">
+            <p class="hour">19:45</p>
+            <p class="title">Dopage: le fondeur autrichien Dominik Baldauf condamné à 5 mois de prison avec sursis</p>
+          </div>
+          <div class="info">
+            <p class="hour">19:45</p>
+            <p class="title">La guerre est déclarée entre le gouvernement et Royal qui s'estime licencié</p>
+          </div>
+          <div class="info">
+            <p class="hour">19:20</p>
+            <p class="title">Retraites:fidèle à son cadre,</p>
+          </div>
+          <p class="more">TOUT VOIR ></p>
+        </section>
+
+        <section class="main__secondaryInfopartone">
+          <div class="main__secondaryInfo">
+            <img src="/assets/imgs/article2.jpg">
+            <p class="title">Comment la réforme des retraites a été dévoyée</p>
+            <p class="subtitle">Edito - publié il y a 14 heures</p>
+          </div>
+          <div class="main__secondaryInfo">
+            <img src="/assets/imgs/article3.jpg">
+            <p class="title">Ségolène Royal estime qu'elle a été licenciée de sa fonction d'ambassadrice des pôles</p>
+            <p class="subtitle">Politique - publié il y a 3 heures</p>
+          </div>
+          <div class="main__secondaryInfo">
+            <img src="/assets/imgs/article4.jpg">
+            <p class="title">A quoi ressembleront les océans en 2049? Suivez notre conférence en direct</p>
+            <p class="subtitle">2049 - publié il y a 2 heures</p>
+          </div>
+        </section>
+          <section class="main__secondaryInfoparttwo">
+          <div class="main__secondaryInfo">
+            <img src="/assets/imgs/article5.jpg">
+            <p class="title">Comment l'avion abbattu à Téhéran fragilise le régime des mollahs</p>
+            <p class="subtitle">Edito - publié il y a 6 heures</p>
+          </div>
+          <div class="main__secondaryInfo--5">
+            <img src="/assets/imgs/article6.jpg">
+            <p class="title">Elif Shafak, star du roman turc et bête noire d'Erdogan</p>
+            <p class="subtitle">Edito - publié il y a 4 heures</p>
+          </div>
+        </section>
+
+        <section class="main__smallarticle ">
+          <div class="main__smallarticle--1">Article1</div>
+          <div class="main__smallarticle--2">Article2</div>
+          <div class="main__smallarticle--3">Article3</div>
+          <div class="main__smallarticle--4">Article4</div>
+          <div class="main__smallarticle--5">Article5</div>
+          <div class="main__smallarticle--6">Article6</div>
+          <div class="main__smallarticle--7">Article7</div>
+          <div class="main__smallarticle--8">Article8</div>
+        </section>
+
+        <section class="main__advertisement">
+         Publicité
+        </section>
+
+        <section class="main__rdv">
+          <div class="main__rdv--1">Article1</div>
+          <div class="main__rdv--2">Article2</div>
+          <div class="main__rdv--3">Article3</div>
         </section>
       </main>
       <footer class="footer"></footer>
     </body>
-  </body>
 </html>

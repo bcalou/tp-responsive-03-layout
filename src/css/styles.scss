@@ -1,7 +1,7 @@
 @import "/css/media.scss";
-@import "blocs/header";
-@import "blocs/main";
-@import "blocs/footer";
+@import "/css/header.scss";
+@import "/css/main.scss";
+@import "/css/footer.scss";
 
 body {
   background-color: green;
@@ -11,25 +11,86 @@ body {
   }
 
   @include large {
-    background-color: red;
+    background-color: white;
   }
 }
 
 .main {
   display: grid;
+  
+  margin-left:10%;
+
 
   @include large {
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 25% 100px;
-    grid-template-areas:1;
-  }
-}
-.main__primaryInfo {
-  background: yellow; /* Pour tester */
-  height: 100px; /* Pour tester */
+    grid-template-columns: repeat (2,1fr);
+    grid-template-rows:500px 1fr;
+    grid-template-areas: "head head"
+                         "main main"
+                         "footer footer";
+    grid-gap:20px;
+    .main__primaryInfo--primaryInfo {
+      background-color :white; 
+      grid-column: 1;
+      grid-row: 1;
+      height: 439px;
+      width: 632.98px;
+    }
 
-  @include large {
-    grid-area: 1;
+    .main__primaryInfo--fil{
+      background-color: white;
+      grid-column-start: 2;
+      grid-row: 1;
+      height: 447px;
+      width: 299.98px;
+      column-gap: 20px;
+    }
+    .main__secondaryInfopartone{
+      background-color: white;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row: 2;
+      display: flex;
+      width: 999px;
+      height: 317.98;
+      align-items: flex-start;
+     
+      }
+      .main__secondaryInfoparttwo{
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 3;
+        display: flex;
+        width: 999px;
+        height: 317.98;
+        align-items: flex-start;
+       
+        }
+      .main__smallarticle{
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        grid-row: 4;
+        grid-column: 1;
+        column-gap: 20px;
+      }
+
+      .main__advertisement{
+        background-color: lightcoral;
+        grid-row: 6;
+        grid-column: 1;
+      }
+      .main__rdv{
+        background-color: lightseagreen;
+        grid-row: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    
   }
-}
+
