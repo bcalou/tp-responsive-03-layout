@@ -3,8 +3,8 @@
   @include medium{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "main__primaryInfo main__secondaryInfo"
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "main__primaryInfo ."
     "main__terceryInfo main__terceryInfo"
     "main__fourthInfo ."
     "main__fifthInfo ."
@@ -18,11 +18,9 @@
       display: flex;
       justify-content: space-around;
       text-align: center;
-
     }
     .main__fourthInfo{
       grid-area: main__fourthInfo;
-      background: blue;
       display: grid;
       grid-template-columns: 1fr 1fr;
       div{
@@ -39,6 +37,7 @@
   }
 
   @include large{
+    display: grid;
     grid-template-areas: "main__primaryInfo main__secondaryInfo"
     "main__terceryInfo main__terceryInfo"
     "main__fourthInfo"
@@ -48,23 +47,22 @@
     //   display: grid;
     //   grid-template-columns: 2fr 1fr;
     // }
+ 
   }
 }
 
 .main__primaryInfo{
   grid-area: main__primaryInfo;
-  background: yellow;
-}
-.main__secondaryInfo{
-  grid-area: main__secondaryInfo;
-  background: lightblue;
-  
-}
-.main__terceryInfo{
-  grid-area: main__terceryInfo;
-  background: red;
 }
 
+.main__terceryInfo{
+  grid-area: main__terceryInfo;
+}
+
+.main__secondaryInfo{
+  grid-area: main__secondaryInfo;
+  
+}
 
 .main__fifthInfo{
   display: flex;
@@ -80,7 +78,6 @@ img{
 }
 .main__sixthInfo{
   grid-area: main__sixthInfo;
-  background: pink;
   .sixthInfo__articles{
     display: flex;
     flex-direction: row;
