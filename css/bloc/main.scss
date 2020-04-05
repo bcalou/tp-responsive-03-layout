@@ -1,0 +1,336 @@
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include large {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr 0.75fr 0.75fr 1fr 0.5fr 1fr;
+        grid-template-areas: 
+        "hero info"
+        "articles articles"
+        "articles articles"
+        "actu ."
+        "ad ."
+        "sub sub"
+        ;
+        grid-column-gap: 10px;
+    }
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.retraite {
+    
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include large {
+        height: 400px;
+        grid-area: hero;
+    }
+    .retraite__border{
+        box-sizing: content-box;
+        width: auto;
+        height: auto;
+        
+    }
+    .retraite__img{
+        margin: 0px 15px;
+    }
+    .retraite__txt{
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: auto;
+        margin: -15px 15px 0px;
+        background: white;
+        padding: 10px 20px;
+        h2 {
+            font-size: 22px;
+        }
+        span {
+            color: grey;
+        }
+    }
+}
+
+.info {
+    background: blue;
+    height:200px;
+    @include large {
+        grid-area: info;
+        height: 400px;
+    }
+}
+
+
+
+.articles {
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include large {
+        grid-area: articles;
+        height: 600px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article{
+        @include large {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas: 
+            "articles1 articles2 articles3"
+            "articles4 articles5 ."
+            ;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+    }
+
+    .articles1 {
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px;
+        border:1px solid black;
+                     
+    }
+
+    .articles2 {
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px;
+        border:1px solid black;
+
+                      
+    }
+
+    .articles3 {
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px;
+        border:1px solid black;
+
+                     
+    }
+
+    .articles4 {
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px;
+        border:1px solid black;
+
+                       
+    }
+
+    .articles5 {
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px; 
+        border:1px solid black;
+
+    }
+        
+
+
+    .articles__img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .articles__txt{
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: auto;
+        margin: -15px 15px 0px;
+        background: white;
+        padding: 10px 20px;
+        h2 {
+            font-size: 22px;
+        }
+        span {
+            color: grey;
+        }
+    }
+
+    }
+
+
+
+
+
+    .actua {
+        background: brown;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        @include large {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+            grid-template-areas: 
+            "actua1 actua2"
+            "actua3 actua4"
+            "actua5 actua6"
+            ;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+
+    .actua__title{
+        background: white;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: row;
+        height: 88px;
+        width: 177px;
+    }
+    img{
+        height: 88px;
+        width: 88px;
+    }
+    .actua1{
+        display: flex;
+        flex-direction: row;
+        border:1px solid black;
+
+    }
+    .actua2{
+        display: flex;
+        flex-direction: row;
+    }
+    .actua3{
+        display: flex;
+        flex-direction: row;
+    }
+    .actua4{
+        display: flex;
+        flex-direction: row;
+    }
+    .actua5{
+        display: flex;
+        flex-direction: row;
+    }
+    .actua6{
+        display: flex;
+        flex-direction: row;
+    }
+        @include large {
+            grid-area: actu;
+            height: 400px;
+        }
+    }
+
+
+
+    .abo {
+        background-color:#fed500;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        
+        @include large {
+            grid-area: ad;
+            height: 200px;
+        }
+        .abo__title {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+
+        }
+        .abo__push{
+            border-bottom:black ;
+
+        }
+    
+    }
+
+
+
+.sub {
+    height: 800px;
+    background: purple;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .subs{
+        @include large {
+            grid-area: sub;
+            display: flex;
+            flex-direction: row;
+        }
+        @include medium {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .sub__text {
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: auto;
+        margin: -15px 15px 1px ;
+        background: white;
+        padding: 10px 20px;
+        h2 {
+            font-size: 22px;
+        }
+        span {
+            color: grey;
+        }
+    }
+    .sub__image{
+        display: flex;
+        justify-content: center;
+    }
+    @include large {
+        grid-area: sub;
+        height: 400px;
+    }
+    .sub1{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+    }
+    .sub2{
+        @include large{
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px;
+        border:1px solid grey;
+        }
+    }
+    .sub3{
+        box-sizing: content-box;
+        width: 297px;
+        height: 285px;
+        border:1px solid grey;
+    }
+}

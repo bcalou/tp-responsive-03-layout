@@ -1,0 +1,13 @@
+@import "header";
+@import "reset";
+@import "medias";
+@import "footer";
+@import "main";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+
+}
