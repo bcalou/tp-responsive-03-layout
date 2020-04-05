@@ -123,7 +123,7 @@
 }
 
 .main__sevenInfo {
-  background: red; /* Pour tester */
+  background: rgb(255, 0, 212); /* Pour tester */
 
   @include large {
     grid-area: item7;
@@ -155,7 +155,7 @@
 }
 
 .main__elevenInfo {
-  background: darkgreen; /* Pour tester */
+  background: rgb(77, 82, 77); /* Pour tester */
 
   @include large {
     grid-area: item11;
@@ -165,7 +165,9 @@
 .main__twelveInfo {
   background: gold; /* Pour tester */
 
+  
   @include large {
     grid-area: item12;
   }
 }
+
