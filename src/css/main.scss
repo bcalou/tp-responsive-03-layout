@@ -39,8 +39,8 @@ img{
     }
     .hero__border{
         box-sizing: content-box;
-        width: 632px;
-        height: 439px;
+        width: auto;
+        height: auto;
         border:1px solid grey;
     }
     .hero__image{
@@ -98,12 +98,15 @@ img{
             "articles1 articles2 articles3"
             "articles4 articles5 ."
             ;
-            grid-column-gap: 10px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+    }
             .articles1 {
                 box-sizing: content-box;
                 width: 297px;
                 height: 285px;
-                border:1px solid grey;       
+                border:1px solid grey;     
             }
             .articles2 {
                 box-sizing: content-box;
@@ -127,14 +130,14 @@ img{
                 box-sizing: content-box;
                 width: 297px;
                 height: 285px;
-                border:1px solid grey;       
+                border:1px solid grey;
+                       
             }
-         }
+        
 
-        }
-.article{
-    margin: 0px 15px;
-}
+//.article{
+//    margin: 0px 15px;
+//}
 
 .articles__image{
     display: flex;
@@ -168,6 +171,34 @@ img{
 .actu {
     background: red;
     height: 600px;
+    justify-content: center;
+    align-items: center;
+    @include large {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "actu1 actu2"
+        "actu3 actu4"
+        "actu5 actu6"
+        ;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+
+.actu__title{
+    background: white;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    width: 177px;
+}
+img{
+    height: 88px;
+    width: 88px;
+}
 .actu1{
     display: flex;
     flex-direction: row;
@@ -254,5 +285,25 @@ img{
     @include large {
         grid-area: sub;
         height: 400px;
+    }
+    .sub1{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+    }
+    .sub2{
+        @include large{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
+        }
+    }
+    .sub3{
+        box-sizing: content-box;
+                width: 297px;
+                height: 285px;
+                border:1px solid grey;
     }
 }
