@@ -1,148 +1,242 @@
 .main{
+  
 
-  width: 100vw;
-  max-width: 100%;
+  @include large {
+
+    margin: 0 200px;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 60vh 80vh 60vh 30vh 40vh;
+    grid-template-areas: "a b" "c c" "e d" "j s" "g g";
+  }
 
 
-  .headingTopic {
+
+  &__primaryInfo {
     height: 60vh;
     background-color: powderblue;
+
+    @include large {
+      grid-area: a;
+    }
+
   }
 
-  .topArticles {
+  &__secondaryInfo {
 
-    @include medium {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 50% 50%;
-      grid-gap: 5px;
-      grid-template-areas: "a a b b c c"
-                           "d d d e e e";
-    }
+    height: 80vh;
+    
 
-    &__first {
-      height: 40vh;
-      background-color: palegoldenrod;
-
-      @include medium {
-        grid-area: a;
-      }
-    }
-
-    &__second {
-      height: 40vh;
-      background-color: rosybrown;
-
-      @include medium {
-        grid-area: b;
-      }
-    }
-
-    &__third {
-      height: 40vh;
-      background-color: plum;
-
-      @include medium {
-        grid-area: c;
-      }
-    }
-
-    &__fourth{
-      height: 40vh;
-      background-color: skyblue;
-
-      @include medium {
-        grid-area: d;
-      }
-    }
-
-    &__fifth {
-      height: 40vh;
-      background-color: honeydew;
-
-      @include medium {
-        grid-area: e;
-      }
+    @include large {
+      grid-area: c;
     }
   }
 
-  .anotherArticles {
-    background-color: seashell;
+  &__anotherArticles {
+    height: 60vh;
+
+    @include large {
+      grid-area: e;
+    }
+  }
+
+  &__subscribe {
+    height: 30vh;
+    background-color: palevioletred;
+
+    @include large {
+      grid-area: j;
+    }
+  }
+
+  &__events {
+    height: 40vh;
+    background-color: cornsilk;
+
+    @include large {
+      grid-area: g;
+    }
+  }
+}
+
+.secondaryInfo{
+
+  @include medium {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    grid-template-areas: "a a b b c c"
+                         "d d d e e e";
+  }
+
+  @include large {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    grid-template-areas: "a b c"
+                         "d e f";
+  }
+
+
+
+
+  &__first {
+    height: 40vh;
+
+    background-color: palegoldenrod;
 
     @include medium {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 5px;
-      grid-template-areas: "a b"
-                           "c d"
-                           "e f";
+      grid-area: a;
     }
 
-    &__first {
-      height: 20vh;
-      background-color: palegoldenrod;
-
-      @include medium{
-        grid-area: a;
-      }
+    @include large {
+      grid-area: a;
     }
 
-    &__second {
-      height: 20vh;
-      background-color: rosybrown;
+  }
 
-      @include medium{
-        grid-area: b;
-      }
+  &__second {
+    height: 40vh;
+    background-color: rosybrown;
+
+    @include medium {
+      grid-area: b;
     }
 
-    &__third {
-      height: 20vh;
-      background-color: plum;
-
-      @include medium{
-        grid-area: c;
-      }
+    @include large {
+      grid-area: b;
     }
 
-    &__fourth{
-      height: 20vh;
-      background-color: skyblue;
+  }
 
-      @include medium{
-        grid-area: d;
-      }
+  &__third {
+    height: 40vh;
+    background-color: plum;
+
+    @include medium {
+      grid-area: c;
     }
 
-    &__fifth {
-      height: 20vh;
-      background-color: honeydew;
-
-      @include medium{
-        grid-area: e;
-      }
+    @include large {
+      grid-area: c;
     }
 
-    &__sixth {
-      height: 20vh;
-      background-color: rgb(140, 207, 140);
+ 
+  }
+
+  &__fourth{
+    height: 40vh;
+    background-color: skyblue;
+
+    @include medium {
+      grid-area: d;
     }
+
+    @include large {
+      grid-area: d;
+    }
+
+
+  }
+
+  &__fifth {
+    height: 40vh;
+    background-color: honeydew;
+
+    @include medium {
+      grid-area: e;
+    }
+
+    @include large {
+      grid-area: e;
+    }
+
+  
+  }
+}
+
+.anotherArticles {
+
+  @include medium {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+  
+    grid-template-areas: "a b"
+                         "c d"
+                         "e f";
+  }
+
+
+
+  &__first {
+    height: 20vh;
+    background-color: palegoldenrod;
 
     @include medium{
+      grid-area: a;
+    }
+
+  
+  }
+
+  &__second {
+    height: 20vh;
+    background-color: rosybrown;
+
+    @include medium{
+      grid-area: b;
+    }
+
+
+  }
+
+  &__third {
+    height: 20vh;
+    background-color: plum;
+
+    @include medium{
+      grid-area: c;
+    }
+
+
+  }
+
+  &__fourth{
+    height: 20vh;
+    background-color: skyblue;
+
+    @include medium{
+      grid-area: d;
+    }
+
+  }
+
+  &__fifth {
+    height: 20vh;
+    background-color: honeydew;
+
+    @include medium{
+      grid-area: e;
+    }
+
+  }
+
+  &__sixth {
+    height: 20vh;
+    background-color: rgb(140, 207, 140);
+
+    @include medium {
       grid-area: f;
     }
   }
 
-  .subscribe {
-    height: 30vh;
-    background-color: palevioletred;
-  }
-
-  .events {
-    height: 40vh;
-    background-color: cornsilk;
-  }
-
-
 }
+
+
+
+

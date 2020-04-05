@@ -18,6 +18,8 @@ img {
 }
 
 body {
+
+  
   background-color: green;
 
   @include medium {
@@ -25,6 +27,6 @@ body {
   }
 
   @include large {
-    background-color: red;
+    background-color: rgb(211, 236, 211);
   }
 }
