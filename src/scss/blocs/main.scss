@@ -13,8 +13,6 @@
 // -----------------------------------------
 
     .updateArticle{
-        
-        grid-column: 1;
         @include medium {
             grid-column: 1 /span 4;
             background: lightseagreen;

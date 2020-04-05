@@ -1,20 +1,4 @@
-// Parameters
-@import "config/medias.scss";
-@import "config/reset.scss";
-
-// Main Content
-@import "blocs/header.scss";
-@import "blocs/main.scss";
-@import "blocs/footer.scss";
-
-// Second grid for main
-@import "bloc-main/main-updateArticle.scss";
-    // --> fil info second grid
-    @import "bloc-main/main-filInfo.scss";
-
-@import "bloc-main/main-articles.scss";
-@import "bloc-main/main-littleArticle.scss";
-@import "bloc-main/main-obsArticle.scss";
+@import "config/imports.scss";
 
 // ---------- Initial Code ----------
 
