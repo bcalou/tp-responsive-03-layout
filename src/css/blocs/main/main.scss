@@ -1,12 +1,11 @@
 .main {
-  position: relative;
-  top: 70px;
+  margin-top: 70px;
   padding: 20px 10px 20px 10px;
   width: 100%;
   max-width: 660px;
 
   @include medium {
-    top: 170px;
+    margin-top: 170px;
   }
 
   @include large {
