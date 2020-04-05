@@ -41,6 +41,7 @@
 
       @include large {
         padding: 10px 30px;
+        top: 200px;
       }
     }
 
@@ -323,6 +324,11 @@
     }
   }
 
+}
+
+.events {
+  display: flex;
+  flex-direction: row;
 }
 
 

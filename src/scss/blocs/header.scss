@@ -14,20 +14,37 @@
 
   &__title {
     font-family: $sourceSerifProRegular;
-    font-size: 40px;
+    font-size: 24px;
+
+    @include large {
+      font-size:  40px;
+    }
   }
 
   .connection {
     display: flex;
     flex-direction: row;
 
-    &__login {
+    .login {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
       margin: 4px;
+
+      &__text {
+        display: none;
+
+        @include medium {
+          display: block;
+        }
+
+        @include large {
+          display: block;
+        }
+      }
     }
+
 
     &__subscribe {
       background-color: $yellow;
