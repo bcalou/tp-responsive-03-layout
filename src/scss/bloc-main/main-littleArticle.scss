@@ -44,7 +44,7 @@
         @include large {
             grid-column: 1;
             grid-row: 2;
-            background: lightgreen;
+            background: rgb(52, 6, 61);
         }
     }
 
@@ -57,7 +57,7 @@
         @include large {
             grid-column: 2;
             grid-row: 2;
-            background: grey;
+            background: yellow;
         }
     }
 
