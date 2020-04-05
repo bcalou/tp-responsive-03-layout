@@ -1,0 +1,136 @@
+.header {
+  border-bottom: 1px rgba(146, 146, 146, 0.5) solid;
+  padding: 15px;
+  width: 98vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include medium {
+    height: 140px;
+    align-items: flex-end;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+
+  @include medium {
+    width: 22px;
+  }
+}
+
+.nav__burger--menu {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -8px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  @include medium {
+    transform: translateY(-9px);
+  }
+}
+
+.nav__logo {
+  height: 25px;
+
+  @include medium {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+    height: 70px;
+  }
+}
+
+.menu {
+  display: none;
+
+  @include medium {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
+
+.menu__section {
+
+  font-weight: bold;
+  display: none; 
+  margin-right: 2vw;
+
+
+  @media (min-width: 800px) {
+    &:nth-child(-n+5) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 850px) {
+    &:nth-child(6) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 960px) {
+    &:nth-child(7) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1075px) {
+    &:nth-child(8) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1165px) {
+    &:nth-child(9) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1255px) {
+    &:nth-child(10) {
+      display: block;
+    }
+  }
+}
+
+.log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+.header__subscribe {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgba(254, 212, 0);
+}

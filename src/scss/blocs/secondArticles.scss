@@ -1,0 +1,37 @@
+.main__secondArticles {
+
+  @include large {
+    grid-area: second-article;
+  }
+}
+
+.secondArticles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+  }
+}
+
+.secondArticles__article {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  & img {
+    width: 90px;
+  }
+
+  & p {
+    padding-left: 15px;
+    line-height: 22px;
+    font-size: 18px;
+  }
+}

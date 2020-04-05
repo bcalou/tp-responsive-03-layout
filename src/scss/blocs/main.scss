@@ -1,0 +1,44 @@
+.main {
+  width: 100%;
+  text-align: center;
+
+  @include medium {
+    top: 170px;
+  }
+
+  @include large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'primary-info primary-info fillInfo'
+      'article article article'
+      'second-article second-article .'
+      'subs subs .'
+      'last last last';
+  }
+  grid-column-gap: 20px;
+  grid-row-gap: 25px;
+}
+
+
+.main__fillInfo {
+  display: none;
+  background-color: greenyellow;
+
+  @include large {
+    display: block;
+    grid-area: fillInfo;
+    margin-right: 20px;
+  }
+}
+
+
+.main__subscribe {
+  background-color: darkorange;
+  height: 320px;
+
+  @include large {
+    grid-area: subs;
+  }
+}

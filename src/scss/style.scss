@@ -1,19 +1,10 @@
 @import '../scss/vendors/reset.css';
 @import '../scss/config/mixin.scss';
+@import '../scss/blocs/body.scss';
+@import '../scss/blocs/main.scss';
+@import '../scss/blocs/main-articles.scss';
+@import '../scss/blocs/secondArticles.scss';
+@import '../scss/blocs/last.scss';
+@import '../scss/blocs/primaryInfo.scss';
+@import '../scss/blocs/header.scss';
 
-body {
-  height: 100vh;
-  background-color: green;
-
-  @include small {
-    background-color: blue;
-  }
-
-  @include medium {
-    background-color: yellow;
-  }
-
-  @include large {
-    background-color: red;
-  }
-}
