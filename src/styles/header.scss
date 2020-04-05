@@ -73,10 +73,17 @@ header {
         }
         &__acount > p {
             display: none;
+            @include medium {
+                display: flex;
+                font-family: SSPb;
+            }
         }
         &__logo {
             height: auto;
             fill: black;
+            @include medium {
+                margin-right: 10px;
+            }
         }
     }
     .subscribe__cta {

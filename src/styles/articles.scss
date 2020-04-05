@@ -7,6 +7,18 @@
     padding-top: 30px;
 }
 
+.main__articles {
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-rows: 2fr 1fr 1fr 0.5fr 0.5fr;
+        grid-gap: 10px;
+        align-items: flex-start;
+        vertical-align: baseline;
+        padding-top: 80px;
+    }
+}
+
 .article {
     display: flex;
     flex-direction: column;
@@ -15,9 +27,13 @@
     margin-bottom: 30px;
     &__first {
         margin-top: 50px;
+        @include medium {
+            grid-column-start: 1;
+            grid-column-end: span 3;
+            margin-top: 0;
+        }
     }
     &__img {
-        width: 100%;
         height: auto;
         background-size: 100%;
     }
@@ -40,6 +56,14 @@
         font-weight: lighter;
         color: lightgrey;
         transform: translateY(-15px);
+
+        @include medium {
+            .container__articles {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
     }
     
 
@@ -59,6 +83,23 @@
     }
 }
 
+.articles__type2 {
+    @include small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
 .obs__abo {
     display: flex;
     flex-direction: row;
@@ -73,12 +114,26 @@
     &__infos {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
+        width: 200px;
+        & > h2 {
+            @include small {
+                display: none;
+            }
+            @include medium {
+                display: flex;
+                font-family: Oswald;
+                font-size: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
     }
     &__text {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &__cover1 {
         width: 80px;
@@ -103,6 +158,13 @@
     &__container {
         padding-left: 20px;
         padding-right: 20px;
+        @include medium {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row: 1fr;
+            grid-gap: 10px;
+            align-items: flex-start;
+        }
     }
     &__title {
         font-family: Oswald;
@@ -131,5 +193,38 @@
     background-color: #f1f1f1;
     & > p {
         margin-bottom: 20px;
+    }
+}
+
+.category {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        @include medium {
+            display: flex;
+            flex-direction: row;
+            & > li {
+            margin-right: 20px;
+            }
+        }
+    }
+}
+
+.footer {
+    &__container {
+        background-color: #f1F1F1;
+        border-top: 1px solid grey;
+        padding-top: 20px;
+    }
+    &__list {
+        display: none;
+        justify-content: center;
+        width: 90%;
+        & > li {
+            margin-right: 30px;
+        }
     }
 }
