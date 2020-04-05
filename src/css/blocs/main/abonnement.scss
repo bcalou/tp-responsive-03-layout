@@ -1,0 +1,84 @@
+.main__abonnement {
+  background-color: rgb(254, 213, 0);
+  height: 140px;
+  display: flex;
+  margin: 40px 0;
+
+  @include medium {
+    height: 180px;
+  }
+
+  @include large {
+    grid-area: abo;
+  }
+}
+
+.abonnement__text {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & h1 {
+    display: none;
+    font-family: 'Osward';
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+
+    @include medium {
+      display: block;
+    }
+  }
+
+  & p {
+    font-family: 'SourceSerifPro-regular';
+    line-height: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  & button {
+    width: auto;
+    border: none;
+    color: white;
+    background-color: black;
+    font-family: 'SourceSerifPro-bold';
+    font-size: 1.1rem;
+    padding: 0.2rem 1rem;
+  }
+}
+
+.abonnement__pictures {
+  position: relative;
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-end;
+
+  @include medium {
+    width: 40%;
+    margin: 0;
+  }
+
+  & .obs-couv {
+    width: 100px;
+
+    @include medium {
+      width: 140px;
+      height: 100%;
+    }
+  }
+
+  & .tele-obs-couv {
+    display: none;
+    position: absolute;
+    width: 85px;
+    height: 60%;
+    left: 45%;
+
+    @include medium {
+      display: block;
+    }
+  }
+}

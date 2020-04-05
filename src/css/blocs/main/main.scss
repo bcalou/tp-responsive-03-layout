@@ -25,14 +25,6 @@
   }
 }
 
-.main__abonnement {
-  border: 1px solid black;
-  background-color: violet;
-  height: 320px;
-  @include large {
-    grid-area: abo;
-  }
-}
 .main__rdv {
   border: 1px solid black;
   background-color: yellowgreen;
