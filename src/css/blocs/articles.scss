@@ -1,0 +1,204 @@
+.article {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__background {
+    width: 100%;
+  }
+
+  &__title {
+    font-family: "SSP-b";
+    font-size: 40px;
+    text-align: center;
+    margin: -5% 5% 0% 5%;
+    background-color: white;
+    padding: 2%;
+
+    &--secondary {
+      padding-top: 15px;
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+  &__aside {
+    font-family: Arial;
+    font-size: 14px;
+    color: grey;
+
+    &--secondary {
+      margin-top: 10px;
+    }
+  }
+
+  &__secondary {
+    border: 1px solid lightgrey;
+    justify-content: flex-start;
+  }
+
+  &__third {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &--image {
+      max-height: 100%;
+      margin-right: 10px;
+    }
+
+    &--text {
+      font-family: SSP-r;
+    }
+  }
+
+  &__live {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:nth-child(5) {
+      border-bottom: none;
+    }
+
+    &--time {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &--text {
+      font-family: Arial;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.articles {
+  width: 966px;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 452px 600px 327px 180px 300px;
+  grid-template-areas:
+    "articlesMain aside"
+    "articlesSecond articlesSecond"
+    "articlesThird ."
+    "advertising ."
+    "fourth fourth";
+
+  @include medium {
+    width: 633px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include small {
+    width: 90%;
+  }
+
+  &__main {
+    padding: 10px;
+
+    @include medium {
+      height: auto;
+    }
+  }
+
+  &__infos {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+    margin: 10px;
+
+    @include medium {
+      display: none;
+    }
+  }
+
+  &__secondary {
+    grid-area: articlesSecond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+    padding: 10px;
+
+    @include medium {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 300px;
+
+      .article:nth-child(1) {
+        grid-column: 1 / span 2;
+      }
+
+      .article:nth-child(2) {
+        grid-column: 3 / span 2;
+      }
+
+      .article:nth-child(3) {
+        grid-column: 5 / span 2;
+      }
+
+      .article:nth-child(4) {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+      }
+      .article:nth-child(5) {
+        grid-column: 4 / span 3;
+        grid-row: 2;
+      }
+    }
+
+    @include small {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__third {
+    grid-area: articlesThird;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 90px);
+    grid-gap: 10px;
+    padding: 10px;
+
+    @include small {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__advertising {
+    background-color: blueviolet;
+    grid-area: advertising;
+    padding: 10px;
+  }
+
+  &__fourth {
+    grid-area: fourth;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    padding: 10px;
+    @include small {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
