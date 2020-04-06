@@ -1,0 +1,13 @@
+.tertiaryInfos {
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 5px;
+  }
+}
+
+.tertiaryInfos__article {
+  text-align: center;
+  border: 1px solid grey;
+}

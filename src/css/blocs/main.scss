@@ -1,0 +1,72 @@
+.main {
+  max-width: 633px;
+  margin: 10px auto;
+
+  @include large {
+    max-width: 966px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 10px;
+    grid-template-areas:
+      'primaryInfo    thread'
+      'secondaryInfos secondaryInfos'
+      'tertiaryInfos  .'
+      'ad             .'
+      'events         events';
+  }
+}
+
+.main__primaryInfo {
+  background-color: gold;
+  height: 150px;
+
+  @include large {
+    grid-area: primaryInfo;
+  }
+}
+
+.main__thread {
+  background-color: aquamarine;
+  height: 150px;
+
+  @include large {
+    grid-area: thread;
+  }
+}
+
+.main__secondaryInfos {
+  background-color: lightcoral;
+  height: 150px;
+
+  @include large {
+    grid-area: secondaryInfos;
+  }
+}
+
+.main__tertiaryInfos {
+  background-color: lightpink;
+  height: 150px;
+
+  @include large {
+    grid-area: tertiaryInfos;
+  }
+}
+
+.main__ad {
+  background-color: lightgreen;
+  height: 150px;
+
+  @include large {
+    grid-area: ad;
+  }
+}
+
+.main__events {
+  background-color: lightskyblue;
+  height: 150px;
+
+  @include large {
+    grid-area: events;
+  }
+}

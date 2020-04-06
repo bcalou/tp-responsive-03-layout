@@ -1,0 +1,45 @@
+.secondaryInfos {
+  @include medium {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5px;
+  }
+
+  @include medium-only {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      'one  one  two  two  three three'
+      'four four four five five  five';
+  }
+
+  @include large {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.secondaryInfo__article {
+  text-align: center;
+  border: 1px solid grey;
+
+  @include medium-only {
+    &:nth-child(1) {
+      grid-area: one;
+    }
+
+    &:nth-child(2) {
+      grid-area: two;
+    }
+
+    &:nth-child(3) {
+      grid-area: three;
+    }
+
+    &:nth-child(4) {
+      grid-area: four;
+    }
+
+    &:nth-child(5) {
+      grid-area: five;
+    }
+  }
+}
