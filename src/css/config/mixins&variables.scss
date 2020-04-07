@@ -1,0 +1,24 @@
+@mixin paddingLarge{
+    padding-top: 2em;
+    padding-bottom:2em;
+    padding-right:5em;
+    padding-left:5em;
+}
+@mixin marginLarge {
+    margin-right: 8em;
+    margin-left:8em;
+    margin-top:3em;
+    margin-bottom:3em;
+}
+@mixin marginMedium {
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-top:2em;
+    margin-right:2em;
+}
+@mixin paddingMedium{
+    padding-top: 2em;
+    padding-bottom:2em;
+    padding-right:4em;
+    padding-left:4em;
+}

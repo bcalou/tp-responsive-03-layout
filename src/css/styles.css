@@ -1,0 +1,163 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (min-width: 657px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 4em;
+    padding-left: 4em;
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-top: 2em;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 1007px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 5em;
+    padding-left: 5em;
+    margin-right: 8em;
+    margin-left: 8em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    grid-gap: 1em;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "primary  feed" "secondary secondary" "tertiary ." "yellowBox ." "lotto lotto";
+  }
+}
+
+.main__primaryInfo {
+  background: green;
+  /* Pour tester */
+  height: 20em;
+  /* Pour tester */
+}
+
+@media (min-width: 1007px) {
+  .main__primaryInfo {
+    grid-area: primary;
+  }
+}
+
+.main__infoFeed {
+  background: brown;
+}
+
+@media (min-width: 1007px) {
+  .main__infoFeed {
+    grid-area: feed;
+  }
+}
+
+.main__secondaryInfo {
+  background: #351919;
+  height: 20em;
+}
+
+@media (min-width: 1007px) {
+  .main__secondaryInfo {
+    grid-area: secondary;
+  }
+}
+
+.main__tertiaryInfo {
+  background: blue;
+  height: 150px;
+}
+
+@media (min-width: 1007px) {
+  .main__tertiaryInfo {
+    grid-area: tertiary;
+  }
+}
+
+.main__yellowBox {
+  background: yellow;
+  height: 100px;
+}
+
+@media (min-width: 1007px) {
+  .main__yellowBox {
+    grid-area: yellowBox;
+  }
+}
+
+.main__cinemaLottery {
+  background: purple;
+  height: 150px;
+}
+
+@media (min-width: 1007px) {
+  .main__cinemaLottery {
+    grid-area: lotto;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+/*# sourceMappingURL=styles.css.map */
