@@ -16,6 +16,8 @@
   $font-header: "Oswald-bold";
   $font-main-regular: "SourceSerifPro-regular";
   $font-main-bold: "SourceSerifPro-bold";
+  $max%-: 100%;
+  $normaly: normal;                                   //test insert % in name
 }
 
 @mixin font-header {
