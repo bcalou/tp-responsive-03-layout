@@ -11,3 +11,32 @@
 
 
 
+:root {
+  $color-text: black;
+  $font-header: "Oswald-bold";
+  $font-main-regular: "SourceSerifPro-regular";
+  $font-main-bold: "SourceSerifPro-bold";
+}
+
+@mixin font-header {
+  @font-face {
+    font-family: $font-header;
+    src: url("../asset/fonts/Oswald-bold.woff2") format("woff2"), local($font-header);
+  }
+}
+
+@mixin font-main-regular {
+  @font-face {
+    font-family: $font-main-regular;
+    src: url("../asset/fonts/SourceSerifPro-regular.woff2") format("woff2"), local($font-main-regular);
+  }
+}
+
+@mixin font-main-bold {
+  @font-face {
+    font-family: $font-main-bold;
+    src: url("../asset/fonts/SourceSerifPro-bold.woff2") format("woff2"), local($font-main-bold);
+  }
+}
+
+
