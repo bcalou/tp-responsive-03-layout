@@ -12,17 +12,42 @@ Les images et fonts sont dans `src/assets`.
 
 _Note : il est inutile de se fier au code source du site modèle en l'inspectant : le but ici est de créer une version plus simple, utilisant des technologies plus modernes._
 
-## Étape 0 : mise en place
+## Étape 0 : Mise en place
 
-Comme à votre habitude (voir TPs précédents), préparez votre environnement de travail avec `npm`, `parcel` et `SASS`. N'oubliez pas de commiter votre travail à la fin de chaque étape.
+- Créer un fork de ce repository
+- Installer le plugin _Prettier_ (si ce n'est pas déjà fait)
+- Afin de pouvoir utiliser SCSS :
+  - Dans le dossier de travail, transformer votre projet simple en projet npm avec `npm init`
+  - Installer [parcel](https://parceljs.org/) avec `npm install parcel --save-dev`
+  - Dans `package.json`, ajouter un script `"serve": "parcel src/index.html"`
+  - Lancer `npm run serve`. Parcel _build_ votre site et l'ouvre dans le navigateur, sur _localhost_.
+- Ajouter un fichier `src/styles/styles.scss` à votre projet et l'importer à partir du HTML. Parcel s'occupera de la transformation en CSS.
+- Ajouter un fichier `reset.scss` à votre projet contenant le [reset CSS classique](https://meyerweb.com/eric/tools/css/reset/), sans l'importer dans le HTML.
+- Dans le fichier `styles.scss`, utiliser un import SASS pour importer le fichier `reset.scss`.
+
+```
+@import 'reset.scss';
+```
+
+Dans vos projets, toujours inclure les deux règles CSS suivantes (rappel sur [box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)) :
+
+```
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+```
 
 ## Étape 1 : Les media queries
 
 Identifiez les _breakpoints_ (dimensions de l'écran auxquelles la mise en page change). La taille la plus petite qu'on souhaite supporter sera `320px`. Partez de cette largeur, puis agrandissez le viewport pour détecter les 2 _breakpoints_ principaux. Notez la taille.
 
-_Note : le header contient plus de variations, ignorez pour l'instant._
+_Note : le header contient plus de variations, ignorez-le pour l'instant._
 
-Dans un fichier `medias.scss`, définissez des mixins pour vos _media queries_. En _mobile first_, on part du plus petit pour aller vers le plus grand :
+Dans un fichier `src/styles/config/medias.scss`, définissez des mixins pour vos _media queries_. En _mobile first_, on part du plus petit pour aller vers le plus grand :
 
 ```
 @mixin medium {
