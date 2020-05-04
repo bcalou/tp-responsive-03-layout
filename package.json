@@ -1,0 +1,25 @@
+{
+  "name": "tp-responsive-03-layout",
+  "version": "1.0.0",
+  "description": "Dans le dernier TP de cette série, nous allons intégrer une page web étape par étape en utilisant intelligement flexbox et grid.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "scripts": {
+    "serve": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcalou/tp-responsive-03-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcalou/tp-responsive-03-layout/issues"
+  },
+  "homepage": "https://github.com/bcalou/tp-responsive-03-layout#readme"
+}
